@@ -3,11 +3,21 @@ $(function() {
 	 
 	 */
 	//判断cookie
-	if ($.cookie().id != undefined 
-		&& $.cookie().user != undefined
-		&& $.cookie().email != undefined) {
-		//自动登录
+	if ($.cookie().id != undefined && $.cookie().user != undefined) {
+		//用cookie缓存 显示信息
 		$("#userInfo_btn").html($.cookie().user);
+		//ajax获取用户个人信息
+		$.ajax({
+			url: 'php/getUser.php',
+			type: 'POST',
+			data: {
+				id:$.cookie().id
+			},
+		})
+		.done(function(response) {
+			json = eval(response);
+			//待用
+		});
 		$(".tips_reg_log_container").css("display", "none");
 	} else {
 		//没有cookie
@@ -25,8 +35,6 @@ $(function() {
 			$('.profile_menu').slideUp('fast');
 		}
 	});
-
-
 
 	//头部主页
 	$(".header_logo_title").click(function(event) {
@@ -79,7 +87,7 @@ $(function() {
 
 	//点击提问
 	$('#ask_btn').click(function(event) {
-		if ($.cookie().email != undefined && $.cookie().user != undefined) {
+		if ($.cookie().id != undefined) {
 			showAskDialog();
 		} else {
 			//未登录
@@ -89,9 +97,8 @@ $(function() {
 
 	//点击退出
 	$('#logout_btn').click(function(event) {
-		$.removeCookie("email");
-		$.removeCookie("user");
 		$.removeCookie("id");
+		$.removeCookie("user");
 		window.history.go(0);
 	});
 
@@ -217,8 +224,7 @@ $(function() {
 					url: 'php/addQuestion.php',
 					type: 'POST',
 					data: {
-						email: $.cookie().email,
-						user: $.cookie().user,
+						user_id: $.cookie().id,
 						title: $('#ask_title').val(),
 						details: $('#ask_details').val(),
 					}
@@ -258,50 +264,7 @@ $(function() {
 		$(".dia_login_form").validate({
 			submitHandler: function(formEle) {
 				$.showLoadDialog('请稍候...');
-				$.ajax({
-					url: 'php/login_isPassRight.php',
-					type: 'POST',
-					data: $('.dia_login_form').serialize(),
-				})
-					.done(function(response, status, xhr) {
-						//alert('注册返回：'+response);
-						if (response != "[]") {
-							json = eval("(" + response + ")");
-							$.showOKDialog('登录成功');
-							//存储cookie
-							if ($('#login_save_cookie').is(':checked')) {
-								$.cookie("email", $('#login_email').val(), {
-									expires: 30
-								});
-								$.cookie("user", json[0].user, {
-									expires: 30
-								});
-								$.cookie("id", json[0].id, {
-									expires: 30
-								});
-							} else {
-								$.cookie("email", $('#login_email').val());
-								$.cookie("user", "登陆了未获取");
-							}
-							setTimeout(function() {
-								$('#dia_load').dialog('close');
-								$('#dia_login').dialog('destroy');
-
-								//登录
-								$("#userInfo_btn").html($.cookie().user);
-								$(".tips_reg_log_container").css("display", "none");
-								$("#userInfo_btn").show();
-								$("#logout_btn").show();
-
-							}, 700);
-						} else {
-							$.showErrorDialog('账号或密码错误');
-						}
-					})
-					.fail(function() {
-						console.log("error");
-						$.showErrorDialog("网络错误");
-					});
+				Login2Server($('.dia_login_form').serialize(),$('#dia_login'));
 			},
 		});
 	}
@@ -360,7 +323,6 @@ $(function() {
 			changeMonth: true,
 			changeYear: true,
 			defaultDate: date,
-			showButtonPanel: true,
 			yearRange: "1900:c",
 			hideIfNotPrevNext: true,
 			maxDate: 0,
@@ -393,29 +355,19 @@ $(function() {
 
 			},
 			submitHandler: function(formEle) {
-				$.showLoadDialog('请稍候');
+				$.showLoadDialog('跳转中...');
 				$.ajax({
-					url: 'php/signUp_addUsers.php',
+					url: 'php/signUp_addUser.php',
 					type: 'POST',
 					data: $('.dia_reg_form').serialize(),
 				})
 					.done(function(response, status) {
 						//alert('注册返回：'+response);
 						if (response == "true") {
-							$.showOKDialog('注册成功');
-							//存储cookie
-							$.cookie("email", $('#reg_email').val());
-							$.cookie("user", $('#reg_user').val());
-							setTimeout(function() {
-								$('#dia_reg').dialog('destroy');
-								//登录
-								$("#userInfo_btn").html($.cookie().user);
-								$(".tips_reg_log_container").css("display", "none");
-								//没有cookie
-								$("#userInfo_btn").show();
-								$("#logout_btn").show();
-							}, 700);
-
+							Login2Server({
+								login_email:$('#reg_email').val(),
+								login_pass:$('#reg_pass').val(),
+							},$('#dia_reg'));
 						} else {
 							$.showErrorDialog('注册失败');
 						}
@@ -428,7 +380,48 @@ $(function() {
 		});
 	}
 
+	function Login2Server(data,dialog2Close){
+		$.ajax({
+					url: 'php/login_isPassRight.php',
+					type: 'POST',
+					data: data,
+				})
+					.done(function(response, status, xhr) {
+						//alert('注册返回：'+response);
+						if (response != "[]") {
+							json = eval("(" + response + ")");
+							$.showOKDialog('登录成功');
+							//存储cookie
+							if ($('#login_save_cookie').is(':checked')) {
+								$.cookie("id", json[0].id, {
+									expires: 30
+								});
+								$.cookie("user", json[0].user, {
+									expires: 30
+								});
+							} else {
+								$.cookie("id", json[0].id);
+								$.cookie("user", json[0].user);
+							}
+							setTimeout(function() {
+								$('#dia_load').dialog('close');
 
+								dialog2Close.dialog('close');
 
+								//登录
+								$("#userInfo_btn").html(json[0].user);
+								$(".tips_reg_log_container").css("display", "none");
+								$("#userInfo_btn").show();
+								$("#logout_btn").show();
 
+							}, 700);
+						} else {
+							$.showErrorDialog('账号或密码错误');
+						}
+					})
+					.fail(function() {
+						console.log("error");
+						$.showErrorDialog("网络错误");
+					});
+	}
 })

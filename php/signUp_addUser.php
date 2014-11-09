@@ -6,6 +6,8 @@
 	@param $_POST['reg_field']
 	@param $_POST['reg_birthday']
 	@param $_POST['reg_gender']
+
+	返回注册成功地Jquery对象
 */
 	
 require 'config.php';
@@ -25,6 +27,7 @@ VALUES ('$reg_user', sha1('$reg_pass'), '$reg_email',
 mysql_query($query) or die('新增失败!'.mysql_error());
 
 echo 'true';
+
 mysql_close(); 
 
 

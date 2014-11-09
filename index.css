@@ -52,13 +52,18 @@ body{
 	cursor: pointer;
 }
 
-#header_logo{
-	float: right;
-}
 #userInfo_btn{
-	padding-left: 55px;
-	position: absolute;
-	left: 0px;
+	float: left;
+	font-size: 16px;
+	padding-left: 50px;
+	margin-right: 10px;
+}
+.top_divide_line{
+	height: 30px;
+	width: 1px;
+	float: left;
+	margin: 5px 10px;
+	background: #aaa;
 }
 .top_avatar{
 	position: absolute;
@@ -381,6 +386,7 @@ body{
     animation: showShadow 1s;
 }
 #search_input{
+	margin-right: 0px;
 	border: 1px solid #6AB015;
 	box-shadow: 0px 0px 0px #eee;
 	background: rgb(220,245,220);

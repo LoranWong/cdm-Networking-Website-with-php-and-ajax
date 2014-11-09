@@ -1,6 +1,7 @@
 <?php
 /*
 	@param $_POST['login_pass']
+	@param $_POST['login_email']
 */
 
 require 'config.php';
