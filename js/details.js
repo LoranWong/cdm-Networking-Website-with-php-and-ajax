@@ -1,5 +1,5 @@
 $(function() {
-	//Git JackWong025
+	//Git JackWong025 ~2
 	//全局变量
 	//接收Get参数  显示文章内容
 	g_question_id = $.baoGetUrlParam('id');
