@@ -70,6 +70,8 @@ $(function() {
 
 	//首次加载 
 	showMoreComment();
+
+
 	$(window).scroll(function(event) {
 		if ($(window).scrollTop() + $(window).height() == $(document).height()) {
 			showMoreComment();
@@ -82,10 +84,9 @@ $(function() {
 			//防止异步加载出错
 			isLoading = true;
 			$.ajax({
-				url: 'php/getQuestions.php',
+				url: 'php/getQuestionAndComments.php',
 				type: 'POST',
 				data: {
-					kind: 1,
 					id: g_question_id,
 					start: comments_json.length,
 					count: COMMENT_LOAD_COUNT,
@@ -94,7 +95,7 @@ $(function() {
 				.done(function(response, status, xhr) {
 					if (response != "[]") {
 						json = eval("(" + response + ")");
-						//console.log(json);
+						console.log(json);
 						//防止重复加载
 						if (!hasQuestionShow) {
 							//加载问题内容
@@ -116,6 +117,12 @@ $(function() {
 							$('.details_question_main').html(json.question[0].details);
 							$('.details_comment_counts').html(Math.floor(Math.random() * (100)));
 							hasQuestionShow = true;
+
+							//显示文章作者小组
+							showGroupsInfo(json.question[0].user_id,$('#details_container'));
+							//显示文章所属Tag
+							showTagsInfo(json.question[0].id);
+
 						}
 
 						//加载评论内容
@@ -139,15 +146,21 @@ $(function() {
 							}
 
 							item = index == 0 && currentLength == 0 ? $('.comment_container').first() : $('.comment_container').first().clone();
+							
+							item.find(".group_item").remove();
 							//console.log("currentLength--->"+currentLength);
-							//console.log("index--->"+index);
+							//console.log(val);
 							item.attr('comment_id', val.id);
 							item.find('.comment_main').html(val.details);
 							item.find('.item_user').html(val.user);
 							item.find('.item_date').html(time);
 							item.find('.comment_index').html(currentLength + index + 1);
+							//显示评论作者小组
+							showGroupsInfo(val.user_id,item);
 
 							item.appendTo('.comments_container');
+
+							
 
 						});
 
@@ -166,10 +179,51 @@ $(function() {
 				})
 				.fail(function() {
 					console.log("error");
-				}).always(function(){
-						isLoading = false;
+				}).always(function() {
+					isLoading = false;
 
 				})
 		}
 	}
+
+	function showGroupsInfo(user_id,container) {
+		$.ajax({
+			url: 'php/getGroupsByUserId.php',
+			type: 'POST',
+			data: {
+				id: user_id
+			},
+		})
+			.done(function(response) {
+				json = eval("(" + response + ")");
+				//console.log(json);
+				$.each(json, function(index, val) {
+					item = $('<a class="group_item"></a>');
+					item.attr('group_id', val.id);
+					item.html(val.name);
+					item.appendTo(container.find('.details_groups'));
+				});
+			});
+	}
+
+	function showTagsInfo(question_id){
+		$.ajax({
+			url: 'php/getTagsByQuestionId.php',
+			type: 'POST',
+			data: {
+				id: question_id
+			},
+		})
+			.done(function(response) {
+				json = eval("(" + response + ")");
+				//console.log(json);
+				$.each(json, function(index, val) {
+					item = $('<a class="tag_item"></a>');
+					item.attr('tag_id', val.id);
+					item.html(val.name);
+					item.insertBefore('.details_title_content');
+				});
+			});
+	}
+
 })

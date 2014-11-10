@@ -69,11 +69,6 @@ $(function() {
 		},
 	});
 
-	//tabs初始化
-	$('.tabs_container').tabs({
-		show: true,
-		heightStyle: 'content',
-	});
 
 	//accordion初始化
 	$('.accordion_container').accordion({

@@ -22,7 +22,7 @@
 
 		<!-- 头部导航栏 -->
 		<div class="header_container">
-		<img class="top_avatar" src="images/sample.png" alt="">
+			<img class="top_avatar" src="images/sample.png" alt="">
 			<a id="userInfo_btn" class="top_menu_item">登录中</a>
 			<ul class="profile_menu">
 				<li id="logout_btn">退出</li>
@@ -35,14 +35,24 @@
 		-->
 		<div class="header_main">
 			<a href="index.html">
-			<img id="header_logo" src="images/logo.png"></a>
-			
+				<img id="header_logo" src="images/logo.png"></a>
+
+			<div class="header_main_menu">
+				<a id="home_btn" class="top_menu_item">首页
+				<img src="images/triangle_bottom.png">
+				</a>
+				<a id="group_btn" class="top_menu_item">小组
+				<img src="images/triangle_bottom.png">
+				</a>
+			</div>
 
 			<div class="header_search">
 				<a id="ask_btn" class="top_btn">提问</a>
 				<input id="search_input" type="text" name="search" class="round_textbox search" title="问题 用户 分享 ...">
 				<img id="search_btn" src="images/search.png" alt=""></div>
 		</div>
+
+		<div class="white_bar"></div>
 
 	</div>
 	<!-- 头部导航栏 -->
@@ -64,17 +74,12 @@
 			<!-- 选项卡 -->
 			<div class="tabs_container">
 				<ul>
-					<li>
-						<a href="#tab1.html">热门发布</a>
-					</li>
-					<li>
-						<a href="#tab_new">新的发布</a>
-					</li>
-					<li>
-						<a href="tab3.html">小组发布</a>
-					</li>
+<!-- 				<li tag_id = "1">
+						<a href="#tab_content">新的发布</a>
+					</li> -->
 				</ul>
-				<div id="tab_new">
+				
+				<div id="tab_content">
 					<div class="items_container" id="items_container_new">
 						<!-- 单条信息的示例内容 -->
 						<table class="item_container" cellpadding="0" cellspacing="0" border="0" width="100%" item-index="0">

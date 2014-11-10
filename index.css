@@ -4,7 +4,7 @@ body{
 	margin: 40px 0 0 0;
 	padding: 0;
 	font-family:sans-serif;
-	background: #e3e3e3;
+	background: #efefef;
 }
 /*页面头部  浅蓝渐变 6AB015-4CA005 */
 
@@ -26,7 +26,7 @@ body{
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#6AB015', endColorstr='#4CA005', GradientType=0);
 	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false);
 	border-bottom: 1px solid #3CA005;
-	box-shadow: 0 1px 2px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.15);
+	box-shadow: 0 1px 3px rgba(0,0,0,.25),inset 0 1px 0 rgba(255,255,255,.15);
 
 }
 .header_main,.tips_main{
@@ -42,22 +42,27 @@ body{
 	cursor: pointer;
 }
 
-.top_menu_item{
+#userInfo_btn{
 	float: left;
 	height: 40px;
 	line-height: 40px;
 	font-size: 15px;
-	padding: 0 15px;
+	padding:0 10px;
 	color: #fff;
 	cursor: pointer;
+	margin-right: 10px;
+	font-size: 15px;
+	padding-left: 50px;
 }
 
-#userInfo_btn{
+
+
+.header_main_menu{
 	float: left;
-	font-size: 16px;
-	padding-left: 50px;
-	margin-right: 10px;
+	margin-left: 20px;
 }
+
+
 .top_divide_line{
 	height: 30px;
 	width: 1px;
@@ -105,9 +110,7 @@ body{
 	background: rgba(255,255,255,.3)
 }
 
-.top_menu_item:hover{
-	background: rgba(0,0,0,.1);
-}
+
 
 .header_search{
 	float: right;
@@ -150,12 +153,40 @@ body{
 	color: #fff;
 	box-shadow: 1px 1px 1px rgba(0,0,0,.2);;
 }
+
+.top_menu_item{
+	float: left;
+	height: 40px;
+	line-height: 42px;
+	font-size: 15px;
+	padding:0 10px;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+}
+.top_menu_item:hover{
+	background: rgba(255,255,255,.1);
+}
+.top_menu_item img{
+	position: absolute;
+	display: none;
+	width: 10px;
+	height: 8px;
+	bottom: .5px;
+	left: 20px;
+}
 .toolbar_menu{
 	width: 100px;
 	height: 40px;
 }
 
-
+.white_bar{
+	background: white;
+	position: absolute;
+	height: 3px;
+	width: 100%;
+	bottom: -1px;
+}
 
 
 /*提示注册登录处*/
@@ -694,8 +725,8 @@ element.style {
 .comment_btn{
 	display: block;
 	position: absolute;
-	right: 20px;
-	bottom: 9px;
+	right: 8px;
+	bottom: 6px;
 	background:#eee;
 	padding: 4px 10px;
 	font-size: 13px;

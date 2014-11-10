@@ -7,7 +7,7 @@
 
 	$id = $_POST['id'];
 
-	$sql = "SELECT user FROM users WHERE id=$id";
+	$sql = "SELECT name,id FROM groups WHERE id=$id";
 
 	$query = mysql_query($sql) or die ('SQL错误'.mysql_error());
 

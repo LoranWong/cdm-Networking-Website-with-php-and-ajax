@@ -20,7 +20,7 @@ $reg_email = addslashes($_POST['reg_email']);
 
 
 
-$query = "INSERT INTO user (user, pass, email, gender, birthday, field , date)
+$query = "INSERT INTO users (user, pass, email, gender, birthday, field , date)
 VALUES ('$reg_user', sha1('$reg_pass'), '$reg_email',
 '$_POST[reg_gender]', '$_POST[reg_birthday]', '$_POST[reg_field]', NOW())";
 
