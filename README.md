@@ -1,5 +1,3 @@
 <html>
-	
-
-	Sample
+	<b>All for learning</b>
 </html>
