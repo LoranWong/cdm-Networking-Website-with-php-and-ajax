@@ -1,21 +1,29 @@
 FORMAT: 1A
 HOST: http://www.google.com
 
-# Interface of cdm project
-Notes API is a *short texts saving* service similar to its physical paper presence on your table.
+# Interface of cdm project v1
+
+    本API文档包含了所有接口   版本号为`v1`
+    
+    注:所有请求均以`POST`方式提交
+    
+    URL地址  http://<domain>/php/<action>
+    
+    
+
+# 分组详细接口信息
 
 # Group User用户信息
-Notes related resources of the **Notes API**
+
+### User对象属性
+    id - 用户的唯一ID
+    user - 用户的昵称
+    email - 用户的注册邮箱
+    date - 用户的注册日期与时间
+    
+    
 
 ## Notes Collection [/notes]
-### List all Notes [GET]
-+ Response 200 (application/json)
-
-        [{
-          "id": 1, "title": "Jogging in park"
-        }, {
-          "id": 2, "title": "Pick-up posters from post-office"
-        }]
 
 ### Create a Note [POST]
 + Request (application/json)
