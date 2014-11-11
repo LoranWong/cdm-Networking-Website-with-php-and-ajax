@@ -2,8 +2,9 @@ body{
 	outline: none;
 	font-size: 14px;
 	margin: 40px 0 0 0;
+	color: #777;
 	padding: 0;
-	font-family:sans-serif;
+	font-family: "Microsoft YaHei","WenQuanYi Micro Hei",SimHei,tahoma,sans-serif;
 	background: #fff;
 }
 /*页面头部  浅蓝渐变 6AB015-4CA005 */
@@ -176,7 +177,7 @@ body{
 	float: left;
 	height: 40px;
 	line-height: 42px;
-	font-size: 18px;
+	font-size: 16px;
 	padding:0 10px;
 	color: #eee;
 	cursor: pointer;
@@ -193,7 +194,7 @@ body{
 	width: 10px;
 	height: 8px;
 	bottom: -1.5px;
-	left: 23px;
+	left: 21px;
 }
 
 .white_bar{
@@ -322,20 +323,20 @@ body{
 .item_title{
 	display: block;
 	font-size: 16px;
-	color: #999;
+	color: #888;
 	margin: 10px 15px;
 	font-style: bold;
 	text-decoration: none;
 }
 
 .item_title:hover{
-	color: #444;
+	color: #666;
 	text-decoration: underline;
 	cursor: pointer;
 }
 
 .item_hot_comment_div{
-	color: #888;
+	color: #aaa;
 	font-size: 14px;
 	margin: 10px 15px;
 }
@@ -355,15 +356,22 @@ body{
 	cursor:pointer;
 }
 .item_info{
-	color: #ccc;
+	color: #bbb;
 	float: right;
 	margin-right: 15px;
 }
-.item_user,.item_hot_user{
-	color: #aaa;
+.item_user,
+.item_hot_user,
+#item_user,
+#item_hot_user{
+	text-decoration: none;
+	color: #999;
 }
-.item_user:hover,.item_hot_user:hover{
-	color: #777;
+.item_user:hover,
+.item_hot_user:hover,
+#item_user:hover,
+#item_hot_user:hover{
+	color: #555;
 	text-decoration: underline;
 	cursor: pointer;
 }
@@ -472,6 +480,18 @@ body{
 	right: 15px;
 	top: 20px;
 }
+
+.question_user,
+.question_hot_user{
+	color: #999;
+	text-decoration: none;
+}
+.question_user:hover,
+.question_hot_user:hover{
+	color: #777;
+	text-decoration: underline;
+}
+
 .details_info_con{
 	margin: 0px 0 5px 0;
 }
@@ -585,16 +605,16 @@ body{
 	position: relative;
 	width: 250px;
 	float: left;
-	margin: 30px 0 0 0;
+	margin: 40px 0 0 0;
 }
 .home_user_name{
-	font-size: 25px;
+	font-size: 22px;
 	color: #777;
 	margin: 0px 0 0 20px;
 }
 
 .home_details{
-	font-size: 13px;
+	font-size: 14px;
 	line-height: 140%;
 	color: #777;
 	padding: 10px 15px;
@@ -616,7 +636,7 @@ body{
 .home_ul li{
 	line-height: 20px;
 	font-size: 13px;
-	margin-top: 4px;
+	margin-top: 8px;
 }
 .home_ul li img{
 	margin-right: 6px;
@@ -624,6 +644,138 @@ body{
 	height: 14px;
 	opacity: .5;
 }
+
+
+.home_middle{
+	position: relative;
+	width: 500px;
+	float: left;
+	margin: 30px 0 0 20px;
+}
+
+.home_groups{
+	clear: both;
+	margin-top: 20px;
+	padding-bottom: 10px;
+	border-bottom: 1px dashed #ddd;
+	font-size: 12px;
+}
+.home_groups_label{
+
+	font-size: 16px;
+}
+.home_items_con{
+	margin-top: 10px;
+	font-size: 16px;
+}
+.home_item_date_td{
+	font-size: 13px;
+	color: #999;
+}
+.home_item_date_td{
+	width:10%;
+}
+.home_item_right{
+	width: 6%;
+}
+.home_item{
+	margin-left: 15px;
+	font-size: 14px;
+	margin-top: 10px;
+}
+
+.home_title{
+	font-size: 14px;
+}
+.home_comment_counts{
+	font-size: 11px;
+	padding: 3px 7px;
+}
+
+.home_items_con .item_con{
+	padding: 5px;
+	border-bottom: 1px dashed #ddd;
+	border-top: none;
+}
+
+.home_items_label{
+	clear: both;
+	font-size: 16px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.home_fllow_con{
+	clear: both;
+	border-bottom: 1px dashed #eee;
+	position: relative;
+	width: 200px;
+	float: left;
+	margin: 30px 0 20px 0px;
+	padding-left: 10px;
+}
+
+.home_fllow_con .home_fllow_item:first-child{
+	border-right: 1px dashed #eee;
+}
+
+.home_fllow_item strong{
+	font-size: 20px;
+}
+
+.home_fllow_item{
+	display: block;
+	float: left;
+	padding: 10px 20px;
+	line-height: 150%;
+	cursor: pointer;
+	font-size: 14px;
+}
+
+.home_fllow_item:hover{
+	color: #6AB015;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes beSmaller {
+    from {
+   		color: #6AB015;
+   	}
+    to {
+   		color: #777;
+    }
+}
+
+/* Standard syntax */
+@keyframes beSmaller {
+    from {
+   		color: #6AB015;
+   	}
+    to {
+   		color: #777;
+    }
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes beBigger {
+    from {
+   		color: #777;
+   	}
+    to {
+   		color: #6AB015;
+    }
+}
+
+/* Standard syntax */
+@keyframes beBigger {
+    from {
+   		color: #777;
+   	}
+    to {
+   		color: #6AB015;
+    }
+}
+
 
 /*全局使用*******************************************************************************************/
 .iconsfzh{
@@ -756,6 +908,7 @@ element.style {
 .ui-widget-content .ui-state-hover,
 .ui-widget-header .ui-state-hover,
 .ui-state-focus,
+.ui-state-focus,
 .ui-widget-content .ui-state-focus,
 .ui-widget-header .ui-state-focus {
 	outline:none;
@@ -804,15 +957,16 @@ element.style {
 }
 
 
-.ui-tabs .ui-state-active .ui-tabs-anchor,
-.ui-tabs-nav .ui-state-focus .ui-tabs-anchor{
+.ui-tabs .ui-state-active .ui-tabs-anchor{
 	float: left;
 	padding: .5em 1em;
 	text-decoration: none;
-	outline: none;
 	color: #4CA005;
 }
 
+.ui-tabs-nav .ui-state-focus .ui-tabs-anchor{
+	outline: none;
+}
 .ui-accordion .ui-state-active{
 	color: #4CA005;
 }

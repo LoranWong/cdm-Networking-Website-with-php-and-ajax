@@ -13,5 +13,5 @@
 
 	echo get_json_from_query($query);
 	mysql_close();
-
+	
  ?>

@@ -117,8 +117,17 @@ $(function() {
 				data: ajaxDataObj,
 			})
 				.done(function(response, status, xhr) {
+
 					if (response != "[]") {
 						json = eval("(" + response + ")");
+
+						if(json.length < 3 ){
+							//当内容已经被取完时
+							$('#spinner_gray_new').hide();
+							$('#item_more_new').text("没有更多内容~(≧▽≦)~啦");
+						}
+
+
 						currentLength = g_items_json.length;
 						if (g_items_json.length == 0) {
 							g_items_json = json;
@@ -130,17 +139,9 @@ $(function() {
 
 						html = '';
 						$.each(json, function(index, val) {
-							//处理距离现在日期
-							date = new Date(val.date);
-							now = new Date();
-							time = '';
-							if ((now - date) / 60000 < 60) {
-								time = Math.floor((now - date) / 60000) + '分钟';
-							} else if ((now - date) / (60000 * 60) < 24) {
-								time = Math.floor((now - date) / (60000 * 60)) + '小时';
-							} else {
-								time = Math.floor((now - date) / (60000 * 60 * 24)) + '天';
-							}
+
+							time = $.getTimeByDateTime(val.date);
+
 							html = $("<html>" + val.details + "</html>");
 							details = html.text().length > DETAILS_LENGTH ? html.text().slice(0, DETAILS_LENGTH) + '... ' : html.text();
 
@@ -152,6 +153,7 @@ $(function() {
 							item.find('.item_title').html(val.title);
 							item.find('.item_title').attr('href', 'details.html?id=' + val.id);
 							item.find('.item_user').html(val.user);
+							item.find('.item_user').attr('href', 'home.html?user_id=' + val.user_id);
 							item.find('.item_date').html(time);
 							item.find('.item_hot_comment').html(details);
 							item.find('.item_comment_counts').html(Math.floor(Math.random() * (100)));
@@ -192,8 +194,6 @@ $(function() {
 									$(this).text("显示全部");
 								}
 							});
-
-
 							item.appendTo('.items_con');
 						});
 					} else {

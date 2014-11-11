@@ -107,6 +107,11 @@ $(function() {
 		window.location = 'index.html';
 	});
 
+	//点击主页
+	$('#home_btn').click(function(event) {
+		window.location = 'home.html?user_id='+$.cookie().id;
+	});
+
 	//点击注册
 	$('.tips_reg_btn').click(function(event) {
 		showSignUpDialog();

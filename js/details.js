@@ -114,12 +114,13 @@ $(function() {
 							$('.details_title_content').html(json.question[0].title);
 							$('.question_user').html(json.question[0].user);
 							$('.question_date').html(time);
+							$('.question_user').attr('href', 'home.html?user_id=' + json.question[0].user_id);
 							$('.details_question_main').html(json.question[0].details);
 							$('.details_comment_counts').html(Math.floor(Math.random() * (100)));
 							hasQuestionShow = true;
 
 							//显示文章作者小组
-							showGroupsInfo(json.question[0].user_id,$('#details_con'));
+							$.showGroupsInfo(json.question[0].user_id,$('#details_con').find('.details_groups'));
 							//显示文章所属Tag
 							showTagsInfo(json.question[0].id);
 
@@ -153,10 +154,11 @@ $(function() {
 							item.attr('comment_id', val.id);
 							item.find('.comment_main').html(val.details);
 							item.find('.item_user').html(val.user);
+							item.find('.item_user').attr('href', 'home.html?user_id=' + val.user_id);
 							item.find('.item_date').html(time);
 							item.find('.comment_index').html(currentLength + index + 1);
 							//显示评论作者小组
-							showGroupsInfo(val.user_id,item);
+							$.showGroupsInfo(val.user_id,item.find('.details_groups'));
 
 							item.appendTo('.comments_con');
 
@@ -186,27 +188,7 @@ $(function() {
 		}
 	}
 
-	function showGroupsInfo(user_id,con) {
-		$.ajax({
-			url: 'php/getGroupsByUserId.php',
-			type: 'POST',
-			data: {
-				id: user_id
-			},
-		})
-			.done(function(response) {
-				json = eval("(" + response + ")");
-				//console.log(json);
-				$.each(json, function(index, val) {
-					item = $('<a class="group_item"></a>');
-					item.attr('group_id', val.id);
-					item.attr('href', "index.html?header_id=1&group_id="+val.id);
-					item.attr('group_id', val.id);
-					item.html(val.name);
-					item.appendTo(con.find('.details_groups'));
-				});
-			});
-	}
+
 
 	function showTagsInfo(question_id){
 		$.ajax({
