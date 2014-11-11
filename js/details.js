@@ -200,6 +200,8 @@ $(function() {
 				$.each(json, function(index, val) {
 					item = $('<a class="group_item"></a>');
 					item.attr('group_id', val.id);
+					item.attr('href', "index.html?header_id=1&group_id="+val.id);
+					item.attr('group_id', val.id);
 					item.html(val.name);
 					item.appendTo(container.find('.details_groups'));
 				});
@@ -219,6 +221,7 @@ $(function() {
 				//console.log(json);
 				$.each(json, function(index, val) {
 					item = $('<a class="tag_item"></a>');
+					item.attr('href', "index.html?header_id=0&tag_id="+val.id);
 					item.attr('tag_id', val.id);
 					item.html(val.name);
 					item.insertBefore('.details_title_content');

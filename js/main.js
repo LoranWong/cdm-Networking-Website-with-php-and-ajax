@@ -35,6 +35,9 @@ $(function() {
 			$('.profile_menu').slideUp('fast');
 		}
 	});
+	$(window).scroll(function(event) {
+			$('.profile_menu').slideUp('fast');
+	});
 
 	//头部主页
 	$(".header_logo_title").click(function(event) {
@@ -419,4 +422,20 @@ $(function() {
 						$.showErrorDialog("网络错误");
 					});
 	}
+
+	//隐藏头部导航栏
+	currentScrollTop = 0 ;
+	$(window).scroll(function(event) {
+		if ($(window).scrollTop() > currentScrollTop + 200){
+			//$.l("down!");
+			$('.header_container').slideUp('fast');
+			currentScrollTop = $(window).scrollTop() ;
+		}else if($(window).scrollTop() < currentScrollTop){
+			//向上滚动
+			$('.header_container').slideDown('fast');
+			currentScrollTop = $(window).scrollTop() ;
+		}
+		
+	});
+
 })

@@ -34,7 +34,10 @@
 		},700);
 	}
 
-
+	//输出调试的简写
+	$.l = function(object){
+		console.log(object);
+	}
 
 
 })(jQuery);

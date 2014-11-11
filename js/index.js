@@ -28,11 +28,13 @@ $(function() {
 	ajaxDataId = "";
 	if (g_header_id == 0 || g_header_id == null) {
 		$('#home_btn img').css('display', 'inline');
+		$('#home_btn').css('color', '#fff');
 		//TODO :get Tags and add them to tab   and of course add tag_id attr
 		ajaxUrl ='php/getTags.php';
 		ajaxDataId = g_tag_id;
 
 	} else if (g_header_id == 1) {
+		$('#group_btn').css('color', '#fff');
 		$('#group_btn img').css('display', 'inline');
 		//查看自己所有小组动态 还是  查看URL参数中的特定动态
 		ajaxUrl = (g_group_id == null) ? 'php/getGroupsByUserId.php' : 'php/getGroup.php';
@@ -70,7 +72,7 @@ $(function() {
 
 	loadQuestion = function(event, ui) {
 		g_tagOrGroup_id = (ui.newTab == undefined) ? ui.tab.attr('tagOrGroup_id') : ui.newTab.attr('tagOrGroup_id');
-		console.log(g_tagOrGroup_id);
+		//console.log(g_tagOrGroup_id);
 		//每次切换Tab清空数据
 		g_items_json = "";
 		//移除之前加载的内容
