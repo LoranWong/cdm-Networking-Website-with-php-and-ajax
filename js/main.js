@@ -18,7 +18,7 @@ $(function() {
 			json = eval(response);
 			//待用
 		});
-		$(".tips_reg_log_container").css("display", "none");
+		$(".tips_reg_log_con").css("display", "none");
 	} else {
 		//没有cookie
 		$("#userInfo_btn").hide();
@@ -74,13 +74,19 @@ $(function() {
 
 
 	//accordion初始化
-	$('.accordion_container').accordion({
+	$('.accordion_con').accordion({
 		collapsible: true,
 		animate: {
 			easing: 'easeOutBounce'
 		}
 	});
 
+	$('#group_btn').click(function(event){
+		if($.cookie().id == undefined){
+			event.preventDefault();
+			showLoginDialog();
+		}
+	});
 
 
 	//点击提问
@@ -97,7 +103,8 @@ $(function() {
 	$('#logout_btn').click(function(event) {
 		$.removeCookie("id");
 		$.removeCookie("user");
-		window.history.go(0);
+		//重定向到主页
+		window.location = 'index.html';
 	});
 
 	//点击注册
@@ -408,7 +415,7 @@ $(function() {
 
 								//登录
 								$("#userInfo_btn").html(json[0].user);
-								$(".tips_reg_log_container").css("display", "none");
+								$(".tips_reg_log_con").css("display", "none");
 								$("#userInfo_btn").show();
 								$("#logout_btn").show();
 
@@ -428,11 +435,11 @@ $(function() {
 	$(window).scroll(function(event) {
 		if ($(window).scrollTop() > currentScrollTop + 200){
 			//$.l("down!");
-			$('.header_container').slideUp('fast');
+			$('.header_con').slideUp('fast');
 			currentScrollTop = $(window).scrollTop() ;
 		}else if($(window).scrollTop() < currentScrollTop){
 			//向上滚动
-			$('.header_container').slideDown('fast');
+			$('.header_con').slideDown('fast');
 			currentScrollTop = $(window).scrollTop() ;
 		}
 		

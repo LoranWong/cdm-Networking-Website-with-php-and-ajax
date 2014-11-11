@@ -21,7 +21,7 @@ $(function() {
 	//防止异步加载出错
 	isLoading = false;
 	//当前页面显示的Tag或者Group 的ID
-	tagOrGroup_id = '';
+	g_tagOrGroup_id = '';
 
 
 	ajaxUrl = "";
@@ -56,10 +56,10 @@ $(function() {
 			//遍历Groups  插入Tabs
 			$.each(json, function(index, val) {
 				item = $('<li tab_index = "' + index + '" tagOrGroup_id ="' + val.id + '""><a href="#tab_content">' + val.name + '</a></li>');
-				item.appendTo($('.tabs_container ul'));
+				item.appendTo($('.tabs_con ul'));
 			});
 			//tabs初始化
-			$('.tabs_container').tabs({
+			$('.tabs_con').tabs({
 				active: 0,
 				show: true,
 				heightStyle: 'content',
@@ -76,7 +76,7 @@ $(function() {
 		//每次切换Tab清空数据
 		g_items_json = "";
 		//移除之前加载的内容
-		$('.item_container').not(':first').remove();
+		$('.item_con').not(':first').remove();
 		//首次加载
 		showMoreQuestions(g_header_id, g_tagOrGroup_id);
 	}
@@ -144,7 +144,7 @@ $(function() {
 							html = $("<html>" + val.details + "</html>");
 							details = html.text().length > DETAILS_LENGTH ? html.text().slice(0, DETAILS_LENGTH) + '... ' : html.text();
 
-							item = index == 0 && currentLength == 0 ? $('.item_container').first() : $('.item_container').first().clone();
+							item = index == 0 && currentLength == 0 ? $('.item_con').first() : $('.item_con').first().clone();
 							//设置Index时加上前面已经有的
 							//console.log("currentLength--->"+currentLength);
 							//console.log("index--->"+index);
@@ -167,7 +167,7 @@ $(function() {
 							});
 							item.find('.item_hot_comment_scale').click(function(event) {
 								//获取所点击条目的下标  从全局数据g_items_json中取得所要显示内容
-								itemIndex = $(this).parents('.item_container').attr('question_id');
+								itemIndex = $(this).parents('.item_con').attr('question_id');
 								// 遍历json查找ID对应
 								longDetails = '';
 								$.each(g_items_json, function(index, val) {
@@ -185,7 +185,7 @@ $(function() {
 								shortDetails = html.text().length > DETAILS_LENGTH ? html.text().slice(0, DETAILS_LENGTH) + '... ' : html.text();
 								details = $(this).text() == "显示全部" ? longDetails : shortDetails;
 
-								$(this).parents('.item_container').find('.item_hot_comment').html(details);
+								$(this).parents('.item_con').find('.item_hot_comment').html(details);
 								if ($(this).text() == "显示全部") {
 									$(this).text("收起");
 								} else {
@@ -194,7 +194,7 @@ $(function() {
 							});
 
 
-							item.appendTo('.items_container');
+							item.appendTo('.items_con');
 						});
 					} else {
 						//当内容已经被取完时

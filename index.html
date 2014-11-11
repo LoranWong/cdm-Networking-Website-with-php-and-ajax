@@ -13,21 +13,24 @@
 	<script src="js/index.js"></script>
 	<link rel="stylesheet" href="jquery-ui/jquery-ui-zhiwen.css">
 	<link rel="stylesheet" href="css/editor_themes/square.min.css" type="text/css" media="all">
-	<link rel="stylesheet" href="index.css">
+	<link rel="stylesheet" href="ui.css">
 
 	<title>CdM | Coder Designer Manager 体验分享的快乐</title>
 </head>
 <body>
-	<div class="container">
+	<div class="con">
 
 		<!-- 头部导航栏 -->
-		<div class="header_container">
+		<div class="header_con">
 			<img class="top_avatar" src="images/sample.png" alt="">
 			<a id="userInfo_btn" class="top_menu_item">登录中</a>
 			<ul class="profile_menu">
-				<li id="logout_btn">退出</li>
-				<li id="logout_btn">退出</li>
-				<li id="logout_btn">退出</li>
+				<li id="home_btn">
+				<i class="iconsfzh home_btn_icon"></i>主页</li>
+				<li id="settings_btn">
+				<i class="iconsfzh settings_btn_icon"></i>设置</li>
+				<li id="logout_btn">
+				<i class="iconsfzh logout_btn_icon"></i>退出</li>
 			</ul>
 			<!-- <img class="top_accordion" src="images/triangle_right.png" alt="">
 			-->
@@ -38,16 +41,16 @@
 				<img id="header_logo" src="images/logo.png"></a>
 
 			<div class="header_main_menu">
-				<a id="home_btn" href="?header_id=0" class="top_menu_item">首页
+				<a id="home_btn" href="index.html?header_id=0" class="top_menu_item">首页
 				<img src="images/triangle_bottom.png">
 				</a>
-				<a id="group_btn" href="?header_id=1" class="top_menu_item">小组
+				<a id="group_btn" href="index.html?header_id=1" class="top_menu_item">小组
 				<img src="images/triangle_bottom.png">
 				</a>
 			</div>
 
 			<div class="header_search">
-				<a id="ask_btn" class="top_btn">提问</a>
+				<a id="ask_btn" class="top_btn">发布</a>
 				<input id="search_input" type="text" name="search" class="round_textbox search" title="问题 用户 分享 ...">
 				<img id="search_btn" src="images/search.png" alt=""></div>
 		</div>
@@ -58,7 +61,7 @@
 	<!-- 头部导航栏 -->
 
 	<!-- 提示登录注册 -->
-	<div class="tips_reg_log_container box_container">
+	<div class="tips_reg_log_con box_con">
 		<div class="tips_main">
 			<a class="tips_join">成为CdM居民，体验分享的快乐</a>
 			<div class="tips_btns">
@@ -69,10 +72,10 @@
 	</div>
 
 	<!-- 页面的主内容 -->
-	<div class="main_container">
-		<div class="main_left box_container">
+	<div class="main_con">
+		<div class="main_left box_con">
 			<!-- 选项卡 -->
-			<div class="tabs_container">
+			<div class="tabs_con">
 				<ul>
 <!-- 				<li tag_id = "1">
 						<a href="#tab_content">新的发布</a>
@@ -80,19 +83,19 @@
 				</ul>
 				
 				<div id="tab_content">
-					<div class="items_container" id="items_container_new">
+					<div class="items_con" id="items_con_new">
 						<!-- 单条信息的示例内容 -->
-						<table class="item_container" cellpadding="0" cellspacing="0" border="0" width="100%" item-index="0">
+						<table class="item_con" cellpadding="0" cellspacing="0" border="0" width="100%" item-index="0">
 							<tbody>
 								<tr>
 									<td class="item_left" valign="top">
 										<img class="item_avatar" src="images/sample.png" 
 											alt=""></td>
 									<td class="item_main">
-										<a class="item_title"  target="_blank">百度搜索为什么会对一个被墙掉的网址不离不弃 3 年不删?</a>
+										<a class="item_title"  target="_blank">该小组还没有主题哦~</a>
 										<div class="item_hot_comment_div">
 											<div class="item_hot_comment">
-												这种人一般水平不高，说“水平不高”可能太笼统，可以称之为“生活境界不高”。在他们眼里，成功＝有钱。当然，子非鱼焉知鱼之乐，也许真正境界高的是他们...
+												快发布主题吧
 											</div>
 											<span class="item_hot_comment_scale">显示全部</span>
 										</div>
@@ -120,17 +123,22 @@
 		</div>
 
 		<!-- 页面右边浮动内容 -->
-		<div class="main_right box_container">
+
+
+		<div class="main_right">
+
 			<!-- 折叠卡 -->
-			<div class="accordion_container">
+<!-- 			<div class="accordion_con">
 				<a id="accordion_title1" class="accordion_title">标题1</a>
 				<div id="accordion_con1"  class="accordion_con">内容1</div>
 				<a id="accordion_title2" class="accordion_title">标题2</a>
 				<div id="accordion_con2" class="accordion_con">内容2</div>
 				<a id="accordion_title3" class="accordion_title">标题3</a>
 				<div id="accordion_con3" class="accordion_con">内容3</div>
-			</div>
+			</div> -->
 		</div>
+
+
 		<!-- 页面右边浮动内容 -->
 
 	</div>

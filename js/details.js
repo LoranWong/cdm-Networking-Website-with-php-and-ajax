@@ -14,12 +14,12 @@ $(function() {
 
 	$('.comment_btn').click(function(event) {
 		/* Act on the event */
-		$('.comment_input_container').slideDown();
+		$('.comment_input_con').slideDown();
 		$('.comment_btn').hide('400');
 	});
 	$('.comment_btn_cancel').click(function(event) {
 		/* Act on the event */
-		$('.comment_input_container').slideUp();
+		$('.comment_input_con').slideUp();
 		$('.comment_btn').show('400');
 	});
 
@@ -53,7 +53,7 @@ $(function() {
 				if (response == "true") {
 					$.showOKDialog('回复成功');
 					setTimeout(function() {
-						$('.comment_input_container').slideUp();
+						$('.comment_input_con').slideUp();
 						$('.comment_btn').show('400');
 						window.history.go(0);
 					}, 700);
@@ -119,7 +119,7 @@ $(function() {
 							hasQuestionShow = true;
 
 							//显示文章作者小组
-							showGroupsInfo(json.question[0].user_id,$('#details_container'));
+							showGroupsInfo(json.question[0].user_id,$('#details_con'));
 							//显示文章所属Tag
 							showTagsInfo(json.question[0].id);
 
@@ -145,7 +145,7 @@ $(function() {
 								time = Math.floor((now - date) / (60000 * 60 * 24)) + '天';
 							}
 
-							item = index == 0 && currentLength == 0 ? $('.comment_container').first() : $('.comment_container').first().clone();
+							item = index == 0 && currentLength == 0 ? $('.comment_con').first() : $('.comment_con').first().clone();
 							
 							item.find(".group_item").remove();
 							//console.log("currentLength--->"+currentLength);
@@ -158,7 +158,7 @@ $(function() {
 							//显示评论作者小组
 							showGroupsInfo(val.user_id,item);
 
-							item.appendTo('.comments_container');
+							item.appendTo('.comments_con');
 
 							
 
@@ -167,7 +167,7 @@ $(function() {
 						if (json.comments.length == 0) {
 							if (comments_json.length == 0) {
 								//当未有评论时
-								$('.comment_container').remove();
+								$('.comment_con').remove();
 							}
 							//当内容已经被取完时
 							$('#spinner_gray_new').hide();
@@ -186,7 +186,7 @@ $(function() {
 		}
 	}
 
-	function showGroupsInfo(user_id,container) {
+	function showGroupsInfo(user_id,con) {
 		$.ajax({
 			url: 'php/getGroupsByUserId.php',
 			type: 'POST',
@@ -203,7 +203,7 @@ $(function() {
 					item.attr('href', "index.html?header_id=1&group_id="+val.id);
 					item.attr('group_id', val.id);
 					item.html(val.name);
-					item.appendTo(container.find('.details_groups'));
+					item.appendTo(con.find('.details_groups'));
 				});
 			});
 	}
