@@ -7,7 +7,7 @@ $(function() {
 	hasQuestionShow = false;
 	isLoading = false;
 	//每次加载回复个数
-	COMMENT_LOAD_COUNT = 3;
+	COMMENT_LOAD_COUNT = 10;
 	//初始化按钮
 	$('.comment_btn_ok').button();
 	$('.comment_btn_cancel').button();
@@ -100,23 +100,16 @@ $(function() {
 						if (!hasQuestionShow) {
 							//加载问题内容
 							//处理距离现在日期
-							date = new Date(json.question[0].date);
-							now = new Date();
-							time = '';
-							if ((now - date) / 60000 < 60) {
-								time = Math.floor((now - date) / 60000) + '分钟';
-							} else if ((now - date) / (60000 * 60) < 24) {
-								time = Math.floor((now - date) / (60000 * 60)) + '小时';
-							} else {
-								time = Math.floor((now - date) / (60000 * 60 * 24)) + '天';
-							}
+							time = $.getTimeByDateTime(json.question[0].date);
+
 							$('title').html(json.question[0].title);
 							$('.details_title_content').html(json.question[0].title);
 							$('.question_user').html(json.question[0].user);
 							$('.question_date').html(time);
+							$('.details_avatar_a').attr('href', 'home.html?user_id=' + json.question[0].user_id);
 							$('.question_user').attr('href', 'home.html?user_id=' + json.question[0].user_id);
 							$('.details_question_main').html(json.question[0].details);
-							$('.details_comment_counts').html(Math.floor(Math.random() * (100)));
+							$('.details_comments_count').html(json.comments_count);
 							hasQuestionShow = true;
 
 							//显示文章作者小组
@@ -154,6 +147,7 @@ $(function() {
 							item.attr('comment_id', val.id);
 							item.find('.comment_main').html(val.details);
 							item.find('.item_user').html(val.user);
+							item.find('.comment_avatar_a').attr('href', 'home.html?user_id=' + val.user_id);
 							item.find('.item_user').attr('href', 'home.html?user_id=' + val.user_id);
 							item.find('.item_date').html(time);
 							item.find('.comment_index').html(currentLength + index + 1);

@@ -33,10 +33,41 @@
 		$sql = "SELECT (SELECT user FROM users WHERE q.user_id=id) AS user,user_id,id,title,details,date FROM questions q ORDER BY date DESC LIMIT $start,$count";
 	}
 
-
-
 	$query = mysql_query($sql) or die ('SQL错误'.mysql_error());
-	echo get_json_from_query($query);
+
+	$json = "";
+	while($row = mysql_fetch_array($query, MYSQL_ASSOC)){
+		$question_id = $row['id'];
+		//根据ID取回最新评论来源以及评论个数
+		$sql_comments = "SELECT (SELECT user FROM users WHERE c.user_id=id) AS user,user_id,date,question_id FROM comments c  where c.question_id=$question_id ORDER BY date DESC";
+		$query_comments = mysql_query($sql_comments) or die ('SQL错误'.mysql_error());
+		//echo get_json_from_query($query_comments);
+
+		//取得第一行，以及行数
+		if ($row_comment = mysql_fetch_array($query_comments, MYSQL_ASSOC)){
+			//$latest_user = $row_comment['user'];
+			//$comments_count = mysql_num_rows($query_comments);
+			//echo 'latest_user:'.$latest_user."  comments_count:".$comments_count;
+			$row['latest_user'] = $row_comment['user'];
+			$row['comments_count'] = mysql_num_rows($query_comments);
+		}else{
+			$row['latest_user'] = '';
+			$row['comments_count'] = "0";
+		}
+		
+		foreach ($row as $key => $value) {
+			# 将中文编码 防止后续操作乱码
+			$value = addslashes($value);
+			$row[$key] = urlencode(str_replace("\n", "", $value));
+		}
+		$json .= urldecode(json_encode($row)).",";
+	}
+	//组成数组
+	$json = "[".substr($json, 0 , strlen($json)-1)."]";
+
+	echo $json;
+
+	
 	mysql_close();
 
 

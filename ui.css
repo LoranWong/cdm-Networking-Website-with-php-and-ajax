@@ -361,16 +361,16 @@ body{
 	margin-right: 15px;
 }
 .item_user,
-.item_hot_user,
+.item_latest_user,
 #item_user,
-#item_hot_user{
+#item_latest_user{
 	text-decoration: none;
 	color: #999;
 }
 .item_user:hover,
-.item_hot_user:hover,
+.item_latest_user:hover,
 #item_user:hover,
-#item_hot_user:hover{
+#item_latest_user:hover{
 	color: #555;
 	text-decoration: underline;
 	cursor: pointer;
@@ -379,7 +379,7 @@ body{
 	width: 15%;
 }
 
-.item_comment_counts{
+.item_comments_count{
 	float: right;
 	color: white;
 	background: #969cb1;
@@ -389,7 +389,7 @@ body{
 	border-radius: 15px; 
 	cursor: pointer;
 }
-.item_comment_counts:hover{
+.item_comments_count:hover{
 	background: #747a90;
 }
 .item_more{
@@ -433,9 +433,10 @@ body{
 	color:#aaa;
 	float: left;
 	font-size: 12px;
+	width: 100%;
 }
-.details_ava_and_gruops{
-
+.comments_top_info{
+	margin-top: 15px;
 }
 #details_con{
 	position: relative;
@@ -447,6 +448,9 @@ body{
 	width: 50px;
 	height: 50px;
 	border-radius: 10px;
+}
+.details_avatar_a{
+	text-decoration: none;
 }
 .details_groups{
 	position: relative;
@@ -473,7 +477,7 @@ body{
 	background: #6AB045;
 	color: #eee;
 }
-.details_comment_counts{
+.details_comments_count{
 	position: absolute;
 	float: none;
 	cursor: default;
@@ -540,6 +544,11 @@ body{
 	width: 30px;
 	height: 30px;
 	cursor: pointer;
+	width: 35px;
+	height: 35px;
+}
+.comment_avatar_a{
+	text-decoration: none;
 }
 .comment_info{
 	position: relative;
@@ -687,7 +696,7 @@ body{
 .home_title{
 	font-size: 14px;
 }
-.home_comment_counts{
+.home_comments_count{
 	font-size: 11px;
 	padding: 3px 7px;
 }

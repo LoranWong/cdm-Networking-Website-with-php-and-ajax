@@ -154,16 +154,25 @@ $(function() {
 							item.find('.item_title').attr('href', 'details.html?id=' + val.id);
 							item.find('.item_user').html(val.user);
 							item.find('.item_user').attr('href', 'home.html?user_id=' + val.user_id);
+							item.find('.item_avatar_a').attr('href', 'home.html?user_id=' + val.user_id);
 							item.find('.item_date').html(time);
 							item.find('.item_hot_comment').html(details);
-							item.find('.item_comment_counts').html(Math.floor(Math.random() * (100)));
+							item.find('.item_comments_count').html(val.comments_count);
+							//如果没有回复
+							if(val.latest_user == ''){
+								item.find('.lastest_comment_info').remove();
+							}else{
+								item.find('.item_latest_user').html(val.latest_user);
+							}
+
+
 							item.find('.item_main').mouseenter(function(event) {
 								//console.log($(this).find('.item_hot_comment').text().length);
 								if ($(this).find('.item_hot_comment').text().length > DETAILS_LENGTH) {
 									$(this).find('.item_hot_comment_scale').css('display', 'inline');
 								}
-
 							});
+
 							item.find('.item_main').mouseleave(function(event) {
 								$(this).find('.item_hot_comment_scale').css('display', 'none');
 							});
