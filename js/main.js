@@ -25,19 +25,34 @@ $(function() {
 		$("#logout_btn").hide();
 	}
 
-	//显示个人信息菜单  暂时遗弃三角形折叠此功能
-	$('#userInfo_btn').click(function(event) {
-		$('.profile_menu').slideToggle('fast');
-	});
+	//显示个人信息菜单 
+
 	$(window).click(function(event) {
 		//console.log(event);
 		if (event.clientX > 150 || event.clientY > 45) {
 			$('.profile_menu').slideUp('fast');
 		}
 	});
-	$(window).scroll(function(event) {
+
+	$('#userInfo_btn').mouseenter(function(event) {
+		$('.profile_menu').slideDown('fast');
+	});	
+	$('#userInfo_btn').mouseleave(function(event) {
+		//$.l($(event.relatedTarget).attr('id') == "home_btn");
+		if($(event.relatedTarget).attr('id') != "home_btn"){
 			$('.profile_menu').slideUp('fast');
+		}
 	});
+	$('.profile_menu').mouseleave(function(event) {
+		//$.l($(event.relatedTarget).attr('id' == "userInfo_btn"));
+		if($(event.relatedTarget).attr('id') != "userInfo_btn"){
+			$('.profile_menu').slideUp('fast');
+		}
+	});
+
+
+
+
 
 	//头部主页
 	$(".header_logo_title").click(function(event) {
