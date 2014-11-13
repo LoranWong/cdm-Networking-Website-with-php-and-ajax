@@ -3,17 +3,27 @@
 
 <head>
     <meta charset="UTF-8">
-
+    <!-- jquery -->
     <script src="jquery-ui/external/jquery/jquery-1.11.1.min.js"></script>
     <script src="jquery-ui/jquery-ui.min.js"></script>
-    <script src="js/jquery.bao.extension.js"></script>
+    <!-- jquery plugins -->
     <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.chosen.min.js"></script>
     <script src="js/jquery.cookie.js"></script>
     <script src="js/jquery.sceditor.xhtml.min.js"></script>
+    <script src="js/jquery.Jcrop.min.js"></script>
+    <script src="js/ajaxfileupload.js"></script>
+
+    <!-- my js -->
+    <script src="js/jquery.bao.extension.js"></script>
     <script src="js/main.js"></script>
-    <script src="js/home.js"></script>
-    <link rel="stylesheet" href="jquery-ui/jquery-ui-zhiwen.css">
+    <script src="js/settings.js"></script>
+
+    <!-- css -->
     <link rel="stylesheet" href="css/editor_themes/square.min.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/chosen.min.css">
+    <link rel="stylesheet" href="css/jquery.Jcrop.min.css">
+    <link rel="stylesheet" href="jquery-ui/jquery-ui-zhiwen.css">
     <link rel="stylesheet" href="ui.css">
 
     <title>CdM | Coder Designer Manager 体验分享的快乐</title>
@@ -39,9 +49,9 @@
                 </li>
             </ul>
             <!-- <img class="top_accordion" src="images/triangle_right.png" alt="">
-			-->
+            -->
             <!-- <div class="top_divide_line"></div>
-		-->
+        -->
             <div class="header_main">
                 <a href="index.html">
                     <img id="header_logo" src="images/logo.png">
@@ -49,11 +59,11 @@
 
                 <div class="header_main_menu">
                     <a id="home_btn" href="index.html?header_id=0" class="top_menu_item">
-					首页
-					<img src="images/triangle_bottom.png"></a>
+                    首页
+                    <img src="images/triangle_bottom.png"></a>
                     <a id="group_btn" href="index.html?header_id=1" class="top_menu_item">
-					小组
-					<img src="images/triangle_bottom.png"></a>
+                    小组
+                    <img src="images/triangle_bottom.png"></a>
                 </div>
 
                 <div class="header_search">
@@ -83,72 +93,84 @@
         <div class="main_con">
             <div class="main_con_inner">
 
-                <div class="home_left">
+                <div class="box_con settings_left ">
 
-                    <div class="home_user_name">JackWong</div>
+                    <div class="settings_label">设置</div>
 
-                    <img class="home_user_avatar" src="images/sample.png" alt="">
-
-                    <div class="home_details">略懂编码, 酷爱音乐,十五字</div>
-
-                    <ul class="home_ul">
-                        <li>
-                            <img src="images/home_uni.png" alt="">华南理工大学</li>
-                        <li>
-                            <img src="images/home_major.png" alt="">软件工程</li>
-                        <li>
-                            <img src="images/home_email.png" alt="">617438040@qq.com</li>
-                        <li></li>
+                    <!-- <img class="home_user_avatar" src="images/sample.png" alt=""> -->
+                    <ul class="settings_ul">
+                        <li class="settings_profile_li">基本资料</li>
+                        <li class="settings_avatar_li">修改头像</li>
                     </ul>
 
+
                 </div>
 
-                <div class="home_middle">
-                    <div class="home_fllow_con">
-                        <a class="home_fllow_item">
-                            <span>关注了</span>
-                            <br>
-                            <strong>15</strong>
-                            <label>人</label>
-                        </a>
-                        <a class="home_fllow_item">
-                            <span>关注者</span>
-                            <br>
-                            <strong>28</strong>
-                            <label>人</label>
-                        </a>
-                    </div>
-                    <div class="home_groups">
-                        <span class="home_groups_label">加入的小组</span>
-                        <span class="chevron">&nbsp;›&nbsp;</span>
-                        <!-- <a class="group_item">小组名</a> -->
-                    </div>
-                    <div class="home_items_label">主题</div>
-                    <div class="home_items_con">
-                        <table class="item_con" cellpadding="0" cellspacing="0" border="0" width="100%">
-                            <tbody>
-                                <tr>
-                                    <td class="item_main ">
-                                        <a class="item_title home_title" target="_blank">该用户还没有发布主题哦~</a>
-                                    </td>
-                                    <td class="home_item_date_td">
-                                        <span class="item_date home_item_date">
-                                            <!-- 时间 -->
-                                        </span>
-                                    </td>
-                                    <td class="item_right home_item_right">
-                                        <span href="" class="item_comments_count home_comments_count">0</span>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
+                <div class="box_con settings_profile">
+                    <div class="settings_profile_label">修改基本资料</div>
+                    <form class="settings_profile_form">
+                        <p>
+                            <lable for="settings_user">昵 称 ：</lable>
+                            <input type="text" id="settings_user" name="settings_user" class="round_textbox dia_textbox setting_textbox" value="Jack" required>
+                        </p>
+                        <p>
+                            <lable for="settings_birthday">生 日 ：</lable>
+                            <input type="text" id="settings_birthday" name="settings_birthday" class="round_textbox dia_textbox setting_textbox" readonly placeholder="点击选择生辰" required>
+                        </p>
+
+                        <p>
+                            <lable for="settings_details">描 述 ：</lable>
+                            <input type="text" id="settings_details" name="settings_details" class="round_textbox dia_textbox setting_textbox" style="width:340px;" value="现在的年轻人,所谓的座右铭都懒得写" required>
+                        </p>
+                        <p>
+                            <lable for="settings_gender">性 别 ：</lable>
+                            <select id="settings_gender" name="settings_gender" style="width:350px;" data-placeholder="请选择性别.." required>
+                                <option></option>
+                                <option value="0">华男理工大学</option>
+                                <option value="1">广东工业大学</option>
+                            </select>
+                        </p>
+
+                        <p>
+                            <lable for="settings_uni">学 校 ：</lable>
+                            <select id="settings_uni" name="settings_uni" style="width:350px;" data-placeholder="请选择学校.." required>
+                                <option></option>
+                                <option value="0">华男理工大学</option>
+                                <option value="1">广东工业大学</option>
+                            </select>
+                        </p>
+                        <p>
+                            <lable for="settings_major">专 业 ：</lable>
+                            <select id="settings_major" name="settings_major" style="width:350px;" data-placeholder="请选择专业.." required>
+                                <option></option>
+                                <option value="0">软件工程</option>
+                                <option value="1">计算机科学与技术</option>
+                            </select>
+                        </p>
+                        <p>
+                            <input type="submit" class="dia_submit settings_submit" value="更新资料">
+                        </p>
+
+
+                    </form>
+
                 </div>
 
+                <div class="box_con settings_avatar">
+                    <div class="settings_profile_label">修改头像</div>
+                    <input type="file" accept="image/*" name="file" class="settings_avatar_file" id="settings_avatar_file">
+                    <img class="settings_avatar_img" src="images/sample.png" alt="">
+                    <img class="settings_avatar_new"alt="">
+                    <div id="preview-pane">
+                        <div class="preview-container">
+                            <img src="" class="jcrop-preview" alt="Preview">
+                        </div>
+                    </div>
+                    <input type="button" class="dia_submit settings_avatar_submit" value="裁剪并上传">
+                </div>
                 <!-- 页面右边浮动内容 -->
 
                 <!-- 页面右边浮动内容 -->
-
             </div>
         </div>
     </div>

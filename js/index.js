@@ -61,7 +61,6 @@ $(function() {
 			//tabs初始化
 			$('.tabs_con').tabs({
 				active: 0,
-				show: true,
 				heightStyle: 'content',
 				beforeActivate: loadQuestion,
 				create: loadQuestion,
@@ -160,8 +159,9 @@ $(function() {
 							item.find('.item_comments_count').html(val.comments_count);
 							//如果没有回复
 							if(val.latest_user == ''){
-								item.find('.lastest_comment_info').remove();
+								item.find('.lastest_comment_info').hide();
 							}else{
+								item.find('.lastest_comment_info').show();
 								item.find('.item_latest_user').html(val.latest_user);
 							}
 
