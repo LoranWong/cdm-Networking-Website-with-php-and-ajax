@@ -162,8 +162,10 @@ $(function() {
 							if(val.latest_user == ''){
 								item.find('.lastest_comment_info').hide();
 							}else{
+								$.l(val);
 								item.find('.lastest_comment_info').show();
 								item.find('.item_latest_user').html(val.latest_user);
+								item.find('.item_latest_user').attr('href', 'home.html?user_id=' + val.latest_user_id);
 							}
 
 

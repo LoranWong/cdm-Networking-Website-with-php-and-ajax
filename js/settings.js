@@ -203,9 +203,13 @@ $(function() {
             if (request.readyState == 4 && request.response == "true") {
                 //console.log(request.response);
                 $.showOKDialog("修改成功", function() {
-                    window.location.replace("home.html")
+                    window.location.replace("home.html");
                 });
-            }
+            }else if (request.readyState == 4 && request.response == "false") {
+                $.showErrorDialog("文件错误或过大",function(){
+                    window.location.replace("settings.html?settings=avatar&");
+                })
+            };
             
         };
 

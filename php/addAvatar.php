@@ -25,21 +25,26 @@ if ($_FILES[$file_key]["error"] > 0) {
 	// echo "Size: " . ($_FILES[$file_key]["size"] / 1024);
 	// echo "Stored in: " . $_FILES[$file_key]["tmp_name"];
 	// echo $_POST['x']." ".$_POST['y']." ".$_POST['x2']." ".$_POST['x2']." ".$_POST['w']." ".$_POST['h']." ";
+	if (($_FILES[$file_key]["size"] / 1024) > 100) {
+		echo "false";
+		exit();
+	}
 
 	//将图片裁剪并存储
 	$r1 = imagecropper($_POST['id'], $_FILES[$file_key]["tmp_name"], intval($_POST['x']), intval($_POST['y']), intval($_POST['w']), intval($_POST['h']));
 	if (!$r1) {
 		echo "false";
-	} else {
-		//将图片分别以 256  128  64  32 的尺寸保存
-		$r2 = image_scale_avatar($_POST['id'], "../avatars/user/" . $_POST['id'] . "_origin.jpg");
-		if ($r2) {
-			echo "true";
-		} else {
-			echo "false";
-		}
-
+		exit();
 	}
+
+	//将图片分别以 256  128  64  32 的尺寸保存
+	$r2 = image_scale_avatar($_POST['id'], "../avatars/user/" . $_POST['id'] . "_origin.jpg");
+	if ($r2) {
+		echo "true";
+	} else {
+		echo "false";
+	}
+
 }
 
 /**

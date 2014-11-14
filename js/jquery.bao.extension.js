@@ -89,6 +89,7 @@
 			jqimg.attr('src', path);
 			//设置其错误回调，显示默认的随即设定好的头像
 			jqimg.error(function(event) {
+				if (size == "origin") size = 256 ;
 				r = user_id % 40;
 				path = "avatars/default/"+r+"_"+size+".png";
 				//回调中注意用this代替具体对象
