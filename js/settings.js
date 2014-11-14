@@ -5,6 +5,28 @@ $(function() {
         no_results_text: '(*^__^*)没有找到..'
     });
 
+    var g_user_id = $.cookie().id ;
+
+    //加载用户基本信息
+    $.ajax({
+        url: 'php/getUser',
+        type: 'POST',
+        data: {
+            id: g_user_id,
+        },
+    })
+    .done(function(response) {
+        json = eval(response);
+        //$.l(json);
+        $('#settings_user').val(json[0].user);
+        $('#settings_birthday').val(json[0].birthday);
+        $('#settings_details').val(json[0].details);
+
+    })
+    .fail(function() {
+        console.log("error");
+    });
+
 
     //获取Get参数
     g_settings = $.baoGetUrlParam('settings');
@@ -61,27 +83,27 @@ $(function() {
 
         },
         submitHandler: function(formEle) {
-            // $.showLoadDialog('跳转中...');
-            // $.ajax({
-            //         url: 'php/signUp_addUser.php',
-            //         type: 'POST',
-            //         data: $('.dia_reg_form').serialize(),
-            //     })
-            //     .done(function(response, status) {
-            //         //alert('注册返回：'+response);
-            //         if (response == "true") {
-            //             Login2Server({
-            //                 login_email: $('#reg_email').val(),
-            //                 login_pass: $('#reg_pass').val(),
-            //             }, $('#dia_reg'));
-            //         } else {
-            //             $.showErrorDialog('注册失败');
-            //         }
-            //     })
-            //     .fail(function() {
-            //         console.log("error");
-            //         $.showErrorDialog("网络错误");
-            //     });
+            //$.showLoadDialog('跳转中...');
+            $.ajax({
+                    url: 'php/updateUser.php',
+                    type: 'POST',
+                    data: $('.settings_profile_form').serialize()+"&settings_id="+g_user_id
+                })
+                .done(function(response, status) {
+                    //alert('注册返回：'+response);
+                    if (response == "true") {
+                        $.showOKDialog("修改成功");
+                        setTimeout(function(){
+                            window.location = "home.html";
+                        },700);
+                    } else {
+                        $.showErrorDialog("错误,可能有非法字符");
+                    }
+                })
+                .fail(function() {
+                    console.log("error");
+                    $.showErrorDialog("网络错误");
+                });
         },
     });
 
@@ -110,7 +132,7 @@ $(function() {
                 reader.readAsDataURL(files[0]);
                 reader.onload = function(evt) { //读取完文件之后会回来这里
                     $('.settings_avatar_img').remove();
-                    //$('.settings_avatar_form').hide();
+                    $('.settings_avatar_form').hide();
                     $('.settings_avatar_new').show();
                     $('.settings_avatar_submit').show();
                     $('.settings_avatar_new,#preview-pane img').attr('src', evt.target.result);
@@ -124,8 +146,8 @@ $(function() {
                         var bounds = this.getBounds();
                         boundx = bounds[0];
                         boundy = bounds[1];
-                        $.l('boundx=' + boundx);
-                        $.l('boundy=' + boundy);
+                        // $.l('boundx=' + boundx);
+                        // $.l('boundy=' + boundy);
                         // Store the API in the jcrop_api variable
                         jcrop_api = this;
                         // Move the preview into the jcrop container for css positioning
@@ -138,6 +160,8 @@ $(function() {
             }
         }
     });
+
+    var g_sel;
 
     function updatePreview(sel) {
 
@@ -153,31 +177,38 @@ $(function() {
             });
         }
         console.log(sel);
+        g_sel = sel;
     }
 
     //点击裁剪上传
     $('.settings_avatar_submit').click(function(event) {
-        // $.ajaxFileUpload({
-        //     url: 'php/addAvatar.php', //用于文件上传的服务器端请求地址
-        //     secureuri: false, //是否需要安全协议，一般设置为false
-        //     fileElementId: 'settings_avatar_file', //文件上传域的ID
-        //     dataType: 'json', //返回值类型 一般设置为json
-        //     success: function(data, status) //服务器成功响应处理函数
-        //         {
-        //             // $("#img1").attr("src", data.imgurl);
-        //             // if (typeof(data.error) != 'undefined') {
-        //             //     if (data.error != '') {
-        //             //         alert(data.error);
-        //             //     } else {
-        //             //         alert(data.msg);
-        //             //     }
-        //             // }
-        //         },
-        //     error: function(data, status, e) //服务器响应失败处理函数
-        //         {
-        //             alert(e);
-        //         }
-        // });
+        //$('.settings_avatar_form').submit();
+        $('.settings_avatar_submit').attr('disabled', 'true');
+        //下面代码可以实现有进度的异步上传
+        var _file = document.getElementById('settings_avatar_file');
+
+        var formData = new FormData();
+        formData.append('settings_avatar_file', _file.files[0]);
+        formData.append('x', g_sel.x);
+        formData.append('y', g_sel.y);
+        formData.append('w', g_sel.w);
+        formData.append('h', g_sel.h);
+        formData.append('id', $.cookie().id);
+
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function() {
+             $('.settings_avatar_submit').attr('disabled', 'false');
+
+            if (request.readyState == 4) {
+                console.log(request.response);
+                //window.location = "home.html";
+            }
+
+        };
+
+        request.open('POST', 'php/addAvatar.php');
+        request.send(formData);
+
     });
 
 

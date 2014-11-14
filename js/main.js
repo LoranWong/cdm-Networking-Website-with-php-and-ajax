@@ -25,6 +25,9 @@ $(function() {
         $("#logout_btn").hide();
     }
 
+    //显示头像
+    $.showAvatar($('.top_avatar'),$.cookie().id,64);
+
     //显示个人信息菜单 
 
     $('#userInfo_btn').mouseenter(function(event) {
@@ -334,7 +337,7 @@ $(function() {
         $('#dia_reg').dialog({
             title: '欢迎加入CdM',
             width: 450,
-            height: 470,
+            height: 240,
             resizable: false,
             show: true,
             hide: true,

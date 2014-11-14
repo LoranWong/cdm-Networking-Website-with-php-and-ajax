@@ -34,7 +34,7 @@
 
         <!-- 头部导航栏 -->
         <div class="header_con">
-            <img class="top_avatar" src="images/sample.png" alt="">
+            <img class="top_avatar" src="" alt="">
             <a id="userInfo_btn" class="top_menu_item">登录中</a>
             <ul class="profile_menu">
                 <li id="home_btn"> <i class="iconsfzh home_btn_icon"></i>
@@ -111,7 +111,7 @@
                     <form class="settings_profile_form">
                         <p>
                             <lable for="settings_user">昵 称 ：</lable>
-                            <input type="text" id="settings_user" name="settings_user" class="round_textbox dia_textbox setting_textbox" value="Jack" required>
+                            <input type="text" id="settings_user" name="settings_user" class="round_textbox dia_textbox setting_textbox" value="" required>
                         </p>
                         <p>
                             <lable for="settings_birthday">生 日 ：</lable>
@@ -125,26 +125,23 @@
                         <p>
                             <lable for="settings_gender">性 别 ：</lable>
                             <select id="settings_gender" name="settings_gender" style="width:350px;" data-placeholder="请选择性别.." required>
-                                <option></option>
-                                <option value="0">华男理工大学</option>
-                                <option value="1">广东工业大学</option>
+                                <option value="1"></option>
+                                <!-- <option value="2">男</option> -->
                             </select>
                         </p>
 
                         <p>
                             <lable for="settings_uni">学 校 ：</lable>
                             <select id="settings_uni" name="settings_uni" style="width:350px;" data-placeholder="请选择学校.." required>
-                                <option></option>
-                                <option value="0">华男理工大学</option>
-                                <option value="1">广东工业大学</option>
+                                <option value="1"></option>
+                                <!-- <option value="2">华男理工大学</option> -->
                             </select>
                         </p>
                         <p>
                             <lable for="settings_major">专 业 ：</lable>
                             <select id="settings_major" name="settings_major" style="width:350px;" data-placeholder="请选择专业.." required>
-                                <option></option>
-                                <option value="0">软件工程</option>
-                                <option value="1">计算机科学与技术</option>
+                                <option value="1"></option>
+                                <!-- <option value="2">软件工程</option> -->
                             </select>
                         </p>
                         <p>
@@ -158,15 +155,18 @@
 
                 <div class="box_con settings_avatar">
                     <div class="settings_profile_label">修改头像</div>
-                    <input type="file" accept="image/*" name="file" class="settings_avatar_file" id="settings_avatar_file">
-                    <img class="settings_avatar_img" src="images/sample.png" alt="">
-                    <img class="settings_avatar_new"alt="">
+                    <form action="php/addAvatar.php" method="POST" class="settings_avatar_form" enctype="multipart/form-data" name="settings_avatar_form">
+                        <input type="file" accept="image/*" name="settings_avatar_file" class="settings_avatar_file" id="settings_avatar_file">
+                    </form>
+                    <img class="settings_avatar_img" src="" alt="">
+                    <img class="settings_avatar_new" alt="">
                     <div id="preview-pane">
                         <div class="preview-container">
                             <img src="" class="jcrop-preview" alt="Preview">
                         </div>
                     </div>
                     <input type="button" class="dia_submit settings_avatar_submit" value="裁剪并上传">
+
                 </div>
                 <!-- 页面右边浮动内容 -->
 
