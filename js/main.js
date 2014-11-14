@@ -26,7 +26,7 @@ $(function() {
     }
 
     //显示头像
-    $.showAvatar($('.top_avatar'),$.cookie().id,64);
+    $.showAvatar($('.top_avatar'),$.cookie().id,128);
 
     //显示个人信息菜单 
 
@@ -260,11 +260,10 @@ $(function() {
                     })
                     .done(function(response, status, xhr) {
                         if (response == "true") {
-                            $.showOKDialog('提问成功');
-                            setTimeout(function() {
+                            $.showOKDialog('提问成功',function(){
                                 $('#dia_ask').dialog('destroy');
                                 window.history.go(0);
-                            }, 700);
+                            });
                         } else {
                             $.showErrorDialog('提问失败');
                         }

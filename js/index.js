@@ -154,7 +154,7 @@ $(function() {
 							item.find('.item_user').html(val.user);
 							item.find('.item_user').attr('href', 'home.html?user_id=' + val.user_id);
 							item.find('.item_avatar_a').attr('href', 'home.html?user_id=' + val.user_id);
-							$.showAvatar(item.find('.item_avatar'),val.user_id,64);
+							$.showAvatar(item.find('.item_avatar'),val.user_id,128);
 							item.find('.item_date').html(time);
 							item.find('.item_hot_comment').html(details);
 							item.find('.item_comments_count').html(val.comments_count);

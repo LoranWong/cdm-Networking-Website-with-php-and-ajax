@@ -80,6 +80,8 @@ body {
     top: 15px;
     left: 5px;
     opacity: .5;
+    filter: alpha(opacity: .5);
+
 }
 .profile_menu {
     position: absolute;
@@ -616,6 +618,8 @@ body {
     top: 4px;
     left: -25px;
     opacity: .5;
+    filter: alpha(opacity: .5);
+
 }
 .home_ul li a {
     text-decoration: none;
@@ -802,10 +806,6 @@ body {
     margin: 40px 0 0 20px;
     padding: 10px;
 }
-.settings_avatar_file {
-    padding: 30px;
-    padding-bottom: 0px;
-}
 .settings_avatar_img, .settings_avatar_new {
     display: block;
     width: 250px;
@@ -838,9 +838,30 @@ body {
     top: 275px;
     left: 440px;
 }
-
+.settings_file_box {
+    position: absolute;
+    top: 30px;
+    left: 130px;
+    outline: none;
+}
+.settings_avatar_file_btn {
+    position: absolute;
+    background-color: #FFF;
+    color: #6AB015;
+    border: 1px solid #CDCDCD;
+    height: 24px;
+    width: 70px;
+    cursor: pointer;
+    outline: none;
+}
+.settings_avatar_file {
+    position: absolute;
+    filter: alpha(opacity: 0);
+    opacity: 0;
+        height: 24px;
+    width: 70px;
+}
 /*全局使用*******************************************************************************************/
-
 
 .iconsfzh {
     background-image: url(images/iconsfzh.png);
@@ -964,6 +985,8 @@ element.style {
 }
 .ui-widget-overlay {
     opacity: .6;
+    filter: alpha(opacity: .6);
+
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     outline: none;

@@ -29,7 +29,7 @@ $(function() {
 		console.log("error");
 	});
 
-	$.showAvatar($('.home_user_avatar'),g_user_id,256);
+	$.showAvatar($('.home_user_avatar'),g_user_id,"origin");
 	
 	//加载用户加入的小组
 	$.showGroupsInfo(g_user_id,$('.home_groups'));

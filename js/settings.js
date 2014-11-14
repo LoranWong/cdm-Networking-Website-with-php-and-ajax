@@ -5,27 +5,27 @@ $(function() {
         no_results_text: '(*^__^*)没有找到..'
     });
 
-    var g_user_id = $.cookie().id ;
+    var g_user_id = $.cookie().id;
 
     //加载用户基本信息
     $.ajax({
-        url: 'php/getUser',
-        type: 'POST',
-        data: {
-            id: g_user_id,
-        },
-    })
-    .done(function(response) {
-        json = eval(response);
-        //$.l(json);
-        $('#settings_user').val(json[0].user);
-        $('#settings_birthday').val(json[0].birthday);
-        $('#settings_details').val(json[0].details);
+            url: 'php/getUser',
+            type: 'POST',
+            data: {
+                id: g_user_id,
+            },
+        })
+        .done(function(response) {
+            json = eval(response);
+            //$.l(json);
+            $('#settings_user').val(json[0].user);
+            $('#settings_birthday').val(json[0].birthday);
+            $('#settings_details').val(json[0].details);
 
-    })
-    .fail(function() {
-        console.log("error");
-    });
+        })
+        .fail(function() {
+            console.log("error");
+        });
 
 
     //获取Get参数
@@ -87,15 +87,15 @@ $(function() {
             $.ajax({
                     url: 'php/updateUser.php',
                     type: 'POST',
-                    data: $('.settings_profile_form').serialize()+"&settings_id="+g_user_id
+                    data: $('.settings_profile_form').serialize() + "&settings_id=" + g_user_id
                 })
                 .done(function(response, status) {
                     //alert('注册返回：'+response);
                     if (response == "true") {
                         $.showOKDialog("修改成功");
-                        setTimeout(function(){
+                        setTimeout(function() {
                             window.location = "home.html";
-                        },700);
+                        }, 700);
                     } else {
                         $.showErrorDialog("错误,可能有非法字符");
                     }
@@ -108,6 +108,8 @@ $(function() {
     });
 
     //头像的设置
+
+    $.showAvatar($('.settings_avatar_img'), g_user_id, 256);
 
     var jcrop_api;
     var reader = new FileReader(); //新建一个FileReader
@@ -131,7 +133,7 @@ $(function() {
 
                 reader.readAsDataURL(files[0]);
                 reader.onload = function(evt) { //读取完文件之后会回来这里
-                    $('.settings_avatar_img').remove();
+                    $('.settings_avatar_img').hide();
                     $('.settings_avatar_form').hide();
                     $('.settings_avatar_new').show();
                     $('.settings_avatar_submit').show();
@@ -176,39 +178,39 @@ $(function() {
                 marginTop: '-' + Math.round(ry * sel.y) + 'px'
             });
         }
-        console.log(sel);
+        //console.log(sel);
         g_sel = sel;
     }
 
     //点击裁剪上传
     $('.settings_avatar_submit').click(function(event) {
-        //$('.settings_avatar_form').submit();
+        //请用户等待
+        jcrop_api.release();
+        $.showLoadDialog("请稍候...");
         $('.settings_avatar_submit').attr('disabled', 'true');
         //下面代码可以实现有进度的异步上传
         var _file = document.getElementById('settings_avatar_file');
-
         var formData = new FormData();
         formData.append('settings_avatar_file', _file.files[0]);
         formData.append('x', g_sel.x);
         formData.append('y', g_sel.y);
         formData.append('w', g_sel.w);
         formData.append('h', g_sel.h);
-        formData.append('id', $.cookie().id);
-
+        formData.append('id', g_user_id);
         var request = new XMLHttpRequest();
         request.onreadystatechange = function() {
-             $('.settings_avatar_submit').attr('disabled', 'false');
-
-            if (request.readyState == 4) {
-                console.log(request.response);
-                //window.location = "home.html";
+            $('.settings_avatar_submit').attr('disabled', 'false');
+            if (request.readyState == 4 && request.response == "true") {
+                //console.log(request.response);
+                $.showOKDialog("修改成功", function() {
+                    window.location.replace("home.html")
+                });
             }
-
+            
         };
 
         request.open('POST', 'php/addAvatar.php');
         request.send(formData);
-
     });
 
 

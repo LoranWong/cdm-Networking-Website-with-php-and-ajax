@@ -155,9 +155,14 @@
 
                 <div class="box_con settings_avatar">
                     <div class="settings_profile_label">修改头像</div>
-                    <form action="php/addAvatar.php" method="POST" class="settings_avatar_form" enctype="multipart/form-data" name="settings_avatar_form">
-                        <input type="file" accept="image/*" name="settings_avatar_file" class="settings_avatar_file" id="settings_avatar_file">
-                    </form>
+
+                    <div class="settings_file_box">
+                        <form action="php/addAvatar.php" method="POST" class="settings_avatar_form" enctype="multipart/form-data" name="settings_avatar_form">
+                            <input type='button' class='settings_avatar_file_btn' value='选择文件' />
+                            <input type="file" accept="image/*" name="settings_avatar_file" class="settings_avatar_file" id="settings_avatar_file" >
+                        </form>
+                    </div>
+
                     <img class="settings_avatar_img" src="" alt="">
                     <img class="settings_avatar_new" alt="">
                     <div id="preview-pane">
@@ -223,30 +228,6 @@
                 <lable for="reg_pass">密 码 ：</lable>
                 <input type="password" id="reg_pass" name="reg_pass" class="round_textbox dia_textbox" placeholder="密码至少6位">
             </p>
-            <p>
-                <lable for="reg_birthday">生 日 ：</lable>
-                <input type="text" id="reg_birthday" name="reg_birthday" class="round_textbox dia_textbox" readonly placeholder="点击选择生辰">
-            </p>
-            <p class="dia_reg_gender">
-                <p>
-                    性 别 :
-                    <span>
-                        <input type="radio" name="reg_gender" id="male" value="1" checked>客观定义的男性</span>
-                </p>
-                <!-- 下方全角缩进 -->
-                <p>
-                    <input type="radio" name="reg_gender" id="female" value="0">客观定义的女性</p>
-                <p>
-                    <input type="radio" name="reg_gender" id="gender_others" value="2">其他</p>
-            </p>
-            <p class="dia_reg_field">
-                <p>性 致 ：</p>
-                <!-- 下方全角缩进 -->
-                <input type="checkbox" name="reg_field" id="programmer" value="0" checked>程序猿
-                <input type="checkbox" name="reg_field" id="designer" value="1">设计狮
-                <input type="checkbox" name="reg_field" id="manager" value="2">项目鲸鲤
-                <input type="checkbox" name="reg_field" id="field_others" value="3">凑热闹的</p>
-            <hr>
             <input type="submit" class="dia_submit" value="加入我们">
         </form>
     </div>

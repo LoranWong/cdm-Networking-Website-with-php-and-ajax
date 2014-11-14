@@ -16,22 +16,26 @@
 					.dialog('open');
 	}
 
-	$.showOKDialog = function(str){
+	$.showOKDialog = function(str,func){
+		var len= arguments.length;
 		$('#dia_load').css('background', 'url(images/success.gif) no-repeat 20px center')
 					.html(str)
 					.dialog('open');
 		setTimeout(function(){
 			$('#dia_load').dialog('close');
-		},700);
+			if(len == 2) func();
+		},1000);
 	}
 
-	$.showErrorDialog = function(str){
+	$.showErrorDialog = function(str,func){
+		var len= arguments.length;
 		$('#dia_load').css('background', 'url(images/error.png) no-repeat 20px center')
 					.html(str)
 					.dialog('open');
 		setTimeout(function(){
 			$('#dia_load').dialog('close');
-		},700);
+			if(len == 2) func();
+		},1000);
 	}
 
 	//加载用户所在小组信息  @p1  用户ID  @p2 需要appendTo哪个Jquery对象
@@ -81,13 +85,14 @@
 			jqimg.attr('src', path);
 		}else{
 			//传入ID时尝试已经设定的头像
-			path = "avatars/user/"+user_id+"_"+size+".png";
+			path = "avatars/user/"+user_id+"_"+size+".jpg";
 			jqimg.attr('src', path);
 			//设置其错误回调，显示默认的随即设定好的头像
-			jqimg.error(function() {
+			jqimg.error(function(event) {
 				r = user_id % 40;
 				path = "avatars/default/"+r+"_"+size+".png";
-				jqimg.attr('src', path);
+				//回调中注意用this代替具体对象
+				$(this).attr('src', path);
 			});
 		}
 
