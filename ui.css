@@ -7,6 +7,173 @@ body {
     font-family: "Microsoft YaHei", "WenQuanYi Micro Hei", SimHei, tahoma, sans-serif;
     background: #fff;
 }
+
+/*全局使用*******************************************************************************************/
+.gradient_btn_green{
+    padding: 6px 10px;
+    color: #fafafa;
+    border-radius: 5px;
+    background-image: -moz-linear-gradient(top, #88C833, #6AB015);
+    background-image: -ms-linear-gradient(top, #88C833, #6AB015);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#88C833), to(#6AB015));
+    background-image: -webkit-linear-gradient(top, #88C833, #6AB015);
+    background-image: -o-linear-gradient(top, #88C833, #6AB015);
+    background-image: linear-gradient(top, #88C833, #6AB015);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#88C833', endColorstr='#6AB015', GradientType=0);
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
+    border: 1px solid #6d8f29;
+    box-shadow:  0 1px 0 rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+.gradient_btn_green:active{
+    background: #4CA005;
+    /*点击时外阴影变成内阴影 造成点击的感觉*/
+    box-shadow: 0 1px 2px rgba(0,0,0,.4) inset;
+}
+.gradient_btn_green:hover{
+    color: #fff;
+    background-image: -moz-linear-gradient(top, #6AB015, #4CA005);
+    background-image: -ms-linear-gradient(top, #6AB015, #4CA005);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#6AB015), to(#4CA005));
+    background-image: -webkit-linear-gradient(top, #6AB015, #4CA005);
+    background-image: -o-linear-gradient(top, #6AB015, #4CA005);
+    background-image: linear-gradient(top, #6AB015, #4CA005);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#6AB015', endColorstr='#4CA005', GradientType=0);
+
+}
+.gradient_btn_white{
+        padding: 6px 10px;
+    border-radius: 5px;
+    background: #f8f8f9;
+    background-color: #f1f1f2;
+    background-image: -moz-linear-gradient(top, #f8f8f9, #e6e6e8);
+    background-image: -ms-linear-gradient(top, #f8f8f9, #e6e6e8);
+    background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f8f8f9), to(#e6e6e8));
+    background-image: -webkit-linear-gradient(top, #f8f8f9, #e6e6e8);
+    background-image: -o-linear-gradient(top, #f8f8f9, #e6e6e8);
+    background-image: linear-gradient(top, #f8f8f9, #e6e6e8);
+    background-repeat: repeat-x;
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#f8f8f9', endColorstr='#e6e6e8', GradientType=0);
+    text-shadow: 0 1px 0 #fff;
+    border: 1px solid #bbb;
+    color: #666!important;
+    box-shadow: 0 1px 0 #fff inset, 0 1px 0 rgba(0, 0, 0, .1);
+    cursor: pointer;
+}
+.gradient_btn_white:active{
+    background: #ddd;
+    box-shadow: none;
+}
+
+
+.iconsfzh {
+    background-image: url(images/iconsfzh.png);
+    background-size: 308px 250px;
+    background-repeat: no-repeat;
+    display: inline-block;
+}
+.round_textbox {
+    outline: none;
+    border-radius: 3px;
+    text-indent: 3px;
+    padding: 3px;
+    border: 1px solid #eee;
+    color: #777;
+    background: white;
+    box-shadow: 0px 0px 0px #6AB015;
+    -webkit-animation: hideShadow 1s;
+    /* Chrome, Safari, Opera */
+    
+    animation: hideShadow 1s;
+}
+.round_textbox:focus {
+    box-shadow: 0px 0px 2px #6AB015;
+    border: 1px solid #6AB015;
+    -webkit-animation: showShadow 1s;
+    /* Chrome, Safari, Opera */
+    
+    animation: showShadow 1s;
+}
+#search_input {
+    margin-right: 0px;
+    border: 1px solid #6AB015;
+    box-shadow: 0px 0px 0px #eee;
+    background: rgb(220, 245, 220);
+    -webkit-animation: showShadow 1s;
+    /* Chrome, Safari, Opera */
+    
+    animation: showShadow 1s;
+}
+#search_input:focus {
+    border: 1px solid #eee;
+    box-shadow: 0px 0px 3px #eee;
+    background: rgb(255, 255, 255);
+    -webkit-animation: hideShadow 1s;
+    /* Chrome, Safari, Opera */
+    
+    animation: hideShadow 1s;
+}
+/*区块样式属性*/
+
+.box_con {
+    background-color: #fff;
+    border-radius: 3px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #eee;
+    margin-bottom: 10px;
+    position: relative;
+}
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes showShadow {
+    from {
+        box-shadow: 0px 0px 3px #eee;
+        border: 1px solid #eee;
+    }
+    to {
+        box-shadow: 0px 0px 2px #6AB015;
+        border: 1px solid #6AB015;
+    }
+}
+/* Standard syntax */
+
+@keyframes showShadow {
+    from {
+        box-shadow: 0px 0px 3px #eee;
+        border: 1px solid #eee;
+    }
+    to {
+        box-shadow: 0px 0px 2px #6AB015;
+        border: 1px solid #6AB015;
+    }
+}
+/* Chrome, Safari, Opera */
+
+@-webkit-keyframes hideShadow {
+    from {
+        box-shadow: 0px 0px 2px #6AB015;
+        border: 1px solid #6AB015;
+    }
+    to {
+        box-shadow: 0px 0px 3px #eee;
+        border: 1px solid #eee;
+    }
+}
+/* Standard syntax */
+
+@keyframes hideShadow {
+    from {
+        box-shadow: 0px 0px 2px #6AB015;
+        border: 1px solid #6AB015;
+    }
+    to {
+        box-shadow: 0px 0px 3px #eee;
+        border: 1px solid #eee;
+    }
+}
+
 /*页面头部  浅蓝渐变 6AB015-4CA005 */
 
 .header_con {
@@ -81,7 +248,6 @@ body {
     left: 5px;
     opacity: .5;
     filter: alpha(opacity: .5);
-
 }
 .profile_menu {
     position: absolute;
@@ -104,9 +270,20 @@ body {
     text-decoration: none;
     border-top: 1px solid rgba(255, 255, 255, .2);
     cursor: pointer;
+    transition: all .3s;
+    -moz-transition: all .3s;
+    /* Firefox 4 */
+    
+    -webkit-transition: all .3s;
+    /* Safari 和 Chrome */
+    
+    -o-transition: all .3s;
+    /* Opera */
 }
 .profile_menu li:hover {
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(255, 255, 255, .2);
+    padding: 9px 15px 5px 10px;
+    font-size: 17px;
 }
 .profile_menu li .iconsfzh {
     width: 20px;
@@ -116,6 +293,9 @@ body {
 }
 .logout_btn_icon {
     background-position: -5px -87px;
+}
+.add_group_btn_icon{
+    background-position: -125px -65px;
 }
 .settings_btn_icon {
     background-position: -5px -60px;
@@ -147,23 +327,27 @@ body {
 #search_btn:hover {
     cursor: pointer;
 }
-.top_btn {
+#ask_btn {
     margin: 0 0 0 6px;
     color: #eee;
     font-size: 14px;
     line-height: 40px;
     height: 40px;
     padding: 7px 18px;
-    border-radius: 3px;
-    border: 1px solid rgba(0, 0, 0, .05);
-    background: #6AB015
+    border: 1px solid #4CA005;
+    box-shadow: none;
 }
+#ask_btn:hover{
+    background-image: none;
+    background: rgba(255,255,255,.1);
+}
+
+
 .top_btn:hover {
     background: rgba(0, 0, 0, .05);
     cursor: pointer;
     color: #fff;
     box-shadow: 1px 1px 1px rgba(0, 0, 0, .2);
-    ;
 }
 .top_menu_item {
     float: left;
@@ -186,8 +370,12 @@ body {
     display: none;
     width: 10px;
     height: 8px;
-    bottom: -1.5px;
+    bottom: -1.7px;
     left: 21px;
+}
+#group_btn img {
+    bottom: -1.7px;
+    left: 37px;
 }
 .white_bar {
     background: white;
@@ -287,8 +475,11 @@ body {
 }
 /*index页面独有内容*****************************************************************************************/
 
+.main_left_index {
+    width: 750px;
+}
 .items_con {
-    width: 95%;
+    width: 100%;
 }
 .item_con {
     width: 100%;
@@ -306,7 +497,7 @@ body {
     border-radius: 51px;
 }
 .item_main {
-    width: 75%;
+    width: 80%;
 }
 .item_title {
     display: block;
@@ -356,7 +547,7 @@ body {
     cursor: pointer;
 }
 .item_right {
-    width: 15%;
+    width: 10%;
 }
 .item_comments_count {
     float: right;
@@ -380,13 +571,70 @@ body {
     margin: 15px auto;
 }
 .main_right {
-    width: 180px;
+    width: 230px;
     float: right;
     margin: 15px 0 0 0;
 }
 .accordion_title {
     margin: 0;
 }
+/*小组详细信息*/
+
+.group_info_con {
+    position: relative;
+    overflow: hidden;
+    width: 95%;
+}
+.group_avatar {
+    padding: 15px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+.group_info_con .group_item {
+    position: absolute;
+    cursor: normal;
+    left: 80px;
+    top: 30px;
+}
+.group_info_bottom_con {
+    margin-top: 60px;
+    overflow: hidden;
+    background: #fafafa;
+}
+.group_info_members {
+    float: left;
+    padding: 0px 15px 0px 20px;
+    margin: 10px 0px;
+    line-height: 165%;
+    border-right: 1px solid #ddd;
+    cursor: pointer;
+}
+.group_info_questions {
+    border: none;
+}
+.group_info_members:hover {
+    color: #6AB015;
+}
+.group_info_members strong {
+    font-size: 20px;
+}
+.group_join_btn {} .group_details {
+    margin: 0px 15px 10px 15px;
+}
+.group_join_btn {
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+}
+
+.group_leave_btn {
+    display: none;
+    position: absolute;
+    right: 20px;
+    bottom: 80px;
+}
+
 /*灰色旋转条*/
 
 .spinner_gray {
@@ -407,7 +655,6 @@ body {
     color: #aaa;
     float: left;
     font-size: 12px;
-    width: 100%;
 }
 .comments_top_info {
     margin-top: 15px;
@@ -469,8 +716,8 @@ body {
 }
 .details_title_info {
     border-top: 1px solid #eee;
-    width: 100%;
     float: left;
+    width: 747px;
     padding: 10px;
     margin: 10px;
 }
@@ -497,7 +744,7 @@ body {
 }
 .details_question_main {
     line-height: 150%;
-    padding: 0px 20px 30px 20px;
+    padding: 0px 20px 40px 20px;
     clear: both;
     color: #888;
 }
@@ -523,7 +770,7 @@ body {
     clear: both;
     color: #999;
     border-bottom: 1px solid #eee;
-    padding: 0 10px 20px 10px;
+    padding: 5px 10px 15px 10px;
     margin-left: 10px;
     margin-right: 10px;
 }
@@ -619,7 +866,6 @@ body {
     left: -25px;
     opacity: .5;
     filter: alpha(opacity: .5);
-
 }
 .home_ul li a {
     text-decoration: none;
@@ -858,116 +1104,10 @@ body {
     position: absolute;
     filter: alpha(opacity: 0);
     opacity: 0;
-        height: 24px;
+    height: 24px;
     width: 70px;
 }
-/*全局使用*******************************************************************************************/
 
-.iconsfzh {
-    background-image: url(images/iconsfzh.png);
-    background-size: 308px 250px;
-    background-repeat: no-repeat;
-    display: inline-block;
-}
-.round_textbox {
-    outline: none;
-    border-radius: 3px;
-    text-indent: 3px;
-    padding: 3px;
-    border: 1px solid #eee;
-    color: #777;
-    background: white;
-    box-shadow: 0px 0px 0px #6AB015;
-    -webkit-animation: hideShadow 1s;
-    /* Chrome, Safari, Opera */
-    
-    animation: hideShadow 1s;
-}
-.round_textbox:focus {
-    box-shadow: 0px 0px 2px #6AB015;
-    border: 1px solid #6AB015;
-    -webkit-animation: showShadow 1s;
-    /* Chrome, Safari, Opera */
-    
-    animation: showShadow 1s;
-}
-#search_input {
-    margin-right: 0px;
-    border: 1px solid #6AB015;
-    box-shadow: 0px 0px 0px #eee;
-    background: rgb(220, 245, 220);
-    -webkit-animation: showShadow 1s;
-    /* Chrome, Safari, Opera */
-    
-    animation: showShadow 1s;
-}
-#search_input:focus {
-    border: 1px solid #eee;
-    box-shadow: 0px 0px 3px #eee;
-    background: rgb(255, 255, 255);
-    -webkit-animation: hideShadow 1s;
-    /* Chrome, Safari, Opera */
-    
-    animation: hideShadow 1s;
-}
-/*区块样式属性*/
-
-.box_con {
-    background-color: #fff;
-    border-radius: 3px;
-    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    border: 1px solid #eee;
-    margin-bottom: 10px;
-    position: relative;
-}
-/* Chrome, Safari, Opera */
-
-@-webkit-keyframes showShadow {
-    from {
-        box-shadow: 0px 0px 3px #eee;
-        border: 1px solid #eee;
-    }
-    to {
-        box-shadow: 0px 0px 2px #6AB015;
-        border: 1px solid #6AB015;
-    }
-}
-/* Standard syntax */
-
-@keyframes showShadow {
-    from {
-        box-shadow: 0px 0px 3px #eee;
-        border: 1px solid #eee;
-    }
-    to {
-        box-shadow: 0px 0px 2px #6AB015;
-        border: 1px solid #6AB015;
-    }
-}
-/* Chrome, Safari, Opera */
-
-@-webkit-keyframes hideShadow {
-    from {
-        box-shadow: 0px 0px 2px #6AB015;
-        border: 1px solid #6AB015;
-    }
-    to {
-        box-shadow: 0px 0px 3px #eee;
-        border: 1px solid #eee;
-    }
-}
-/* Standard syntax */
-
-@keyframes hideShadow {
-    from {
-        box-shadow: 0px 0px 2px #6AB015;
-        border: 1px solid #6AB015;
-    }
-    to {
-        box-shadow: 0px 0px 3px #eee;
-        border: 1px solid #eee;
-    }
-}
 /*Editor插件属性*/
 
 element.style {
@@ -986,7 +1126,6 @@ element.style {
 .ui-widget-overlay {
     opacity: .6;
     filter: alpha(opacity: .6);
-
 }
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
     outline: none;

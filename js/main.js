@@ -32,11 +32,6 @@ $(function() {
 
     $('#userInfo_btn').mouseenter(function(event) {
         $('.profile_menu').slideDown('fast');
-        $(this).effect('bounce', {
-            distance: 5,
-            times: 1,
-            duration: 150
-        });
 
     });
     $('#userInfo_btn').mouseleave(function(event) {

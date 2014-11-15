@@ -43,6 +43,7 @@ $(function() {
 	.done(function(response) {
 		json = eval(response);
 		//$.l(json);
+		$('#home_items_count').html(json.length);
 		$.each(json, function(index, val) {
 			time = $.getTimeByDateTime(val.date);
 			item = (index == 0) ? $('.item_con').first() : $('.item_con').first().clone();
@@ -51,6 +52,11 @@ $(function() {
 			item.find('.item_title').attr('href', 'details.html?id=' + val.id);
 			item.appendTo('.home_items_con');
 		});
+		if(json.length == 0){
+			$('.item_con').remove();
+		}
+
+
 	})
 	.fail(function() {
 		console.log("error");

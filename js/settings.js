@@ -109,7 +109,7 @@ $(function() {
 
     //头像的设置
 
-    $.showAvatar($('.settings_avatar_img'), g_user_id, 256);
+    $.showAvatar($('.settings_avatar_img'), g_user_id, "origin");
 
     var jcrop_api;
     var reader = new FileReader(); //新建一个FileReader

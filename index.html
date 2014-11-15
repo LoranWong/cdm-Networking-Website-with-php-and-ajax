@@ -28,20 +28,23 @@
             <a id="userInfo_btn" class="top_menu_item">登录中</a>
             <ul class="profile_menu">
                 <li id="home_btn"> <i class="iconsfzh home_btn_icon"></i>
-                    主页
+                    个人主页
                 </li>
                 <li id="settings_btn"> <i class="iconsfzh settings_btn_icon"></i>
-                    设置
+                    设置信息
+                </li>
+                <li id="add_group_btn"> <i class="iconsfzh add_group_btn_icon"></i>
+                    创建小组
                 </li>
                 <li id="logout_btn">
                     <i class="iconsfzh logout_btn_icon"></i>
-                    退出
+                    退出登录
                 </li>
             </ul>
             <!-- <img class="top_accordion" src="images/triangle_right.png" alt="">
-			-->
+            -->
             <!-- <div class="top_divide_line"></div>
-		-->
+        -->
             <div class="header_main">
                 <a href="index.html">
                     <img id="header_logo" src="images/logo.png">
@@ -49,15 +52,15 @@
 
                 <div class="header_main_menu">
                     <a id="home_btn" href="index.html?header_id=0" class="top_menu_item">
-					首页
-					<img src="images/triangle_bottom.png"></a>
+                    首页
+                    <img src="images/triangle_bottom.png"></a>
                     <a id="group_btn" href="index.html?header_id=1" class="top_menu_item">
-					小组
-					<img src="images/triangle_bottom.png"></a>
+                    我的小组
+                    <img src="images/triangle_bottom.png"></a>
                 </div>
 
                 <div class="header_search">
-                    <a id="ask_btn" class="top_btn">发布</a>
+                    <a id="ask_btn" class="gradient_btn_green">发布</a>
                     <input id="search_input" type="text" name="search" class="round_textbox search" title="问题 用户 分享 ...">
                     <img id="search_btn" src="images/search.png" alt="">
                 </div>
@@ -82,14 +85,14 @@
         <!-- 页面的主内容 -->
         <div class="main_con">
             <div class="main_con_inner">
-                <div class="main_left box_con">
+                <div class="main_left main_left_index box_con">
                     <!-- 选项卡 -->
                     <div class="tabs_con">
                         <ul>
-                            <!-- 				<li tag_id = "1">
-					<a href="#tab_content">新的发布</a>
-				</li>
-				-->
+                            <!--                <li tag_id = "1">
+                    <a href="#tab_content">新的发布</a>
+                </li>
+                -->
                         </ul>
 
                         <div id="tab_content">
@@ -101,8 +104,9 @@
                                             <td class="item_left" valign="top">
                                                 <a class="item_avatar_a">
                                                     <img class="item_avatar" src="" alt="">
+                                                </a>
                                             </td>
-                                            </a>
+
                                             <td class="item_main">
                                                 <a class="item_title" target="_blank">该小组还没有主题哦~</a>
                                                 <div class="item_hot_comment_div">
@@ -140,16 +144,44 @@
 
                 <div class="main_right">
 
+                    <div class="box_con group_info_con">
+                        <img class="group_avatar" src="avatars/default/0_256.png" alt="">
+                        <span class="group_item">卓越基佬哈</span>
+                        <div class="group_details">
+                            男人之间怎么会有纯洁的友谊？侬脑子瓦特啦？
+                        </div>
+                        <div class="gradient_btn_green group_join_btn">加入这群逗比</div>
+                        <div class="gradient_btn_white group_leave_btn">离开这群逗比</div>
+                        <div class="group_info_bottom_con">
+
+
+                            <div class="group_info_members">
+                                <span>&nbsp;&nbsp;成员</span>
+                                <br>
+                                <strong>28</strong>
+                                <label>人</label>
+                            </div>
+                            <div class="group_info_members group_info_questions">
+                                <span>&nbsp;&nbsp;发布</span>
+                                <br>
+                                <strong>384</strong>
+                                <label>篇</label>
+                            </div>
+
+
+                        </div>
+                    </div>
+
                     <!-- 折叠卡 -->
                     <!-- <div class="accordion_con">
-					<a id="accordion_title1" class="accordion_title">标题1</a>
-					<div id="accordion_con1"  class="accordion_con">内容1</div>
-					<a id="accordion_title2" class="accordion_title">标题2</a>
-					<div id="accordion_con2" class="accordion_con">内容2</div>
-					<a id="accordion_title3" class="accordion_title">标题3</a>
-					<div id="accordion_con3" class="accordion_con">内容3</div>
-				</div>
-				-->
+                    <a id="accordion_title1" class="accordion_title">标题1</a>
+                    <div id="accordion_con1"  class="accordion_con">内容1</div>
+                    <a id="accordion_title2" class="accordion_title">标题2</a>
+                    <div id="accordion_con2" class="accordion_con">内容2</div>
+                    <a id="accordion_title3" class="accordion_title">标题3</a>
+                    <div id="accordion_con3" class="accordion_con">内容3</div>
+                </div>
+                -->
                 </div>
 
                 <!-- 页面右边浮动内容 -->
