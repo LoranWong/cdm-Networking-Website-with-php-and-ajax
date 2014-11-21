@@ -67,7 +67,6 @@ body {
     box-shadow: none;
 }
 
-
 .iconsfzh {
     background-image: url(images/iconsfzh.png);
     background-size: 308px 250px;
@@ -273,10 +272,8 @@ body {
     transition: all .3s;
     -moz-transition: all .3s;
     /* Firefox 4 */
-    
     -webkit-transition: all .3s;
     /* Safari 和 Chrome */
-    
     -o-transition: all .3s;
     /* Opera */
 }
@@ -293,9 +290,6 @@ body {
 }
 .logout_btn_icon {
     background-position: -5px -87px;
-}
-.add_group_btn_icon{
-    background-position: -125px -65px;
 }
 .settings_btn_icon {
     background-position: -5px -60px;
@@ -586,15 +580,16 @@ body {
     width: 95%;
 }
 .group_avatar {
-    padding: 15px;
+    margin: 15px;
+    margin-bottom: 10px;
     width: 60px;
     height: 60px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .group_info_con .group_item {
     position: absolute;
     cursor: normal;
-    left: 80px;
+    left: 90px;
     top: 30px;
 }
 .group_info_bottom_con {
@@ -607,7 +602,7 @@ body {
     padding: 0px 15px 0px 20px;
     margin: 10px 0px;
     line-height: 165%;
-    border-right: 1px solid #ddd;
+    border-right: 1px solid #f3f3f3;
     cursor: pointer;
 }
 .group_info_questions {
@@ -619,8 +614,10 @@ body {
 .group_info_members strong {
     font-size: 20px;
 }
-.group_join_btn {} .group_details {
+.group_details {
     margin: 0px 15px 10px 15px;
+    padding-top: 10px;
+    border-top: 1px dashed #f3f3f3;
 }
 .group_join_btn {
     position: absolute;
