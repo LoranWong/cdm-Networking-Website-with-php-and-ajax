@@ -1,9 +1,9 @@
 <?php
 /*
-	@param $_POST['reg_email']
-*/
+@param $_POST['reg_email']
+ */
 
-require 'config.php';
+require '../require.php';require 'mysql.config.php';
 
 $query = mysql_query("SELECT email FROM users WHERE email='$_GET[reg_email]'") or die('SQL 错误!');
 if (mysql_fetch_array($query, MYSQL_ASSOC)) {
@@ -12,7 +12,6 @@ if (mysql_fetch_array($query, MYSQL_ASSOC)) {
 	echo 'true';
 }
 
-mysql_close(); 
-
+mysql_close();
 
 ?>

@@ -10,7 +10,7 @@
 
  */
 
-require 'config.php';
+require '../require.php';require 'mysql.config.php';
 
 sleep(1);
 

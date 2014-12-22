@@ -1,11 +1,11 @@
 <?php
 /*
-	@param $_POST['login_pass']
-	@param $_POST['login_email']
-*/
+@param $_POST['login_pass']
+@param $_POST['login_email']
+ */
 
-require 'config.php';
- 
+require '../require.php';require 'mysql.config.php';
+
 sleep(1);
 
 $pass = sha1($_POST['login_pass']);
@@ -14,7 +14,6 @@ $query = mysql_query("SELECT user,id FROM users WHERE email='$_POST[login_email]
 
 echo get_json_from_query($query);
 
-mysql_close(); 
-
+mysql_close();
 
 ?>

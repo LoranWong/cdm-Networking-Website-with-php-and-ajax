@@ -1,6 +1,5 @@
 <?php
 /*
-
 @param $_POST['start'] 查询起始点 必须
 @param $_POST['count'] 查询个数 必须
 
@@ -10,9 +9,11 @@
 @param $_POST['user_id']
  */
 
-require 'config.php';
+require '../require.php';require 'mysql.config.php';
+
 $start = $_POST['start'];
 $count = $_POST['count'];
+
 $sql = "";
 
 if ($_POST['tag_id'] != null) {

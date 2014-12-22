@@ -85,17 +85,17 @@
 		//未登录时随机显示自己头像
 		if(user_id == undefined){
 			r = Math.floor(Math.random()*(40));
-			path = "avatars/default/"+r+"_"+size+".png";
+			path = "resources/avatars/default/"+r+"_"+size+".png";
 			jqimg.attr('src', path);
 		}else{
 			//传入ID时尝试已经设定的头像
-			path = "avatars/user/"+user_id+"_"+size+".jpg";
+			path = "resources/avatars/user/"+user_id+"_"+size+".jpg";
 			jqimg.attr('src', path);
 			//设置其错误回调，显示默认的随即设定好的头像
 			jqimg.error(function(event) {
 				if (size == "origin") size = 256 ;
 				r = user_id % 40;
-				path = "avatars/default/"+r+"_"+size+".png";
+				path = "resources/avatars/default/"+r+"_"+size+".png";
 				//回调中注意用this代替具体对象
 				$(this).attr('src', path);
 			});

@@ -38,7 +38,7 @@ if ($_FILES[$file_key]["error"] > 0) {
 	}
 
 	//将图片分别以 256  128  64  32 的尺寸保存
-	$r2 = image_scale_avatar($_POST['id'], "../avatars/user/" . $_POST['id'] . "_origin.jpg");
+	$r2 = image_scale_avatar($_POST['id'], "../resources/avatars/user/" . $_POST['id'] . "_origin.jpg");
 	if ($r2) {
 		echo "true";
 	} else {
@@ -83,7 +83,7 @@ function imagecropper($id, $source_path, $x, $y, $w, $h) {
 	$result = imagecopy($cropped_image, $source_image, 0,
 		0, intval($x * $scale), intval($y * $scale), intval($w * $scale), intval($h * $scale));
 	//$result = imagecopy($cropped_image, $source_image, 0,0,$x,$y,$w,$h);
-	imagejpeg($cropped_image, "../avatars/user/" . $id . "_origin.jpg");
+	imagejpeg($cropped_image, "../resources/avatars/user/" . $id . "_origin.jpg");
 	imagedestroy($source_image);
 	imagedestroy($cropped_image);
 
@@ -118,10 +118,10 @@ function image_scale_avatar($id, $source_path) {
 		return "false";
 	}
 
-	imagejpeg($avatar_256, "../avatars/user/" . $id . "_256.jpg");
-	imagejpeg($avatar_128, "../avatars/user/" . $id . "_128.jpg");
-	imagejpeg($avatar_64, "../avatars/user/" . $id . "_64.jpg");
-	imagejpeg($avatar_32, "../avatars/user/" . $id . "_32.jpg");
+	imagejpeg($avatar_256, "../resources/avatars/user/" . $id . "_256.jpg");
+	imagejpeg($avatar_128, "../resources/avatars/user/" . $id . "_128.jpg");
+	imagejpeg($avatar_64, "../resources/avatars/user/" . $id . "_64.jpg");
+	imagejpeg($avatar_32, "../resources/avatars/user/" . $id . "_32.jpg");
 
 	imagedestroy($source_image);
 	imagedestroy($avatar_256);

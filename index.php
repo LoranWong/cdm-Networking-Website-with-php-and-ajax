@@ -1,3 +1,4 @@
+<?php require_once 'require.php';?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -85,7 +86,7 @@
                 <div class="main_right">
 
                     <div class="box_con group_info_con">
-                        <img class="group_avatar" src="avatars/user/25_256.jpg" alt="">
+                        <img class="group_avatar" src="resources/avatars/user/25_256.jpg" alt="">
                         <span class="group_item">戴政粉丝团</span>
                         <div class="group_details">
                             男人之间怎么会有纯洁的友谊？侬脑子瓦特啦？
