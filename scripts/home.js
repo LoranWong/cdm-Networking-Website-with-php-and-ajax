@@ -49,6 +49,7 @@ $(function() {
 			item = (index == 0) ? $('.item_con').first() : $('.item_con').first().clone();
 			item.find('.item_date').html(time);
 			item.find('.item_title').html(val.title);
+			item.find('.home_comments_count').html(val.comments_count);
 			item.find('.item_title').attr('href', 'details.php?id=' + val.id);
 			item.appendTo('.home_items_con');
 		});

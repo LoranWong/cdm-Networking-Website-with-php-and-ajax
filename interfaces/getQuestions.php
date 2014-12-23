@@ -9,7 +9,7 @@
 @param $_POST['user_id']
  */
 
-require '../require.php';require 'mysql.config.php';
+require_once '../require.php';
 
 $start = $_POST['start'];
 $count = $_POST['count'];

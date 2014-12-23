@@ -3,7 +3,7 @@
 @param $_POST['id'] 指定的ID
  */
 
-require '../require.php';require 'mysql.config.php';
+require_once '../require.php';
 
 $id = $_POST['id'];
 

@@ -88,8 +88,10 @@
 			path = "resources/avatars/default/"+r+"_"+size+".png";
 			jqimg.attr('src', path);
 		}else{
+			//将size拼接成 origin 或者 sizexsize
+			con_size = (size=='origin')?'origin':size+'x'+size;
 			//传入ID时尝试已经设定的头像
-			path = "resources/avatars/user/"+user_id+"_"+size+".jpg";
+			path = "resources/avatars/user/"+user_id+"_"+con_size+".jpg";
 			jqimg.attr('src', path);
 			//设置其错误回调，显示默认的随即设定好的头像
 			jqimg.error(function(event) {
@@ -102,6 +104,121 @@
 		}
 
 	}
+
+	/**
+		显示照片预览裁剪并上传
+		note: 本函数选择文件后会将 class 为settings_avatar_img settings_file_box的元素 hide
+		@param formData 先创建好并放出其他参数
+		@param input_file_eleid 选择文件的input标签的ID，其name 与 class 必为 settings_avatar_file
+		@param avatar_new_eleid 新显示的图像元素的ID
+		@param submit_btn_eleid 提交按钮的ID
+		@uploadURL 上传URL
+		@successURL 上传成功后跳转URL
+	**/
+	$.imageSelectAndUpload = function (formData,input_file_eleid,avatar_new_eleid,submit_btn_eleid,uploadURL,successURL){
+
+		var jcrop_api;
+        var reader = new FileReader(); //新建一个FileReader
+
+        $preview = $('#preview-pane');
+        $pcon = $('#preview-pane .preview-container');
+        $pimg = $('#preview-pane .preview-container img');
+
+        xsize = $pcon.width();
+        ysize = $pcon.height();
+
+        $('#'+input_file_eleid).change(function(event) {
+            if (typeof FileReader == 'undefined') {
+                alert('放弃IE吧同志,开发人员会疯掉的');
+            } else {
+                var files = $('#'+input_file_eleid).prop('files'); //获取到文件列表
+                if (files.length == 0) {
+                    console.log('请选择文件');
+                    return;
+                } else {
+
+                    reader.readAsDataURL(files[0]);
+                    reader.onload = function(evt) { //读取完文件之后会回来这里
+                        $('.settings_avatar_img').hide();
+                        $('.settings_file_box').hide();
+
+                        $('#'+avatar_new_eleid).show();
+                        $('#'+submit_btn_eleid).show();
+                        $('#'+avatar_new_eleid+',#preview-pane img').attr('src', evt.target.result);
+                        //这里已经进行了图片的显示
+                        $('#'+avatar_new_eleid).Jcrop({
+                            onChange: updatePreview,
+                            onSelect: updatePreview,
+                            aspectRatio: xsize / ysize,
+                        }, function() {
+                            var bounds = this.getBounds();
+                            boundx = bounds[0];
+                            boundy = bounds[1];
+                            jcrop_api = this;
+                            $preview.show();
+                            $preview.appendTo(jcrop_api.ui.holder);
+                            min = boundx > boundy ? boundy : boundx;
+                            jcrop_api.setSelect([0, 0, min, min]);
+                        });
+                    }
+                }
+            }
+        });
+
+        var g_sel;
+
+        function updatePreview(sel) {
+            if (parseInt(sel.w) > 0) {
+                var rx = xsize / sel.w;
+                var ry = ysize / sel.h;
+                $pimg.css({
+                    width: Math.round(rx * boundx) + 'px',
+                    height: Math.round(ry * boundy) + 'px',
+                    marginLeft: '-' + Math.round(rx * sel.x) + 'px',
+                    marginTop: '-' + Math.round(ry * sel.y) + 'px'
+                });
+            }
+            //console.log(sel);
+            g_sel = sel;
+        }
+
+        //点击裁剪上传
+        $('#'+submit_btn_eleid).click(function(event) {
+            //请用户等待
+            jcrop_api.release();
+            $.showLoadDialog("请稍候...");
+            $('#'+submit_btn_eleid).attr('disabled', 'true');
+            //下面代码可以实现有进度的异步上传
+            var _file = document.getElementById(input_file_eleid);
+            formData.append('settings_avatar_file', _file.files[0]);
+            formData.append('x', g_sel.x);
+            formData.append('y', g_sel.y);
+            formData.append('w', g_sel.w);
+            formData.append('h', g_sel.h);
+            var request = new XMLHttpRequest();
+            request.onreadystatechange = function() {
+                $('#'+submit_btn_eleid).attr('disabled', 'false');
+                if (request.readyState == 4 && request.response == "true") {
+                    //console.log(request.response);
+                    $.showOKDialog("修改成功", function() {
+                        window.location.replace(successURL);
+                    });
+                } else if (request.readyState == 4 && request.response == "false") {
+                    $.showErrorDialog("文件错误或过大", function() {
+                        window.history.go(0);
+                    })
+                };
+
+            };
+
+            request.open('POST', uploadURL);
+            request.send(formData);
+            console.log('有没有发送啊？');
+        });
+
+	}
+	
+
 
 	//输出调试的简写
 	$.l = function(object){

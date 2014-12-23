@@ -1,10 +1,10 @@
 <?php require_once 'require.php';?>
 <!DOCTYPE html>
 <html>
-
 <head>
-    <script src="scripts/settings.js"></script>
 <?php require_once 'includeBeforeTitle.php';?>
+<script src="scripts/settings.js"></script>
+
 <title>CdM | Coder Designer Manager 体验分享的快乐</title>
 </head>
 
@@ -79,14 +79,15 @@
 
                     <!-- <img class="home_user_avatar" src="images/sample.png" alt=""> -->
                     <ul class="settings_ul">
-                        <li class="settings_profile_li">基本资料</li>
-                        <li class="settings_avatar_li">修改头像</li>
+                        <li class="settings_profile_li"><a href="settings.php?settings=profile">基本资料</a></li>
+                        <li class="settings_avatar_li"><a href="settings.php?settings=avatar">修改头像</a></li>
+                        <li class="settings_creategroup_li"><a href="settings.php?settings=creategroup">创建小组</a></li>
                     </ul>
 
 
                 </div>
 
-                <div class="box_con settings_profile">
+                <div class="box_con settings_right settings_profile">
                     <div class="settings_profile_label">修改基本资料</div>
                     <form class="settings_profile_form">
                         <p>
@@ -133,24 +134,61 @@
 
                 </div>
 
-                <div class="box_con settings_avatar">
+                <div class="box_con settings_right settings_me_avatar">
                     <div class="settings_profile_label">修改头像</div>
 
-                    <div class="settings_file_box">
-                        <form action="php/addAvatar.php" method="POST" class="settings_avatar_form" enctype="multipart/form-data" name="settings_avatar_form">
-                            <input type='button' class='settings_avatar_file_btn' value='选择文件' />
-                            <input type="file" accept="image/*" name="settings_avatar_file" class="settings_avatar_file" id="settings_avatar_file" >
-                        </form>
-                    </div>
 
-                    <img class="settings_avatar_img" src="" alt="">
-                    <img class="settings_avatar_new" alt="">
-                    <div id="preview-pane">
-                        <div class="preview-container">
-                            <img src="" class="jcrop-preview" alt="Preview">
+                    <div id='settings_me_file_box' class="settings_file_box">
+                            <input type='button' class='settings_avatar_file_btn' value='选择文件' />
+                            <input type="file" accept="image/*" name="settings_avatar_file" class="settings_avatar_file" id="settings_me_avatar_file" >
+                     </div>
+                            <img class="settings_avatar_img" src="" alt="">
+                            <img id="settings_me_avatar_new" class="settings_avatar_new" alt="">
+                            <div id="preview-pane">
+                                <div class="preview-container">
+                                    <img src="" class="jcrop-preview" alt="Preview">
+                                </div>
+                            </div>
+                            <input type="button" id='settings_avatar_submit' class="dia_submit " value="裁剪并上传">
+
+
+
+
+                </div>
+
+
+                <div class="box_con settings_right settings_creategroup">
+                    <div class="settings_profile_label">创建小组</div>
+                    <form class="settings_profile_form">
+                        <p>
+                            <lable for="settings_groupname">组 名 ：</lable>
+                            <input type="text" id="settings_groupname" name="settings_groupname" class="round_textbox dia_textbox setting_textbox" value="" required>
+                        </p>
+                        <p>
+                            <lable for="settings_details">描 述 ：</lable>
+                            <input type="text" id="settings_details" name="settings_details" class="round_textbox dia_textbox setting_textbox" style="width:340px;" value="你就介绍一下你的小组吧！" required>
+                        </p>
+                        <div id='settings_group_file_box' class="settings_file_box">
+                        <lable for="settings_avatar_file_btn">头 像 ：</lable>
+                        <input type='button' class='settings_avatar_file_btn' value='选择文件' />
+                        <input type="file" accept="image/*" name="settings_avatar_file" class="settings_avatar_file" id="settings_group_avatar_file" >
                         </div>
-                    </div>
-                    <input type="button" class="dia_submit settings_avatar_submit" value="裁剪并上传">
+
+                        <img class="settings_avatar_img" src="" alt="">
+                        <img id="settings_group_avatar_new" class="settings_avatar_new" alt="">
+                        <div id="preview-pane">
+                            <div class="preview-container">
+                                <img src="" class="jcrop-preview" alt="Preview">
+                            </div>
+                        </div>
+
+
+
+                            <input type="submit" id='settings_group_submit' class="dia_submit" value="提交">
+
+
+
+                    </form>
 
                 </div>
                 <!-- 页面右边浮动内容 -->

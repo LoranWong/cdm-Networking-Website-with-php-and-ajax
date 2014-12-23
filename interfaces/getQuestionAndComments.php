@@ -6,7 +6,7 @@
 @param $_POST['count'] 查询个数 必须
  */
 
-require '../require.php';require 'mysql.config.php';
+require_once '../require.php';
 $start = $_POST['start'];
 $count = $_POST['count'];
 $question_id = $_POST['id'];

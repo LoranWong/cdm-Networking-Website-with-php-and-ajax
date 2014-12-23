@@ -6,7 +6,7 @@
 @return 标签信息的JSON数组
  */
 
-require '../require.php';require 'mysql.config.php';
+require_once '../require.php';
 $id = $_POST['id'];
 
 $sql = "SELECT t.name,t.id from tags t join rel_question_tag r on r.tag_id = t.id where r.question_id = $id";

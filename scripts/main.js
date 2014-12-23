@@ -120,6 +120,10 @@ $(function() {
     $('#home_btn').click(function(event) {
         window.location = 'home.php?user_id=' + $.cookie().id;
     });
+    //点击自己头像
+    $('#userInfo_btn').click(function(event) {
+        window.location = 'home.php?user_id=' + $.cookie().id;
+    });
 
     //点击设置
     $('#settings_btn').click(function(event) {

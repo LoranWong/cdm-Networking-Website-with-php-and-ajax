@@ -113,6 +113,7 @@ body {
     /* Chrome, Safari, Opera */
     animation: hideShadow 1s;
 }
+
 /*区块样式属性*/
 
 .box_con {
@@ -1012,10 +1013,15 @@ body {
     color: #6AB015;
     font-size: 13px;
 }
+.settings_ul li a{
+    cursor: pointer;
+    color: #6AB015;
+}
 .settings_ul li:hover {
     text-decoration: underline;
 }
-.settings_profile {
+.settings_right {
+    display: none;
     float: left;
     width: 720px;
     height: 600px;
@@ -1041,14 +1047,7 @@ body {
 .setting_textbox {
     font-size: 13px;
 }
-.settings_avatar {
-    float: left;
-    position: relative;
-    width: 720px;
-    height: 600px;
-    margin: 40px 0 0 20px;
-    padding: 10px;
-}
+
 .settings_avatar_img, .settings_avatar_new {
     display: block;
     width: 250px;
@@ -1075,17 +1074,28 @@ body {
     height: 150px;
     overflow: hidden;
 }
-.settings_avatar_submit {
+#settings_avatar_submit {
     display: none;
     position: absolute;
     top: 275px;
     left: 440px;
 }
+#settings_group_submit{
+    position: absolute;
+    top: 380px;
+    left: 477px;
+}
 .settings_file_box {
+    outline: none;
+}
+#settings_me_file_box{
     position: absolute;
     top: 30px;
     left: 130px;
-    outline: none;
+}
+#settings_group_file_box{
+    padding-left: 50px;
+    padding-top: 10px;
 }
 .settings_avatar_file_btn {
     position: absolute;
@@ -1094,11 +1104,15 @@ body {
     border: 1px solid #CDCDCD;
     height: 24px;
     width: 70px;
+    margin-left: 5px;
     cursor: pointer;
     outline: none;
 }
+
+
 .settings_avatar_file {
     position: absolute;
+    cursor: pointer;
     filter: alpha(opacity: 0);
     opacity: 0;
     height: 24px;
