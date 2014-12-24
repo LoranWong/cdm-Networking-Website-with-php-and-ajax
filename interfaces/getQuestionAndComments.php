@@ -22,8 +22,7 @@ $comments_json = get_json_from_sql($comments_sql);
 
 //评论的总数
 $count_sql = "SELECT id from comments WHERE question_id = $question_id";
-$count_query = mysql_query($count_sql) or die('SQL错误' . mysql_error());
-$comments_count = mysql_num_rows($count_query);
+$comments_count = mydb_getResultNum($count_sql);
 
 echo '{"question":' . $question_json . ',"comments":' . $comments_json . ',"comments_count":' . $comments_count . "}";
 mysql_close();

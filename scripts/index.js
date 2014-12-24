@@ -16,7 +16,7 @@ $(function() {
 	//摘要长度
 	DETAILS_LENGTH = 80;
 	//每次加载个数
-	DETAILS_LOAD_COUNT = 3;
+	DETAILS_LOAD_COUNT = 10;
 	//防止异步加载出错
 	isLoading = false;
 	//当前页面显示的Tag或者Group 的ID
@@ -31,7 +31,7 @@ $(function() {
 		$('#home_btn img').css('display', 'inline');
 		$('#home_btn').css('color', '#fff');
 		//TODO :get Tags and add them to tab   and of course add tag_id attr
-		ajaxUrl =$.PATH_INTERFACE+'getTags.php';
+		ajaxUrl ='interfaces/getTags.php';
 		ajaxDataId = g_tag_id;
 		$('.group_info_con').css('display', 'none');
 
@@ -39,7 +39,7 @@ $(function() {
 		$('#group_btn').css('color', '#fff');
 		$('#group_btn img').css('display', 'inline');
 		//查看自己所有小组动态 还是  查看URL参数中的特定动态
-		ajaxUrl = (g_group_id == null) ? $.PATH_INTERFACE+'getGroupsByUserId.php' : $.PATH_INTERFACE+'getGroup.php';
+		ajaxUrl = (g_group_id == null) ? 'interfaces/getGroupsByUserId.php' : 'interfaces/getGroup.php';
 		ajaxDataId = (g_group_id == null) ? $.cookie().id : g_group_id;
 		isNowShowGroup = true;
 	}
@@ -86,7 +86,7 @@ $(function() {
 		//若当前显示的是Group,显示页面右边内容
 		if(isNowShowGroup){
 			$.ajax({
-				url: $.PATH_INTERFACE+'getGroup.php',
+				url: 'interfaces/getGroup.php',
 				type: 'POST',
 				data: {
 					id: g_tagOrGroup_id,
@@ -137,7 +137,7 @@ $(function() {
 			isLoading = true;
 			//加载页面问题内容
 			$.ajax({
-				url: $.PATH_INTERFACE+'getQuestions.php',
+				url: 'interfaces/getQuestions.php',
 				type: 'POST',
 				data: ajaxDataObj,
 			})

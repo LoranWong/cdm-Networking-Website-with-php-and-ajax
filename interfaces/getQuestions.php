@@ -76,3 +76,4 @@ echo $json;
 
 mysql_close();
 
+?>

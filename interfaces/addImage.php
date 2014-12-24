@@ -3,6 +3,7 @@
 添加图像接口
 
 1*************************************************************
+上传修改用户头像
 @param $_POST['type'] == 'avatar'
 裁剪信息：
 @param $_FILES['settings_avatar_file']
@@ -14,14 +15,21 @@
 @param $_POST['id']
 
 2*************************************************************
+上传小组头像
+@param $_POST['type'] == 'group'
+
+@param $_FILES['settings_group_avatar_file']
+
+
+
 
  */
 require_once '../require.php';
 
-define('USERAVATAR_PATH', '../resources/avatars/user/');
-
 if ($_POST['type'] == 'avatar') {
 	addavatar();
+}elseif($_POST['type'] == 'group'){
+	echo 'true';
 }
 
 /*
@@ -44,7 +52,6 @@ function addavatar() {
 
 		//将图片裁剪并存储
 		$r1 = imagecropper(USERAVATAR_PATH . $_POST['id'] . "_origin.jpg", $_FILES[$file_key]["tmp_name"], intval($_POST['x']), intval($_POST['y']), intval($_POST['w']), intval($_POST['h']));
-		//$r1 = imagecropper($_POST['id'], $_FILES[$file_key]["tmp_name"], intval($_POST['x']), intval($_POST['y']), intval($_POST['w']), intval($_POST['h']));
 		if (!$r1) {
 			echofalse_andexit();
 		}
@@ -81,5 +88,3 @@ function echofalse_andexit() {
 	echo "false";
 	exit();
 }
-
-?>

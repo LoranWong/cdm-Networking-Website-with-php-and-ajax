@@ -2,10 +2,10 @@
 
 /**
  *该函数将图片以固定尺寸进行保存
- * @param $dest_path  目标存储路径  如参数  /images/group_1  最后会存储为 如 /images/group_1_32x32.jpg  32代表尺寸
- * @param $source_path  图片来源路径存储路径
- * @param $width 缩放尺寸 如 32
- * @param $height 缩放尺寸 如 32
+ * @param string $dest_path  目标存储路径  如参数  /images/group_1  最后会存储为 如 /images/group_1_32x32.jpg  32代表尺寸
+ * @param string $source_path  图片来源路径存储路径
+ * @param number $width 缩放尺寸 如 32
+ * @param number $height 缩放尺寸 如 32
  * @return 布尔值  代表操作是否成功
  **/
 function image_scale($dest_path, $source_path, $width, $height) {
@@ -30,22 +30,20 @@ function image_scale($dest_path, $source_path, $width, $height) {
 
 /**
  *该函数将图片进行裁剪
- * @param $dest_path  目标存储路径
- * @param $source_path  图片来源路径存储路径
- * @param $x $y $w $h  	需要裁剪的区域
- * @return 布尔值  代表操作是否成功
+ * @param  string $dest_path  目标存储路径
+ * @param  string  $source_path  图片来源路径存储路径
+ * @param  number $x 	需要裁剪的区域
+ * @param  number $y  	需要裁剪的区域
+ * @param  number $w 	需要裁剪的区域
+ * @param  number $h  	需要裁剪的区域
+ * @return  布尔值  代表操作是否成功
  **/
 
 function imagecropper($dest_path, $source_path, $x, $y, $w, $h) {
 	$source_info = getimagesize($source_path);
 	$source_width = $source_info[0];
-	$source_height = $source_info[1];
-	// echo "||||";
-	// echo $source_width . "  ";
-	// echo $source_height . "  ";
 	$scale = $source_width / 250;
 	$source_mime = $source_info['mime'];
-	//echo $scale . "  ";
 	switch ($source_mime) {
 		case 'image/gif':
 			$source_image = imagecreatefromgif($source_path);
@@ -62,12 +60,9 @@ function imagecropper($dest_path, $source_path, $x, $y, $w, $h) {
 	}
 	//图片暂存对象
 	$cropped_image = imagecreatetruecolor(intval($w * $scale), intval($h * $scale));
-	//echo intval($w * $scale) . "  ";
-	//echo intval($h * $scale) . "  ";
 	// 裁剪
 	$result = imagecopy($cropped_image, $source_image, 0,
 		0, intval($x * $scale), intval($y * $scale), intval($w * $scale), intval($h * $scale));
-	//$result = imagecopy($cropped_image, $source_image, 0,0,$x,$y,$w,$h);
 	imagejpeg($cropped_image, $dest_path);
 	imagedestroy($source_image);
 	imagedestroy($cropped_image);

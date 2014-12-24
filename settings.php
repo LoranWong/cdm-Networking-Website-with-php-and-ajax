@@ -82,6 +82,7 @@
                         <li class="settings_profile_li"><a href="settings.php?settings=profile">基本资料</a></li>
                         <li class="settings_avatar_li"><a href="settings.php?settings=avatar">修改头像</a></li>
                         <li class="settings_creategroup_li"><a href="settings.php?settings=creategroup">创建小组</a></li>
+                        <li class="settings_group_li"><a href="settings.php?settings=group">小组设置</a></li>
                     </ul>
 
 
@@ -89,7 +90,7 @@
 
                 <div class="box_con settings_right settings_profile">
                     <div class="settings_profile_label">修改基本资料</div>
-                    <form class="settings_profile_form">
+                    <form class="settings_form" id="settings_profile_form">
                         <p>
                             <lable for="settings_user">昵 称 ：</lable>
                             <input type="text" id="settings_user" name="settings_user" class="round_textbox dia_textbox setting_textbox" value="" required>
@@ -159,14 +160,34 @@
 
                 <div class="box_con settings_right settings_creategroup">
                     <div class="settings_profile_label">创建小组</div>
-                    <form class="settings_profile_form">
+                    <form class="settings_form" id="settings_creatgroup_form">
                         <p>
                             <lable for="settings_groupname">组 名 ：</lable>
                             <input type="text" id="settings_groupname" name="settings_groupname" class="round_textbox dia_textbox setting_textbox" value="" required>
                         </p>
                         <p>
-                            <lable for="settings_details">描 述 ：</lable>
-                            <input type="text" id="settings_details" name="settings_details" class="round_textbox dia_textbox setting_textbox" style="width:340px;" value="你就介绍一下你的小组吧！" required>
+                            <lable for="settings_group_details">描 述 ：</lable>
+                            <input type="text" id="settings_group_details" name="settings_group_details" class="round_textbox dia_textbox setting_textbox" style="width:340px;" value="这个组长很懒,什么都不肯写.." required>
+                        </p>
+                        <p>
+                        <input type="submit"  class="dia_submit settings_submit" value="提交">
+
+                        </p>
+                    </form>
+
+                </div>
+
+
+                <div class="box_con settings_right settings_group">
+                    <div class="settings_profile_label">小组设置</div>
+                    <form class="settings_form" id="settings_creatgroup_form">
+                        <p>
+                            <lable for="settings_groupname">组 名 ：</lable>
+                            <input type="text" id="settings_groupname" name="settings_groupname" class="round_textbox dia_textbox setting_textbox" value="" required>
+                        </p>
+                        <p>
+                            <lable for="settings_group_details">描 述 ：</lable>
+                            <input type="text" id="settings_group_details" name="settings_group_details" class="round_textbox dia_textbox setting_textbox" style="width:340px;" value="这个组长很懒,什么都不肯写.." required>
                         </p>
                         <div id='settings_group_file_box' class="settings_file_box">
                         <lable for="settings_avatar_file_btn">头 像 ：</lable>
@@ -181,13 +202,7 @@
                                 <img src="" class="jcrop-preview" alt="Preview">
                             </div>
                         </div>
-
-
-
-                            <input type="submit" id='settings_group_submit' class="dia_submit" value="提交">
-
-
-
+                        <input type="submit" id='settings_group_submit' class="dia_submit" value="提交">
                     </form>
 
                 </div>

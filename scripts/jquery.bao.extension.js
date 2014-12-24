@@ -1,7 +1,7 @@
 (function($) {
 
 	//定义全局变量
-	$.PATH_INTERFACE = 'interfaces/';
+	//$.PATH_INTERFACE = 'interfaces/';
 
 	//获取Get参数
 	$.baoGetUrlParam = function(name) {
@@ -45,7 +45,7 @@
 	//加载用户所在小组信息  @p1  用户ID  @p2 需要appendTo哪个Jquery对象
 		$.showGroupsInfo=function(user_id,appendToWhat) {
 		$.ajax({
-			url: $.PATH_INTERFACE+'getGroupsByUserId.php',
+			url: 'interfaces/getGroupsByUserId.php',
 			type: 'POST',
 			data: {
 				id: user_id
@@ -217,6 +217,7 @@
         });
 
 	}
+
 	
 
 

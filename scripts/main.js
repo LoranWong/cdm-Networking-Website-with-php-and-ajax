@@ -9,7 +9,7 @@ $(function() {
         $("#userInfo_btn").html($.cookie().user);
         //ajax获取用户个人信息
         $.ajax({
-                url: $.PATH_INTERFACE+'getUser.php',
+                url: 'interfaces/getUser.php',
                 type: 'POST',
                 data: {
                     id: $.cookie().id
@@ -250,7 +250,7 @@ $(function() {
                 console.log($('.ask_title').val());
 
                 $.ajax({
-                        url: $.PATH_INTERFACE+'addQuestion.php',
+                        url: 'interfaces/addQuestion.php',
                         type: 'POST',
                         data: {
                             user_id: $.cookie().id,
@@ -365,7 +365,7 @@ $(function() {
                 reg_email: {
                     required: true,
                     email: true,
-                    remote: $.PATH_INTERFACE+"isUserExist.php",
+                    remote: 'interfaces/isUserExist.php',
                 },
                 reg_user: {
                     required: true,
@@ -385,7 +385,7 @@ $(function() {
             submitHandler: function(formEle) {
                 $.showLoadDialog('跳转中...');
                 $.ajax({
-                        url: $.PATH_INTERFACE+'addUser.php',
+                        url: 'interfaces/addUser.php',
                         type: 'POST',
                         data: $('.dia_reg_form').serialize(),
                     })
@@ -410,7 +410,7 @@ $(function() {
 
     function Login2Server(data, dialog2Close) {
         $.ajax({
-                url: $.PATH_INTERFACE+'isPassRight.php',
+                url: 'interfaces/isPassRight.php',
                 type: 'POST',
                 data: data,
             })

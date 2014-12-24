@@ -9,7 +9,7 @@ $(function() {
 
 	//加载用户基本信息
 	$.ajax({
-		url: $.PATH_INTERFACE+'getUser',
+		url: 'interfaces/getUser',
 		type: 'POST',
 		data: {
 			id: g_user_id
@@ -36,7 +36,7 @@ $(function() {
 
 	//加载用户发布的主题
 	$.ajax({
-		url: $.PATH_INTERFACE+'getQuestions',
+		url: 'interfaces/getQuestions',
 		type: 'POST',
 		data: {user_id: g_user_id},
 	})

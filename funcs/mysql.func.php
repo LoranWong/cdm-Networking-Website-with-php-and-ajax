@@ -26,7 +26,7 @@ function get_json_from_sql($sql) {
  *将记录插入数据库  可以传入'NOW()'
  *@param string $table  表名
  *@param array $array  键值对 插入的键与值
- * @return string true or false
+ * @return string mysql_insert_id() or false
  **/
 function mydb_insert($table, $array) {
 	$keys = join(',', array_keys($array));
@@ -36,7 +36,7 @@ function mydb_insert($table, $array) {
 	$values = str_replace("'NOW()'","NOW()",$values);
 	$sql = "INSERT INTO $table ($keys) VALUES($values)";
 	if(mysql_query($sql)){
-		return 'true';
+		return mysql_insert_id();
 	}else{
 		return 'false';
 	}
@@ -85,10 +85,9 @@ function mydb_update($table, $array ,$where){
 	//echo $sql;
 	if(mysql_query($sql)){
 		return 'true';
-	}else{
+	}else {
 		return 'false';
 	}
-
 }
 
 /**
@@ -109,3 +108,12 @@ function mydb_isexist($table,$where){
 }
 
 
+/**
+ * 得到结果集中的记录条数
+ * @param string $sql
+ * @return number
+ */
+function mydb_getResultNum($sql){
+	$result=mysql_query($sql);
+	return mysql_num_rows($result);
+}

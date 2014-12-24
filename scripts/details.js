@@ -41,7 +41,7 @@ $(function() {
     $('.comment_btn_ok').click(function(event) {
         $.showLoadDialog('提交中...');
         $.ajax({
-                url: $.PATH_INTERFACE+'addComment',
+                url: 'interfaces/addComment',
                 type: 'POST',
                 data: {
                     question_id: g_question_id,
@@ -84,7 +84,7 @@ $(function() {
             //防止异步加载出错
             isLoading = true;
             $.ajax({
-                    url: $.PATH_INTERFACE+'getQuestionAndComments.php',
+                    url: 'interfaces/getQuestionAndComments.php',
                     type: 'POST',
                     data: {
                         id: g_question_id,
@@ -197,7 +197,7 @@ $(function() {
 
     function showTagsInfo(question_id) {
         $.ajax({
-                url: $.PATH_INTERFACE+'getTagsByQuestionId.php',
+                url: 'interfaces/getTagsByQuestionId.php',
                 type: 'POST',
                 data: {
                     id: question_id
