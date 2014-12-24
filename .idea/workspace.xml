@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="55153aac-881a-40f0-a367-7123bc2b00f2" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/BaosApple.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/testOperation.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interfaces/dest_path" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/interfaces/test.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/25_128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/25_256.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/25_32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/25_64.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/25_origin.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/49_128.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/49_256.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/49_32.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/49_64.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/resources/avatars/user/49_origin.jpg" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/interfaces/login_isPassRight.php" afterPath="$PROJECT_DIR$/interfaces/isPassRight.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/interfaces/signUp_addUser.php" afterPath="$PROJECT_DIR$/interfaces/addUser.php" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/interfaces/signUp_isUserExist.php" afterPath="$PROJECT_DIR$/interfaces/isUserExist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addComment.php" afterPath="$PROJECT_DIR$/interfaces/addComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addQuestion.php" afterPath="$PROJECT_DIR$/interfaces/addQuestion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/details.js" afterPath="$PROJECT_DIR$/scripts/details.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getGroup.php" afterPath="$PROJECT_DIR$/interfaces/getGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getGroupsByUserId.php" afterPath="$PROJECT_DIR$/interfaces/getGroupsByUserId.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getQuestionAndComments.php" afterPath="$PROJECT_DIR$/interfaces/getQuestionAndComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getQuestions.php" afterPath="$PROJECT_DIR$/interfaces/getQuestions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getTags.php" afterPath="$PROJECT_DIR$/interfaces/getTags.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getTagsByQuestionId.php" afterPath="$PROJECT_DIR$/interfaces/getTagsByQuestionId.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getUser.php" afterPath="$PROJECT_DIR$/interfaces/getUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getUsersByGroupId.php" afterPath="$PROJECT_DIR$/interfaces/getUsersByGroupId.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.js" afterPath="$PROJECT_DIR$/scripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funcs/mysql.config.php" afterPath="$PROJECT_DIR$/funcs/mysql.config.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/require.php" afterPath="$PROJECT_DIR$/require.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/settings.js" afterPath="$PROJECT_DIR$/scripts/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/updateUser.php" afterPath="$PROJECT_DIR$/interfaces/updateUser.php" />
+    </list>
+    <ignored path="cdm.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/dataSources.local.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="cdm" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="mysql.func.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.24216028" vertical-offset="1031" max-vertical-offset="1755">
+              <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+              <folding>
+                <marker date="1419437125000" expanded="true" signature="970:1012" placeholder="INSERT INTO ..." />
+                <marker date="1419437125000" expanded="true" signature="1289:1310" placeholder="DELETE FROM ..." />
+                <marker date="1419437125000" expanded="true" signature="1996:2026" placeholder="UPDATE :_tab..." />
+                <marker date="1419437125000" expanded="true" signature="2366:2389" placeholder="SELECT * FRO..table_..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/scripts/details.js" />
+        <option value="$PROJECT_DIR$/interfaces/addQuestion.php" />
+        <option value="$PROJECT_DIR$/interfaces/login_isPassRight.php" />
+        <option value="$PROJECT_DIR$/scripts/main.js" />
+        <option value="$PROJECT_DIR$/interfaces/addComment.php" />
+        <option value="$PROJECT_DIR$/interfaces/addUser.php" />
+        <option value="$PROJECT_DIR$/interfaces/isPassRight.php" />
+        <option value="$PROJECT_DIR$/interfaces/testOperation.php" />
+        <option value="$PROJECT_DIR$/interfaces/isUserExist.php" />
+        <option value="$PROJECT_DIR$/interfaces/getGroup.php" />
+        <option value="$PROJECT_DIR$/interfaces/getGroupsByUserId.php" />
+        <option value="$PROJECT_DIR$/interfaces/getQuestionAndComments.php" />
+        <option value="$PROJECT_DIR$/interfaces/getTags.php" />
+        <option value="$PROJECT_DIR$/interfaces/getTagsByQuestionId.php" />
+        <option value="$PROJECT_DIR$/interfaces/getUser.php" />
+        <option value="$PROJECT_DIR$/interfaces/getUsersByGroupId.php" />
+        <option value="$PROJECT_DIR$/interfaces/getQuestions.php" />
+        <option value="$PROJECT_DIR$/interfaces/updateUser.php" />
+        <option value="$PROJECT_DIR$/scripts/settings.js" />
+        <option value="$PROJECT_DIR$/funcs/mysql.func.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1280" />
+    <option name="height" value="695" />
+  </component>
+  <component name="ProjectInspectionProfilesVisibleTreeState">
+    <entry key="Project Default">
+      <profile-state>
+        <expanded-state>
+          <State>
+            <id />
+          </State>
+          <State>
+            <id>Cucumber</id>
+          </State>
+          <State>
+            <id>General</id>
+          </State>
+          <State>
+            <id>Spelling</id>
+          </State>
+          <State>
+            <id>XPath</id>
+          </State>
+        </expanded-state>
+        <selected-state>
+          <State>
+            <id>Blade files</id>
+          </State>
+        </selected-state>
+      </profile-state>
+    </entry>
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="2" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scripts" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="interfaces" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="cdm" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="funcs" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="options.lastSelected" value="fileTemplates" />
+    <property name="options.splitter.main.proportions" value="0.3" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="FullScreen" value="false" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpLocalRunConfigurationType" factoryName="PHP Console">
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpBehatConfigurationType" factoryName="Behat">
+      <BehatRunner />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <pass-parent-envs>true</pass-parent-envs>
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
+    <list size="0" />
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="55153aac-881a-40f0-a367-7123bc2b00f2" name="Default" comment="" />
+      <created>1419420992148</created>
+      <option name="number" value="Default" />
+      <updated>1419420992148</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1280" height="695" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1984375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17571884" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1419437125000" expanded="true" signature="970:1012" placeholder="INSERT INTO ..." />
+            <marker date="1419437125000" expanded="true" signature="1289:1310" placeholder="DELETE FROM ..." />
+            <marker date="1419437125000" expanded="true" signature="1996:2026" placeholder="UPDATE :_tab..." />
+            <marker date="1419437125000" expanded="true" signature="2366:2389" placeholder="SELECT * FRO..table_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="540">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="false" />
+            <marker date="1419434520000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/testOperation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="180">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="465">
+          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="24" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="390" max-vertical-offset="495">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="7155">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/isPassRight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="390">
+          <caret line="17" column="17" selection-start-line="17" selection-start-column="17" selection-end-line="17" selection-end-column="17" />
+          <folding>
+            <marker date="1419435090000" expanded="true" signature="-1:-1" placeholder="SELECT user,..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/isUserExist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="210" max-vertical-offset="300">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#39#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcs/mysql.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcs/image.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="28.083334" vertical-offset="674" max-vertical-offset="1215">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addImage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1350">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/details.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3375">
+          <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcs/mysql.config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="565">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="6285" max-vertical-offset="7155">
+          <caret line="435" column="0" selection-start-line="435" selection-start-column="0" selection-end-line="435" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/testOperation.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="5" selection-end-line="3" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="510">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#6#91#0#PHP" expanded="false" />
+            <marker date="1419434520000" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="465">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="465">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="22" column="14" selection-start-line="22" selection-start-column="14" selection-end-line="22" selection-end-column="14" />
+          <folding>
+            <marker date="1419436659000" expanded="true" signature="-1:-1" placeholder="SELECT name,..groups..." />
+            <marker date="1419436659000" expanded="true" signature="-1:-1" placeholder="SELECT count..questions..." />
+            <marker date="1419436659000" expanded="true" signature="-1:-1" placeholder="SELECT u.id ..users..." />
+            <marker date="1419436659000" expanded="true" signature="-1:-1" placeholder="SELECT count..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getTags.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.375" vertical-offset="0" max-vertical-offset="315">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding>
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT name,..tags..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT name,..tags..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getTagsByQuestionId.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="315">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT t.nam..tags..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scripts/settings.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5641026" vertical-offset="1050" max-vertical-offset="2010">
+          <caret line="92" column="49" selection-start-line="92" selection-start-column="45" selection-end-line="92" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/updateUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4117647" vertical-offset="114" max-vertical-offset="675">
+          <caret line="32" column="2" selection-start-line="32" selection-start-column="2" selection-end-line="32" selection-end-column="2" />
+          <folding>
+            <marker date="1419437024000" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getQuestions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6791444" vertical-offset="264" max-vertical-offset="1140">
+          <caret line="51" column="59" selection-start-line="51" selection-start-column="59" selection-end-line="51" selection-end-column="59" />
+          <folding>
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT (SELE..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT user ..users..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT (SELE..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT user ..users..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT title..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT (SELE..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT user ..users..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT (SELE..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT user ..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getQuestionAndComments.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26737967" vertical-offset="0" max-vertical-offset="561">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT (SELE..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT user ..users..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT (SELE..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT user ..users..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT id fr..comments..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getGroupsByUserId.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28745645" vertical-offset="0" max-vertical-offset="574">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT g.nam..groups..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/isPassRight.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13066202" vertical-offset="0" max-vertical-offset="574">
+          <caret line="5" column="21" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
+          <folding>
+            <marker date="1419435090000" expanded="true" signature="-1:-1" placeholder="SELECT user,..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/isUserExist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.13066202" vertical-offset="0" max-vertical-offset="574">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding>
+            <element signature="e#6#39#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32085562" vertical-offset="0" max-vertical-offset="561">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding>
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT (SELE..users..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT name ..unis..." />
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT name ..majors..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getUsersByGroupId.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.33972126" vertical-offset="0" max-vertical-offset="574">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1419437013000" expanded="true" signature="-1:-1" placeholder="SELECT u.use..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.24216028" vertical-offset="1031" max-vertical-offset="1755">
+          <caret line="78" column="23" selection-start-line="78" selection-start-column="23" selection-end-line="78" selection-end-column="23" />
+          <folding>
+            <marker date="1419437125000" expanded="true" signature="970:1012" placeholder="INSERT INTO ..." />
+            <marker date="1419437125000" expanded="true" signature="1289:1310" placeholder="DELETE FROM ..." />
+            <marker date="1419437125000" expanded="true" signature="1996:2026" placeholder="UPDATE :_tab..." />
+            <marker date="1419437125000" expanded="true" signature="2366:2389" placeholder="SELECT * FRO..table_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

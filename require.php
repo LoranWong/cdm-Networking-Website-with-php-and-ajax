@@ -5,5 +5,6 @@ define('FUNC_PATH', '/funcs');
 set_include_path(ROOT . INCLUDE_PATH . PATH_SEPARATOR . ROOT . FUNC_PATH . PATH_SEPARATOR . get_include_path());
 require_once 'mysql.config.php';
 require_once 'image.func.php';
+require_once 'mysql.func.php';
 
 ?>

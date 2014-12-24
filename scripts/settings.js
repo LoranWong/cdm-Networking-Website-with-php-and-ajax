@@ -96,7 +96,7 @@ $(function() {
                                     window.location = "home.php";
                                 }, 700);
                             } else {
-                                $.showErrorDialog("错误,可能有非法字符");
+                                $.showErrorDialog("操作失败");
                             }
                         })
                         .fail(function() {

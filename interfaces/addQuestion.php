@@ -13,13 +13,17 @@ $details = addslashes($_POST['details']);
 $title = addslashes($_POST['title']);
 $user_id = $_POST['user_id'];
 
-$query = "INSERT INTO questions (user_id , title, details , date)
-VALUES ('$user_id' ,'$title', '$details',  NOW())";
+$array = array('user_id'=>"$user_id",
+    'title'=>"$title",
+    'details'=>"$details",
+    'date'=>"NOW()",
+);
 
-mysql_query($query) or die('新增失败!' . mysql_error());
 
-echo 'true';
+if(mydb_insert('questions',$array)){
+    echo 'true';
+}
 
 mysql_close();
 
-?>
+

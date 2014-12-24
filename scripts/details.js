@@ -32,7 +32,7 @@ $(function() {
         resizable: false,
         draggable: false,
         width: 180,
-        height: 50,
+        height: 50
     }).dialog('widget').find('.ui-widget-header').hide();
 
 

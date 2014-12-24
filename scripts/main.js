@@ -1,4 +1,5 @@
 $(function() {
+
     /*
      
      */
@@ -364,7 +365,7 @@ $(function() {
                 reg_email: {
                     required: true,
                     email: true,
-                    remote: $.PATH_INTERFACE+"signUp_isUserExist.php",
+                    remote: $.PATH_INTERFACE+"isUserExist.php",
                 },
                 reg_user: {
                     required: true,
@@ -384,7 +385,7 @@ $(function() {
             submitHandler: function(formEle) {
                 $.showLoadDialog('跳转中...');
                 $.ajax({
-                        url: $.PATH_INTERFACE+'signUp_addUser.php',
+                        url: $.PATH_INTERFACE+'addUser.php',
                         type: 'POST',
                         data: $('.dia_reg_form').serialize(),
                     })
@@ -409,7 +410,7 @@ $(function() {
 
     function Login2Server(data, dialog2Close) {
         $.ajax({
-                url: $.PATH_INTERFACE+'login_isPassRight.php',
+                url: $.PATH_INTERFACE+'isPassRight.php',
                 type: 'POST',
                 data: data,
             })

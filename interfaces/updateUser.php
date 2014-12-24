@@ -30,12 +30,19 @@ $settings_id = $_POST['settings_id'];
 // echo "settings_uni = $settings_uni  ";
 // echo "settings_id = $settings_id  ";
 
-$query = "UPDATE users set user='$settings_user',details='$settings_details' ,birthday = '$settings_birthday' , gender_id = $settings_gender ,major_id =$settings_major ,uni_id = $settings_uni where id =  $settings_id ";
+//$query = "UPDATE users set user='$settings_user',details='$settings_details' ,birthday = '$settings_birthday' , gender_id = $settings_gender ,major_id =$settings_major ,uni_id = $settings_uni where id =  $settings_id ";
 
-mysql_query($query) or die('修改失败!' . mysql_error());
+$array = array('user'=>"$settings_user",
+    'details'=>"$settings_details",
+    'birthday'=>"$settings_birthday",
+    'gender_id'=>"$settings_gender",
+    'major_id'=>"$settings_major",
+    'uni_id'=>"$settings_id"
+);
 
-echo 'true';
+
+echo mydb_update('users',$array,"id=$settings_id");
 
 mysql_close();
 
-?>
+

@@ -13,8 +13,5 @@ if ($id == null) {
 	$sql = "SELECT name,id FROM tags WHERE id=$id";
 }
 
-$query = mysql_query($sql) or die('SQL错误' . mysql_error());
-echo get_json_from_query($query);
+echo get_json_from_sql($sql);
 mysql_close();
-
-?>

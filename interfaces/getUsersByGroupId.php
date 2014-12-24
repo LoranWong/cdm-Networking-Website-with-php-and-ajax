@@ -11,10 +11,8 @@ $id = $_POST['id'];
 
 $sql = "SELECT u.user,u.id from users u join rel_user_group r on r.user_id = u.id where r.group_id = $id ORDER BY r.date";
 
-$query = mysql_query($sql) or die('SQL错误' . mysql_error());
-
-echo get_json_from_query($query);
+echo get_json_from_sql($sql);
 mysql_close();
 
-?>
+
 

@@ -13,13 +13,16 @@ $details = addslashes($_POST['details']);
 $question_id = $_POST['question_id'];
 $user_id = $_POST['user_id'];
 
-$query = "INSERT INTO comments (user_id , question_id, details , date)
-VALUES ('$user_id' ,'$question_id', '$details',  NOW())";
+//$query = "INSERT INTO comments (user_id , question_id, details , date)
+//VALUES ('$user_id' ,'$question_id', '$details',  NOW())";
 
-mysql_query($query) or die('新增失败!' . mysql_error());
+$array = array('user_id' => "$user_id",
+	'question_id' => "$question_id",
+	'details' => "$details",
+	'date' => "NOW()");
 
-echo 'true';
+echo mydb_insert('comments',$array);
 
 mysql_close();
 
-?>
+
