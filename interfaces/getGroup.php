@@ -11,7 +11,7 @@ require_once '../require.php';
 
 $id = $_POST['id'];
 
-$sql = "SELECT name,id,
+$sql = "SELECT name,id,details,
 	(SELECT count(q.id) from questions q join (SELECT u.id from users u join rel_user_group r on r.user_id = u.id where r.group_id = $id) b on q.user_id=b.id)
 	AS questions_count,
 	(SELECT count(u.id) from users u join rel_user_group r on r.user_id = u.id where r.group_id = $id)

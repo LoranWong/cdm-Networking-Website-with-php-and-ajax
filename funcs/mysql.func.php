@@ -99,8 +99,8 @@ function mydb_update($table, $array ,$where){
 function mydb_isexist($table,$where){
 	$where = $where == null ? null: " where ".$where;
 	$sql = "SELECT * FROM {$table} {$where}";
-	//$query = mysql_query($sql);
-	if (mysql_query($sql)) {
+	$query = mysql_query($sql);
+	if (mysql_fetch_array($query)) {
 		return 'true';
 	} else {
 		return 'false';
@@ -116,4 +116,12 @@ function mydb_isexist($table,$where){
 function mydb_getResultNum($sql){
 	$result=mysql_query($sql);
 	return mysql_num_rows($result);
+}
+
+/**
+ * 返回"false"并退出程序
+ */
+function echofalse_andexit() {
+	echo "false";
+	exit();
 }

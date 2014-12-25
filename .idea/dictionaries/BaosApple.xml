@@ -2,14 +2,17 @@
   <dictionary name="BaosApple">
     <words>
       <w>addavatar</w>
+      <w>addgroupavatar</w>
       <w>andexit</w>
       <w>creategroup</w>
       <w>dest</w>
       <w>echofalse</w>
       <w>gmail</w>
+      <w>groupavatar</w>
       <w>imagecropper</w>
       <w>isexist</w>
       <w>mydb</w>
+      <w>saveorigin</w>
       <w>useravatar</w>
     </words>
   </dictionary>

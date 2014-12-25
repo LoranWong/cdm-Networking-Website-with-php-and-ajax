@@ -17,7 +17,7 @@ $(function() {
 	})
 	.done(function(response) {
 		json = eval(response);
-		//$.l(json);
+		$.l(json);
 		$('.home_user_name').html(json[0].user);
 		$('.home_uni_a').html(json[0].uni_name);
 		$('.home_major_a').html(json[0].major_name);

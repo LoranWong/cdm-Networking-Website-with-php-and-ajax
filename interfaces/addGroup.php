@@ -22,12 +22,11 @@ if($group_id == 'false'){
     echofalse_andexit();
 }else{
     $array = array('user_id'=>$user_id,
-        'group_id'=>$group_id
+        'group_id'=>$group_id,
+        'admin'=>1
     );
-    //使创建者加入小组
+    //使创建者加入小组并设置权限
     mydb_insert('rel_user_group',$array);
-    //设置权限
-    mydb_insert('rel_manager_group',$array);
     echo $group_id;
 }
 

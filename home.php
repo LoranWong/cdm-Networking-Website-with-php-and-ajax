@@ -49,7 +49,6 @@
                             <img src="images/home_email.png" alt="">
                             <a class="home_email_a">加载中</a>
                         </li>
-                        <li></li>
                     </ul>
 
                 </div>

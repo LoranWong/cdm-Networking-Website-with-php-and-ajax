@@ -2,7 +2,7 @@
 
 //header('Content-Type:text/html; charset=utf-8');
 define('USERAVATAR_PATH', '../resources/avatars/user/');
-
+define('GROUPAVATAR_PATH', '../resources/avatars/group/');
 
 define('DB_HOST', '127.0.0.1');
 define('DB_USER', 'root');

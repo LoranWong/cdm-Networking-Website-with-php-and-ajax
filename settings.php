@@ -171,7 +171,6 @@
                         </p>
                         <p>
                         <input type="submit"  class="dia_submit settings_submit" value="提交">
-
                         </p>
                     </form>
 
@@ -180,29 +179,52 @@
 
                 <div class="box_con settings_right settings_group">
                     <div class="settings_profile_label">小组设置</div>
-                    <form class="settings_form" id="settings_creatgroup_form">
-                        <p>
-                            <lable for="settings_groupname">组 名 ：</lable>
-                            <input type="text" id="settings_groupname" name="settings_groupname" class="round_textbox dia_textbox setting_textbox" value="" required>
-                        </p>
-                        <p>
-                            <lable for="settings_group_details">描 述 ：</lable>
-                            <input type="text" id="settings_group_details" name="settings_group_details" class="round_textbox dia_textbox setting_textbox" style="width:340px;" value="这个组长很懒,什么都不肯写.." required>
-                        </p>
-                        <div id='settings_group_file_box' class="settings_file_box">
-                        <lable for="settings_avatar_file_btn">头 像 ：</lable>
-                        <input type='button' class='settings_avatar_file_btn' value='选择文件' />
-                        <input type="file" accept="image/*" name="settings_avatar_file" class="settings_avatar_file" id="settings_group_avatar_file" >
-                        </div>
 
-                        <img class="settings_avatar_img" src="" alt="">
-                        <img id="settings_group_avatar_new" class="settings_avatar_new" alt="">
-                        <div id="preview-pane">
+                    <div id="settings_manage_groups"class="home_groups settings_groups displaynone">
+                        <span class="home_groups_label settings_group_label">选择小组</span>
+                        <span class="chevron">&nbsp;›&nbsp;</span>
+                        <!-- <a class="group_item">小组名</a> -->
+                    </div>
+
+                    <div id="settings_manage_actions" class="home_groups settings_groups displaynone">
+                        <span class="home_groups_label settings_group_label">选择操作</span>
+                        <span class="chevron">&nbsp;›&nbsp;</span>
+                        <a id='settings_group_basic_btn' class="group_item">修改基本资料</a>
+                        <a id='settings_group_avatar_btn' class="group_item">修改小组头像</a>
+                    </div>
+
+                    <form class="settings_form displaynone" id="settings_group_basic_form">
+                        <div id='settings_groupname_and_details'>
+                            <p>
+                                <lable for="settings_groupname">组 名 ：</lable>
+                                <input type="text" id="settings_basic_groupname" name="settings_groupname" class="round_textbox dia_textbox setting_textbox" value="" required>
+                            </p>
+                            <p>
+                                <lable for="settings_group_details">描 述 ：</lable>
+                                <input type="text" id="settings_basic_group_details" name="settings_group_details" class="round_textbox dia_textbox setting_textbox" style="width:340px;" value="这个组长很懒,什么都不肯写.." required>
+                            </p>
+                            <input type="submit" id='settings_group_basic_submit' class="dia_submit settings_submit" value="提交">
+                        </div>
+                    </form>
+
+                    <form class="settings_form displaynone" id="settings_group_avatar_form">
+                        <div>
+                            <div id='settings_group_file_box' class="settings_file_box">
+                            <lable for="settings_avatar_file_btn">头 像 ：</lable>
+                            <input type='button' class='settings_avatar_file_btn' value='选择文件' />
+                            <input type="file" accept="image/*" name="settings_avatar_file" class="settings_avatar_file" id="settings_group_avatar_file" >
+                            </div>
+
+                            <img class="settings_avatar_img" src="" alt="">
+                            <img id="settings_group_avatar_new" class="settings_avatar_new" alt="">
+                            <div id="preview-pane">
                             <div class="preview-container">
                                 <img src="" class="jcrop-preview" alt="Preview">
                             </div>
+                            </div>
+                            <input type="submit" id='settings_group_avatar_submit' class="dia_submit settings_submit" value="裁剪并上传">
+
                         </div>
-                        <input type="submit" id='settings_group_submit' class="dia_submit" value="提交">
                     </form>
 
                 </div>

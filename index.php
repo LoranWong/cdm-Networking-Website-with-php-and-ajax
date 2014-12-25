@@ -86,10 +86,10 @@
                 <div class="main_right">
 
                     <div class="box_con group_info_con">
-                        <img class="group_avatar" src="resources/avatars/user/25_256.jpg" alt="">
+                        <img class="group_avatar" src="" alt="">
                         <span class="group_item">戴政粉丝团</span>
                         <div class="group_details">
-                            男人之间怎么会有纯洁的友谊？侬脑子瓦特啦？
+                            加载中..
                         </div>
                         <div class="gradient_btn_green group_join_btn">加入这群逗比</div>
                         <div class="gradient_btn_white group_leave_btn">离开这群逗比</div>
@@ -112,17 +112,6 @@
 
                         </div>
                     </div>
-
-                    <!-- 折叠卡 -->
-                    <!-- <div class="accordion_con">
-                    <a id="accordion_title1" class="accordion_title">标题1</a>
-                    <div id="accordion_con1"  class="accordion_con">内容1</div>
-                    <a id="accordion_title2" class="accordion_title">标题2</a>
-                    <div id="accordion_con2" class="accordion_con">内容2</div>
-                    <a id="accordion_title3" class="accordion_title">标题3</a>
-                    <div id="accordion_con3" class="accordion_con">内容3</div>
-                </div>
-                -->
                 </div>
 
                 <!-- 页面右边浮动内容 -->

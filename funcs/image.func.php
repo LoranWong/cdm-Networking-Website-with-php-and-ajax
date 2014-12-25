@@ -36,9 +36,8 @@ function image_scale($dest_path, $source_path, $width, $height) {
  * @param  number $y  	需要裁剪的区域
  * @param  number $w 	需要裁剪的区域
  * @param  number $h  	需要裁剪的区域
- * @return  布尔值  代表操作是否成功
+ * @return  bool|string  代表操作是否成功
  **/
-
 function imagecropper($dest_path, $source_path, $x, $y, $w, $h) {
 	$source_info = getimagesize($source_path);
 	$source_width = $source_info[0];

@@ -9,6 +9,9 @@ body {
 }
 
 /*全局使用*******************************************************************************************/
+.displaynone{
+    display: none;
+}
 .gradient_btn_green{
     padding: 6px 10px;
     color: #fafafa;
@@ -113,6 +116,7 @@ body {
     /* Chrome, Safari, Opera */
     animation: hideShadow 1s;
 }
+
 
 /*区块样式属性*/
 
@@ -694,6 +698,7 @@ body {
     background: #6AB045;
     color: #eee;
 }
+
 .details_comments_count {
     position: absolute;
     float: none;
@@ -1042,7 +1047,8 @@ body {
     padding-left: 50px;
 }
 .settings_submit {
-    margin: 10px 0 0 50px;
+    margin: 10px 20px 0 0;
+    float: right;
 }
 .setting_textbox {
     font-size: 13px;
@@ -1080,11 +1086,6 @@ body {
     top: 275px;
     left: 440px;
 }
-#settings_group_submit{
-    position: absolute;
-    top: 380px;
-    left: 477px;
-}
 .settings_file_box {
     outline: none;
 }
@@ -1094,7 +1095,7 @@ body {
     left: 130px;
 }
 #settings_group_file_box{
-    padding-left: 50px;
+    padding-left: 0px;
     padding-top: 10px;
 }
 .settings_avatar_file_btn {
@@ -1117,6 +1118,35 @@ body {
     opacity: 0;
     height: 24px;
     width: 70px;
+}
+.settings_groups{
+    border:none;
+}
+
+#settings_manage_actions{
+    margin-top: 0px;
+    padding-top: 20px;
+    border-top:1px dashed #ddd;
+}
+
+
+.settings_group_label{
+    padding: 20px;
+    padding-right: 10px;
+}
+
+#settings_group_basic_form p{
+    padding-left: 0;
+}
+
+#settings_group_avatar_form p{
+    padding-left: 0;
+}
+
+#settings_group_avatar_submit{
+    position: absolute;
+    right: 155px;
+    top: 420px;
 }
 
 /*Editor插件属性*/
