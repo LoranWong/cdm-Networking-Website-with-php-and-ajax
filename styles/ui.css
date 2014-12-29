@@ -436,6 +436,7 @@ body {
     margin: 15px auto 0 auto;
 }
 #dia_load {
+    display: none;
     padding: 3px 0 0 55px;
     line-height: 40px;
     margin: 0;
