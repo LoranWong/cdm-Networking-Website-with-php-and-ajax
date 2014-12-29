@@ -5,7 +5,7 @@
 
 require_once '../require.php';
 
-echo mydb_isexist('users','email=chang@gmail.com');
+$email = $_GET['reg_email'];
+echo mydb_isexist('users', "email=$email");
 
 mysql_close();
-

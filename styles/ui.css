@@ -630,13 +630,14 @@ body {
     border-top: 1px dashed #f3f3f3;
 }
 .group_join_btn {
+    display: none;
     position: absolute;
     right: 20px;
     bottom: 80px;
 }
 
 .group_leave_btn {
-    display: none;
+    
     position: absolute;
     right: 20px;
     bottom: 80px;

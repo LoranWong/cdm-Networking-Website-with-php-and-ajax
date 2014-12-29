@@ -84,43 +84,44 @@ $(function() {
         $('.item_con').not(':first').remove();
         //首次加载
         showMoreQuestions(g_header_id, g_tagOrGroup_id);
-
-        //加载小组信息
-        doInitGroupInfo();
+        //若当前显示的是Group,显示页面右边内容
+        if (isNowShowGroup) {
+            //加载小组信息
+            doInitGroupInfo();
+        }
     }
 
     doInitGroupInfo = function() {
-        //若当前显示的是Group,显示页面右边内容
-        if (isNowShowGroup) {
-            $.ajax({
-                    url: 'interfaces/getGroup.php',
-                    type: 'POST',
-                    data: {
-                        id: g_tagOrGroup_id,
-                    },
-                })
-                .done(function(response) {
-                    json = eval(response);
-                    //显示小组信息
-                    $('.group_info_questions:first strong').text(json[0].questions_count);
-                    $('.group_info_questions:last strong').text(json[0].users_count);
-                    $('.group_details').text(json[0].details)
-                    $('.group_item').text(json[0].name);
-                    $.showAvatar($('.group_avatar'), json[0].id, 256, true);
-                    //根据用户是否在小组内显示按钮
-                    doInitJoinOrLeaveBtn(g_user_id, g_group_id);
-                    //点击加入或者退出小组后
-                    $('.group_join_btn').click(function(event) {
-                        doJoinOrleave(g_user_id, g_group_id, true);
-                    });
-                    $('.group_leave_btn').click(function(event) {
-                        doJoinOrleave(g_user_id, g_group_id, false);
-                    });
 
-
+        $.ajax({
+                url: 'interfaces/getGroup.php',
+                type: 'POST',
+                data: {
+                    id: g_tagOrGroup_id,
+                },
+            })
+            .done(function(response) {
+                json = eval(response);
+                //设置当前group
+                g_group_id = json[0].id;
+                //显示小组信息
+                $('.group_info_questions:first strong').text(json[0].questions_count);
+                $('.group_info_questions:last strong').text(json[0].users_count);
+                $('.group_details').text(json[0].details)
+                $('.group_item').text(json[0].name);
+                $.showAvatar($('.group_avatar'), json[0].id, 256, true);
+                //根据用户是否在小组内显示按钮 (如果是显示我的小组就不用进入此函数,默认显示为退出)
+                doInitJoinOrLeaveBtn(g_user_id, g_group_id);
+                //点击加入或者退出小组后
+                $('.group_join_btn').clearQueue()
+                    //绑定点击前先清除之前的事件，以免触发两次
+                $('.group_join_btn').unbind("click").click(function(event) {
+                    doJoinOrleave(g_user_id, g_group_id, true);
                 });
-        }
-
+                $('.group_leave_btn').unbind("click").click(function(event) {
+                    doJoinOrleave(g_user_id, g_group_id, false);
+                });
+            });
 
     }
 
@@ -136,9 +137,12 @@ $(function() {
             .done(function(response) {
                 //console.log("response= " + response);
                 if (response == 'true') {
-                    $('.group_join_btn').toggle();
-                    $('.group_leave_btn').toggle();
-                                    }
+                    $('.group_join_btn').hide();
+                    $('.group_leave_btn').show();
+                }else{
+                    $('.group_join_btn').show();
+                    $('.group_leave_btn').hide();
+                }
             });
     }
 
@@ -159,16 +163,24 @@ $(function() {
                 })
                 .done(function(response) {
                     //console.log("response= " + response);
-                    $('.group_join_btn').toggle();
-                    $('.group_leave_btn').toggle();
-                    //加入按钮隐藏  证明上一次操作是加入
-                    users_count =parseInt($('.group_info_questions:last strong').text());
-                    if($('.group_join_btn').is(":hidden")){
-                    	$('.group_info_questions:last strong').text(users_count + 1);
+                    //如果是加入
+                    if (isJoin) {
+                        $.showOKDialog("加入成功");
+                        $('.group_join_btn').toggle();
+                        $('.group_leave_btn').toggle();
+                        //增加人数
+                        users_count = parseInt($('.group_info_questions:last strong').text());
+                        if ($('.group_join_btn').is(":hidden")) {
+                            $('.group_info_questions:last strong').text(users_count + 1);
+                        } else {
+                            $('.group_info_questions:last strong').text(users_count - 1);
+                        }
+                    //如果是退出
                     }else{
-                    	$('.group_info_questions:last strong').text(users_count- 1);
+                        $.showOKDialog("退出成功",function(){
+                            window.history.go(0);
+                        });
                     }
-
                 });
         }
 
@@ -199,7 +211,6 @@ $(function() {
                     count: DETAILS_LOAD_COUNT,
                 }
             }
-
 
             if (!isLoading) {
                 isLoading = true;

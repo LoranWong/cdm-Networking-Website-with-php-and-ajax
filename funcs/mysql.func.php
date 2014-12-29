@@ -21,7 +21,6 @@ function get_json_from_sql($sql) {
 	return $json;
 }
 
-
 /**
  *将记录插入数据库  可以传入'NOW()'
  *@param string $table  表名
@@ -33,15 +32,14 @@ function mydb_insert($table, $array) {
 	//将values拼接成如下字符串 ：   'value1','value2','value3'
 	$values = "'" . join("','", array_values($array)) . "'";
 	//如果包含 'NOW()'  把它两边的双引号去掉以免解析错误
-	$values = str_replace("'NOW()'","NOW()",$values);
+	$values = str_replace("'NOW()'", "NOW()", $values);
 	$sql = "INSERT INTO $table ($keys) VALUES($values)";
-	if(mysql_query($sql)){
+	if (mysql_query($sql)) {
 		return mysql_insert_id();
-	}else{
+	} else {
 		return 'false';
 	}
 }
-
 
 /**
  * 删除数据库的特定记录
@@ -49,12 +47,12 @@ function mydb_insert($table, $array) {
  * @param string $where
  * @return string true or false
  */
-function mydb_delete($table, $where){
-	$where = $where == null ? null: " where ".$where;
+function mydb_delete($table, $where) {
+	$where = $where == null ? null : " where " . $where;
 	$sql = "DELETE FROM {$table} {$where}";
-	if(mysql_query($sql)){
+	if (mysql_query($sql)) {
 		return 'true';
-	}else{
+	} else {
 		return 'false';
 	}
 }
@@ -68,24 +66,24 @@ function mydb_delete($table, $where){
  * UPDATE table_name SET field1=new-value1, field2=new-value2 [WHERE Clause]
  */
 
-function mydb_update($table, $array ,$where){
-	$where = $where == null ? null: " where ".$where;
+function mydb_update($table, $array, $where) {
+	$where = $where == null ? null : " where " . $where;
 	$update = '';
-	foreach ($array as $key => $value){
+	foreach ($array as $key => $value) {
 		//组合  field1=new-value1, field2=new-value2 语句  ，开头没有逗号；
-		if($update == null){
+		if ($update == null) {
 			$sep = '';
-		}else{
+		} else {
 			$sep = ',';
 		}
-		$update .= $sep.$key."='".$value."'";
+		$update .= $sep . $key . "='" . $value . "'";
 	}
-	$update = str_replace("'NOW()'","NOW()",$update);
+	$update = str_replace("'NOW()'", "NOW()", $update);
 	$sql = "UPDATE {$table} SET {$update} {$where}";
 	//echo $sql;
-	if(mysql_query($sql)){
+	if (mysql_query($sql)) {
 		return 'true';
-	}else {
+	} else {
 		return 'false';
 	}
 }
@@ -96,25 +94,24 @@ function mydb_update($table, $array ,$where){
  * @param string $where
  * @return string true or false
  */
-function mydb_isexist($table,$where){
-	$where = $where == null ? null: " where ".$where;
+function mydb_isexist($table, $where) {
+	$where = $where == null ? null : " where " . $where;
 	$sql = "SELECT * FROM {$table} {$where}";
 	$query = mysql_query($sql);
-	if (mysql_fetch_array($query)) {
+	if (@mysql_fetch_array($query)) {
 		return 'true';
 	} else {
 		return 'false';
 	}
 }
 
-
 /**
  * 得到结果集中的记录条数
  * @param string $sql
  * @return number
  */
-function mydb_getResultNum($sql){
-	$result=mysql_query($sql);
+function mydb_getResultNum($sql) {
+	$result = mysql_query($sql);
 	return mysql_num_rows($result);
 }
 
