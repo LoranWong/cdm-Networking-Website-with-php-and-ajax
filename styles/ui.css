@@ -8,6 +8,10 @@ body {
     background: #fff;
 }
 
+.main_frame_body{
+    margin:0;
+}
+
 /*全局使用*******************************************************************************************/
 .displaynone{
     display: none;
