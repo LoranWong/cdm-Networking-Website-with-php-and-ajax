@@ -63,7 +63,8 @@
             </p>
             <lable>描 述 ：</lable>
             <div class="details_textarea_div">
-                <textarea id="ask_details" name="ask_details" class="round_textbox"></textarea>
+                <!-- <textarea id="ask_details" name="ask_details" class="round_textbox"></textarea> -->
+                <script id="editor" type="text/plain" style="width:600px;height:300px;"></script>
             </div>
             <input type="submit" class="dia_submit" value="提交">
         </form>

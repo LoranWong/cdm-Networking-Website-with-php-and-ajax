@@ -2,13 +2,16 @@
     <!-- jquery -->
     <script src="plugins/jquery-ui/external/jquery/jquery-1.11.1.min.js"></script>
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
-    <!-- jquery plugins -->
+    <!-- plugins -->
     <script src="plugins/jquery.validate.min.js"></script>
     <script src="plugins/jquery.chosen.min.js"></script>
     <script src="plugins/jquery.cookie.js"></script>
     <script src="plugins/jquery.sceditor.xhtml.min.js"></script>
     <script src="plugins/jquery.Jcrop.min.js"></script>
     <script src="plugins/ajaxfileupload.js"></script>
+
+    <script type="text/javascript" charset="utf-8" src="plugins/ueditor/ueditor.config.js"></script>
+    <script type="text/javascript" charset="utf-8" src="plugins/ueditor/ueditor.all.min.js"> </script>
 
     <!-- my js -->
     <script src="scripts/jquery.bao.extension.js"></script>

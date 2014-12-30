@@ -150,7 +150,7 @@ $(function() {
         $('#dia_ask').dialog({
             title: '提问',
             width: 720,
-            height: 280,
+            height: 500,
             resizable: false,
             show: true,
             hide: true,
@@ -165,66 +165,73 @@ $(function() {
         //  resizeEnabled: false,
         // });
 
+
+    //尝试使用插件  ueditor
+
+    //实例化编辑器
+    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+    var ue = UE.getEditor('editor');
+
         //实现textarea的Tab功能
-        HTMLTextAreaElement.prototype.getCaretPosition = function() { //return the caret position of the textarea
-            return this.selectionStart;
-        };
-        HTMLTextAreaElement.prototype.setCaretPosition = function(position) { //change the caret position of the textarea
-            this.selectionStart = position;
-            this.selectionEnd = position;
-            this.focus();
-        };
-        HTMLTextAreaElement.prototype.hasSelection = function() { //if the textarea has selection then return true
-            if (this.selectionStart == this.selectionEnd) {
-                return false;
-            } else {
-                return true;
-            }
-        };
-        HTMLTextAreaElement.prototype.getSelectedText = function() { //return the selection text
-            return this.value.substring(this.selectionStart, this.selectionEnd);
-        };
-        HTMLTextAreaElement.prototype.setSelection = function(start, end) { //change the selection area of the textarea
-            this.selectionStart = start;
-            this.selectionEnd = end;
-            this.focus();
-        };
+        // HTMLTextAreaElement.prototype.getCaretPosition = function() { //return the caret position of the textarea
+        //     return this.selectionStart;
+        // };
+        // HTMLTextAreaElement.prototype.setCaretPosition = function(position) { //change the caret position of the textarea
+        //     this.selectionStart = position;
+        //     this.selectionEnd = position;
+        //     this.focus();
+        // };
+        // HTMLTextAreaElement.prototype.hasSelection = function() { //if the textarea has selection then return true
+        //     if (this.selectionStart == this.selectionEnd) {
+        //         return false;
+        //     } else {
+        //         return true;
+        //     }
+        // };
+        // HTMLTextAreaElement.prototype.getSelectedText = function() { //return the selection text
+        //     return this.value.substring(this.selectionStart, this.selectionEnd);
+        // };
+        // HTMLTextAreaElement.prototype.setSelection = function(start, end) { //change the selection area of the textarea
+        //     this.selectionStart = start;
+        //     this.selectionEnd = end;
+        //     this.focus();
+        // };
 
-        var textarea = document.getElementById('ask_details');
+        // var textarea = document.getElementById('ask_details');
 
-        textarea.onkeydown = function(event) {
+        // textarea.onkeydown = function(event) {
 
-            //support tab on textarea
-            if (event.keyCode == 9) { //tab was pressed
-                var newCaretPosition;
-                newCaretPosition = textarea.getCaretPosition() + "    ".length;
-                textarea.value = textarea.value.substring(0, textarea.getCaretPosition()) + "    " + textarea.value.substring(textarea.getCaretPosition(), textarea.value.length);
-                textarea.setCaretPosition(newCaretPosition);
-                return false;
-            }
-            if (event.keyCode == 8) { //backspace
-                if (textarea.value.substring(textarea.getCaretPosition() - 4, textarea.getCaretPosition()) == "    ") { //it's a tab space
-                    var newCaretPosition;
-                    newCaretPosition = textarea.getCaretPosition() - 3;
-                    textarea.value = textarea.value.substring(0, textarea.getCaretPosition() - 3) + textarea.value.substring(textarea.getCaretPosition(), textarea.value.length);
-                    textarea.setCaretPosition(newCaretPosition);
-                }
-            }
-            if (event.keyCode == 37) { //left arrow
-                var newCaretPosition;
-                if (textarea.value.substring(textarea.getCaretPosition() - 4, textarea.getCaretPosition()) == "    ") { //it's a tab space
-                    newCaretPosition = textarea.getCaretPosition() - 3;
-                    textarea.setCaretPosition(newCaretPosition);
-                }
-            }
-            if (event.keyCode == 39) { //right arrow
-                var newCaretPosition;
-                if (textarea.value.substring(textarea.getCaretPosition() + 4, textarea.getCaretPosition()) == "    ") { //it's a tab space
-                    newCaretPosition = textarea.getCaretPosition() + 3;
-                    textarea.setCaretPosition(newCaretPosition);
-                }
-            }
-        }
+        //     //support tab on textarea
+        //     if (event.keyCode == 9) { //tab was pressed
+        //         var newCaretPosition;
+        //         newCaretPosition = textarea.getCaretPosition() + "    ".length;
+        //         textarea.value = textarea.value.substring(0, textarea.getCaretPosition()) + "    " + textarea.value.substring(textarea.getCaretPosition(), textarea.value.length);
+        //         textarea.setCaretPosition(newCaretPosition);
+        //         return false;
+        //     }
+        //     if (event.keyCode == 8) { //backspace
+        //         if (textarea.value.substring(textarea.getCaretPosition() - 4, textarea.getCaretPosition()) == "    ") { //it's a tab space
+        //             var newCaretPosition;
+        //             newCaretPosition = textarea.getCaretPosition() - 3;
+        //             textarea.value = textarea.value.substring(0, textarea.getCaretPosition() - 3) + textarea.value.substring(textarea.getCaretPosition(), textarea.value.length);
+        //             textarea.setCaretPosition(newCaretPosition);
+        //         }
+        //     }
+        //     if (event.keyCode == 37) { //left arrow
+        //         var newCaretPosition;
+        //         if (textarea.value.substring(textarea.getCaretPosition() - 4, textarea.getCaretPosition()) == "    ") { //it's a tab space
+        //             newCaretPosition = textarea.getCaretPosition() - 3;
+        //             textarea.setCaretPosition(newCaretPosition);
+        //         }
+        //     }
+        //     if (event.keyCode == 39) { //right arrow
+        //         var newCaretPosition;
+        //         if (textarea.value.substring(textarea.getCaretPosition() + 4, textarea.getCaretPosition()) == "    ") { //it's a tab space
+        //             newCaretPosition = textarea.getCaretPosition() + 3;
+        //             textarea.setCaretPosition(newCaretPosition);
+        //         }
+        //     }
+        // }
 
 
 
