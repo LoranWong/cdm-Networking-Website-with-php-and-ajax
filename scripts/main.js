@@ -149,8 +149,8 @@ $(function() {
         //初始化提问对话框
         $('#dia_ask').dialog({
             title: '提问',
-            width: 720,
-            height: 500,
+            width: 900,
+            height: 550,
             resizable: false,
             show: true,
             hide: true,
@@ -262,7 +262,8 @@ $(function() {
                         data: {
                             user_id: $.cookie().id,
                             title: $('#ask_title').val(),
-                            details: $('#ask_details').val(),
+                            details: UE.getEditor('editor').getAllHtml(),
+                            details_text: UE.getEditor('editor').getPlainTxt()
                         }
                     })
                     .done(function(response, status, xhr) {

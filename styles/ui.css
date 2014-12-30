@@ -1,4 +1,4 @@
-body {
+.mybody {
     outline: none;
     font-size: 14px;
     margin: 40px 0 0 0;
@@ -421,7 +421,7 @@ body {
     display: none;
     color: #777;
 }
-#dia_reg form, #dia_login form, #dia_ask form {
+#dia_reg form, #dia_login form {
     margin: 20px 0 0 15px;
 }
 .dia_textbox {
@@ -446,7 +446,13 @@ body {
     background: url(../images/loading.gif) no-repeat 15px center;
 }
 /*提问窗口*/
+#dia_ask form{
+    margin: 10px 0 0 10px;
+}
 
+.dia_ask_form p{
+    margin: 0 0 15px 0;
+}
 #ask_title {
     width: 590px;
     margin-left: 1px;

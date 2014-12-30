@@ -245,7 +245,7 @@ $(function() {
 
                                 time = $.getTimeByDateTime(val.date);
 
-                                html = $("<html>" + val.details + "</html>");
+                                html = $("<html>" + val.details_text + "</html>");
                                 details = html.text().length > DETAILS_LENGTH ? html.text().slice(0, DETAILS_LENGTH) + '... ' : html.text();
 
                                 item = index == 0 && currentLength == 0 ? $('.item_con').first() : $('.item_con').first().clone();

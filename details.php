@@ -10,7 +10,7 @@
     <title>CdM | Coder Designer Manager 体验分享的快乐</title>
 </head>
 
-<body>
+<body class="mybody">
     <div class="con">
 
 <?php require_once 'header.php';?>

@@ -9,7 +9,7 @@
 
 </head>
 
-<body>
+<body class="mybody">
     <div class="con">
 <?php require_once 'header.php';?>
 
