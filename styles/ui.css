@@ -451,10 +451,11 @@
 }
 
 .dia_ask_form p{
-    margin: 0 0 15px 0;
+    margin: 0 0 5px 0;
 }
 #ask_title {
-    width: 590px;
+    display: inline-block;
+    width: 770px;
     margin-left: 1px;
 }
 #ask_details {
@@ -463,7 +464,7 @@
     resize: none;
 }
 .details_textarea_div {
-    margin: -15px 0 0 55px;
+    margin: 15px 0 0 0px;
 }
 /*页面主要内容*/
 

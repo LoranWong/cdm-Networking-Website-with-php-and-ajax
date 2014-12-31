@@ -245,10 +245,16 @@ $(function() {
 
                                 time = $.getTimeByDateTime(val.date);
 
-                                html = $("<html>" + val.details_text + "</html>");
-                                details = html.text().length > DETAILS_LENGTH ? html.text().slice(0, DETAILS_LENGTH) + '... ' : html.text();
-
                                 item = index == 0 && currentLength == 0 ? $('.item_con').first() : $('.item_con').first().clone();
+
+                                if(val.details_text.length > DETAILS_LENGTH){
+                                    details =  val.details_text.slice(0, DETAILS_LENGTH) + '... ';
+                                    item.attr('needShowbtn', 'true');
+                                }else{
+                                    details = val.details_text;
+                                    item.attr('needShowbtn', 'false');
+                                }
+
                                 //设置Index时加上前面已经有的
                                 //console.log("currentLength--->"+currentLength);
                                 //console.log("index--->"+index);
@@ -275,7 +281,7 @@ $(function() {
 
                                 item.find('.item_main').mouseenter(function(event) {
                                     //console.log($(this).find('.item_hot_comment').text().length);
-                                    if ($(this).find('.item_hot_comment').text().length > DETAILS_LENGTH) {
+                                    if ($(this).parents('.item_con').attr('needShowbtn') == 'true') {
                                         $(this).find('.item_hot_comment_scale').css('display', 'inline');
                                     }
                                 });
@@ -283,27 +289,30 @@ $(function() {
                                 item.find('.item_main').mouseleave(function(event) {
                                     $(this).find('.item_hot_comment_scale').css('display', 'none');
                                 });
-                                item.find('.item_hot_comment_scale').click(function(event) {
+                                item.find('.item_hot_comment_scale').unbind('click').click(function(event) {
                                     //获取所点击条目的下标  从全局数据g_items_json中取得所要显示内容
                                     itemIndex = $(this).parents('.item_con').attr('question_id');
                                     // 遍历json查找ID对应
                                     longDetails = '';
+                                    showDetails = '';
                                     $.each(g_items_json, function(index, val) {
-                                        console.log(index);
-                                        console.log(itemIndex);
-                                        console.log(val);
+                                        // console.log(index);
+                                        // console.log(itemIndex);
+                                        // console.log(val);
                                         if (val.id == itemIndex) {
-                                            longDetails = val.details;
+                                            longDetails = "<html>"+val.details+"</html>";
+                                            shortDetails = val.details_text.length > DETAILS_LENGTH ? val.details_text.slice(0, DETAILS_LENGTH) + '... ' : val.details_text;
                                             //跳出循环
                                             return false;
                                         }
                                     });
-
-                                    html = $("<html>" + longDetails + "</html>");
-                                    shortDetails = html.text().length > DETAILS_LENGTH ? html.text().slice(0, DETAILS_LENGTH) + '... ' : html.text();
+                                    
                                     details = $(this).text() == "显示全部" ? longDetails : shortDetails;
 
                                     $(this).parents('.item_con').find('.item_hot_comment').html(details);
+
+console.log('?');
+
                                     if ($(this).text() == "显示全部") {
                                         $(this).text("收起");
                                     } else {

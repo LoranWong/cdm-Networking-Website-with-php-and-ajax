@@ -27,7 +27,7 @@ $(function() {
     }
 
     //显示头像
-    $.showAvatar($('.top_avatar'),$.cookie().id,128);
+    $.showAvatar($('.top_avatar'), $.cookie().id, 128);
 
     //显示个人信息菜单 
 
@@ -156,84 +156,33 @@ $(function() {
             hide: true,
             modal: true,
         });
-        //先不管格式输入
-        // $('#ask_details').sceditor({
-        //  plugins: "xhtml",
-        //  style: "css/editor_themes/square.min.css",
-        //  toolbar: "size,bold,underline,font|image,link,emoticon|code,quote,horizontalrule,table|source",
-        //  locale: "cn",
-        //  resizeEnabled: false,
-        // });
 
+        //获取tag
+        $.ajax({
+                url: "interfaces/getTags.php",
+                type: 'POST',
+            })
+            .done(function(response) {
+                //console.log(response);
+                json = eval(response);
+                //console.log(json);
+                //遍历Groups  插入Tabs
+                $.each(json, function(index, val) {
+                    item = $('<option value="' + val.id + '"">' + val.name + '</option>');
+                    item.appendTo($('#ask_tag'));
+                });
+                //tag下拉选择
+                $('#ask_tag').chosen({
+                    no_results_text: '(*^__^*)没有找到..',
+                    disable_search_threshold: 10,
+                });
 
-    //尝试使用插件  ueditor
+            });
 
-    //实例化编辑器
-    //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
-    var ue = UE.getEditor('editor');
-
-        //实现textarea的Tab功能
-        // HTMLTextAreaElement.prototype.getCaretPosition = function() { //return the caret position of the textarea
-        //     return this.selectionStart;
-        // };
-        // HTMLTextAreaElement.prototype.setCaretPosition = function(position) { //change the caret position of the textarea
-        //     this.selectionStart = position;
-        //     this.selectionEnd = position;
-        //     this.focus();
-        // };
-        // HTMLTextAreaElement.prototype.hasSelection = function() { //if the textarea has selection then return true
-        //     if (this.selectionStart == this.selectionEnd) {
-        //         return false;
-        //     } else {
-        //         return true;
-        //     }
-        // };
-        // HTMLTextAreaElement.prototype.getSelectedText = function() { //return the selection text
-        //     return this.value.substring(this.selectionStart, this.selectionEnd);
-        // };
-        // HTMLTextAreaElement.prototype.setSelection = function(start, end) { //change the selection area of the textarea
-        //     this.selectionStart = start;
-        //     this.selectionEnd = end;
-        //     this.focus();
-        // };
-
-        // var textarea = document.getElementById('ask_details');
-
-        // textarea.onkeydown = function(event) {
-
-        //     //support tab on textarea
-        //     if (event.keyCode == 9) { //tab was pressed
-        //         var newCaretPosition;
-        //         newCaretPosition = textarea.getCaretPosition() + "    ".length;
-        //         textarea.value = textarea.value.substring(0, textarea.getCaretPosition()) + "    " + textarea.value.substring(textarea.getCaretPosition(), textarea.value.length);
-        //         textarea.setCaretPosition(newCaretPosition);
-        //         return false;
-        //     }
-        //     if (event.keyCode == 8) { //backspace
-        //         if (textarea.value.substring(textarea.getCaretPosition() - 4, textarea.getCaretPosition()) == "    ") { //it's a tab space
-        //             var newCaretPosition;
-        //             newCaretPosition = textarea.getCaretPosition() - 3;
-        //             textarea.value = textarea.value.substring(0, textarea.getCaretPosition() - 3) + textarea.value.substring(textarea.getCaretPosition(), textarea.value.length);
-        //             textarea.setCaretPosition(newCaretPosition);
-        //         }
-        //     }
-        //     if (event.keyCode == 37) { //left arrow
-        //         var newCaretPosition;
-        //         if (textarea.value.substring(textarea.getCaretPosition() - 4, textarea.getCaretPosition()) == "    ") { //it's a tab space
-        //             newCaretPosition = textarea.getCaretPosition() - 3;
-        //             textarea.setCaretPosition(newCaretPosition);
-        //         }
-        //     }
-        //     if (event.keyCode == 39) { //right arrow
-        //         var newCaretPosition;
-        //         if (textarea.value.substring(textarea.getCaretPosition() + 4, textarea.getCaretPosition()) == "    ") { //it's a tab space
-        //             newCaretPosition = textarea.getCaretPosition() + 3;
-        //             textarea.setCaretPosition(newCaretPosition);
-        //         }
-        //     }
-        // }
-
-
+        //尝试使用插件  ueditor
+        //实例化编辑器
+        //建议使用工厂方法getEditor创建和引用编辑器实例，如果在某个闭包下引用该编辑器，直接调用UE.getEditor('editor')就能拿到相关的实例
+        var ue = UE.getEditor('editor');
 
         //验证提问
         $(".dia_ask_form").validate({
@@ -252,33 +201,38 @@ $(function() {
             },
             submitHandler: function(formEle) {
                 //console.log($('#ask_details').sceditor("instance").getBody());
-                $.showLoadDialog('请稍候...');
 
-                console.log($('.ask_title').val());
-
-                $.ajax({
-                        url: 'interfaces/addQuestion.php',
-                        type: 'POST',
-                        data: {
-                            user_id: $.cookie().id,
-                            title: $('#ask_title').val(),
-                            details: UE.getEditor('editor').getAllHtml(),
-                            details_text: UE.getEditor('editor').getPlainTxt()
-                        }
-                    })
-                    .done(function(response, status, xhr) {
-                        if (response == "true") {
-                            $.showOKDialog('提问成功',function(){
-                                $('#dia_ask').dialog('destroy');
-                                window.history.go(0);
-                            });
-                        } else {
-                            $.showErrorDialog('提问失败');
-                        }
-                    })
-                    .fail(function() {
-                        $.showErrorDialog('网络错误');
-                    });
+                //选择分类之后才提交
+                if ($('#ask_tag').val() != 0) {
+                    $.showLoadDialog('请稍候...');
+                    console.log($('.ask_title').val());
+                    $.ajax({
+                            url: 'interfaces/addQuestion.php',
+                            type: 'POST',
+                            data: {
+                                user_id: $.cookie().id,
+                                title: $('#ask_title').val(),
+                                details: UE.getEditor('editor').getAllHtml(),
+                                details_text: UE.getEditor('editor').getPlainTxt(),
+                                tag_id: $('#ask_tag').val(),
+                            }
+                        })
+                        .done(function(response, status, xhr) {
+                            if (response == "true") {
+                                $.showOKDialog('提问成功', function() {
+                                    $('#dia_ask').dialog('destroy');
+                                    window.history.go(0);
+                                });
+                            } else {
+                                $.showErrorDialog('提问失败');
+                            }
+                        })
+                        .fail(function() {
+                            $.showErrorDialog('网络错误');
+                        });
+                } else {
+                    alert("请选择分类吖(*^__^*)");
+                }
             }
         });
     }

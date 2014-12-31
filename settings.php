@@ -50,7 +50,7 @@
                         <p>
                             <lable for="settings_gender">性 别 ：</lable>
                             <select id="settings_gender" name="settings_gender" style="width:350px;" data-placeholder="请选择性别.." required>
-                                <option value="1"></option>
+                                <option value=""></option>
                                 <!-- <option value="2">男</option> -->
                             </select>
                         </p>
@@ -58,7 +58,7 @@
                         <p>
                             <lable for="settings_uni">学 校 ：</lable>
                             <select id="settings_uni" name="settings_uni" style="width:350px;" data-placeholder="请选择学校.." required>
-                                <option value="1"></option>
+                                <option value=""></option>
                                 <!-- <option value="2">华男理工大学</option> -->
                             </select>
                         </p>

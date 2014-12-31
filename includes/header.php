@@ -58,13 +58,19 @@
     <div id="dia_ask">
         <form class="dia_ask_form">
             <p>
-                <lable for="ask_title">标 题 ：</lable>
-                <input type="text" id="ask_title" name="ask_title" class="round_textbox" placeholder="请输入标题" required>
+                <lable for="ask_tag">分 类 ：</lable>
+                <select id="ask_tag" name="ask_tag" style="width:100px;" data-placeholder="请选择.." required>
+                        <option value="0"></option>
+                        <!-- <option value="2">杂谈</option> -->
+                </select>
             </p>
-            <lable>描 述 ：</lable>
+            <p>
+                <lable for="ask_title">标 题 ：</lable>
+                <input type="text" id="ask_title" style="margin-top:5px;" name="ask_title" class="round_textbox" placeholder="标题好才是真的好\(^o^)/~" required>
+            </p>
             <div class="details_textarea_div">
                 <!-- <textarea id="ask_details" name="ask_details" class="round_textbox"></textarea> -->
-                <script id="editor" type="text/plain" style="width:800px;height:350px;"></script>
+                <script id="editor" type="text/plain" style="width:832px;height:330px;"></script>
             </div>
             <input type="submit" class="dia_submit" value="提交">
         </form>

@@ -2,26 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55153aac-881a-40f0-a367-7123bc2b00f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/addUser2Group.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/deleteUserFromGroup.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/isUserInGroup.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/updateGroup.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/interfaces/addGroupManager.php" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/BaosApple.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/BaosApple.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addGroup.php" afterPath="$PROJECT_DIR$/interfaces/addGroup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addImage.php" afterPath="$PROJECT_DIR$/interfaces/addImage.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funcs/config.php" afterPath="$PROJECT_DIR$/funcs/config.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getGroup.php" afterPath="$PROJECT_DIR$/interfaces/getGroup.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getGroupsByUserId.php" afterPath="$PROJECT_DIR$/interfaces/getGroupsByUserId.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/home.js" afterPath="$PROJECT_DIR$/scripts/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funcs/image.func.php" afterPath="$PROJECT_DIR$/funcs/image.func.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/jquery.bao.extension.js" afterPath="$PROJECT_DIR$/scripts/jquery.bao.extension.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/funcs/mysql.func.php" afterPath="$PROJECT_DIR$/funcs/mysql.func.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addQuestion.php" afterPath="$PROJECT_DIR$/interfaces/addQuestion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/header.php" afterPath="$PROJECT_DIR$/includes/header.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.js" afterPath="$PROJECT_DIR$/scripts/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/settings.js" afterPath="$PROJECT_DIR$/scripts/settings.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.php" afterPath="$PROJECT_DIR$/settings.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/ui.css" afterPath="$PROJECT_DIR$/styles/ui.css" />
@@ -53,89 +36,26 @@
       <file leaf-file-name="mysql.func.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.0416665" vertical-offset="1361" max-vertical-offset="1980">
-              <caret line="102" column="36" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
+            <state vertical-scroll-proportion="-13.291667" vertical-offset="236" max-vertical-offset="1935">
+              <caret line="37" column="30" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="30" />
               <folding>
-                <marker date="1419531415000" expanded="true" signature="983:1025" placeholder="INSERT INTO ..." />
-                <marker date="1419531415000" expanded="true" signature="1313:1334" placeholder="DELETE FROM ..." />
-                <marker date="1419531415000" expanded="true" signature="2020:2050" placeholder="UPDATE :_tab..." />
-                <marker date="1419531415000" expanded="true" signature="2390:2413" placeholder="SELECT * FRO..table_..." />
+                <marker date="1419871511000" expanded="true" signature="984:1026" placeholder="INSERT INTO ..." />
+                <marker date="1419871511000" expanded="true" signature="1321:1342" placeholder="DELETE FROM ..." />
+                <marker date="1419871511000" expanded="true" signature="2051:2081" placeholder="UPDATE :_tab..." />
+                <marker date="1419871511000" expanded="true" signature="2429:2452" placeholder="SELECT * FRO..table_..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getGroupsByUserId.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaces/getGroupsByUserId.php">
+      <file leaf-file-name="addQuestion.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interfaces/addQuestion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
-              <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+            <state vertical-scroll-proportion="-0.071428575" vertical-offset="161" max-vertical-offset="735">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
               <folding>
-                <element signature="e#8#137#0#PHP" expanded="true" />
-                <marker date="1419510588000" expanded="true" signature="198:329" placeholder="SELECT g.nam..groups..." />
+                <element signature="e#6#138#0#PHP" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addGroup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaces/addGroup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7916667" vertical-offset="11" max-vertical-offset="585">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="updateGroup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaces/updateGroup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="405">
-              <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
-              <folding>
-                <element signature="e#6#103#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addUser2Group.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaces/addUser2Group.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="375">
-              <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="isUserInGroup.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/interfaces/isUserInGroup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.05226481" vertical-offset="0" max-vertical-offset="574">
-              <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="isUserExist.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaces/isUserExist.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="225">
-              <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="deleteUserFromGroup.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaces/deleteUserFromGroup.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
-              <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="81" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -149,7 +69,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/scripts/details.js" />
-        <option value="$PROJECT_DIR$/interfaces/addQuestion.php" />
         <option value="$PROJECT_DIR$/interfaces/login_isPassRight.php" />
         <option value="$PROJECT_DIR$/scripts/main.js" />
         <option value="$PROJECT_DIR$/interfaces/addComment.php" />
@@ -179,6 +98,7 @@
         <option value="$PROJECT_DIR$/funcs/mysql.func.php" />
         <option value="$PROJECT_DIR$/interfaces/addUser2Group.php" />
         <option value="$PROJECT_DIR$/interfaces/isUserInGroup.php" />
+        <option value="$PROJECT_DIR$/interfaces/addQuestion.php" />
       </list>
     </option>
   </component>
@@ -358,15 +278,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -405,7 +325,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="695" extended-state="0" />
+    <frame x="0" y="23" width="1280" height="695" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -420,13 +340,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40095848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -456,13 +376,13 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1316" max-vertical-offset="1980">
-          <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1361" max-vertical-offset="1980">
+          <caret line="102" column="36" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
           <folding>
-            <marker date="1419531415000" expanded="true" signature="983:1025" placeholder="INSERT INTO ..." />
-            <marker date="1419531415000" expanded="true" signature="1313:1334" placeholder="DELETE FROM ..." />
-            <marker date="1419531415000" expanded="true" signature="2020:2050" placeholder="UPDATE :_tab..." />
-            <marker date="1419531415000" expanded="true" signature="2390:2413" placeholder="SELECT * FRO..table_..." />
+            <marker date="1419871511000" expanded="true" signature="984:1026" placeholder="INSERT INTO ..." />
+            <marker date="1419871511000" expanded="true" signature="1321:1342" placeholder="DELETE FROM ..." />
+            <marker date="1419871511000" expanded="true" signature="2051:2081" placeholder="UPDATE :_tab..." />
+            <marker date="1419871511000" expanded="true" signature="2429:2452" placeholder="SELECT * FRO..table_..." />
           </folding>
         </state>
       </provider>
@@ -473,7 +393,81 @@
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
             <element signature="e#8#137#0#PHP" expanded="true" />
-            <marker date="1419510588000" expanded="true" signature="198:329" placeholder="SELECT g.nam..groups..." />
+            <marker date="1419510588000" expanded="true" signature="-1:-1" placeholder="SELECT g.nam..groups..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="11" max-vertical-offset="585">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/updateGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="405">
+          <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          <folding>
+            <element signature="e#6#103#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addUser2Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="375">
+          <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/isUserInGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="270">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/isUserExist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="225">
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/deleteUserFromGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1316" max-vertical-offset="1980">
+          <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
+          <folding>
+            <marker date="1419871511000" expanded="true" signature="984:1026" placeholder="INSERT INTO ..." />
+            <marker date="1419871511000" expanded="true" signature="1321:1342" placeholder="DELETE FROM ..." />
+            <marker date="1419871511000" expanded="true" signature="2051:2081" placeholder="UPDATE :_tab..." />
+            <marker date="1419871511000" expanded="true" signature="2429:2452" placeholder="SELECT * FRO..table_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getGroupsByUserId.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#8#137#0#PHP" expanded="true" />
+            <marker date="1419510588000" expanded="true" signature="-1:-1" placeholder="SELECT g.nam..groups..." />
           </folding>
         </state>
       </provider>
@@ -517,10 +511,10 @@
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1419531415000" expanded="true" signature="983:1025" placeholder="INSERT INTO ..." />
-            <marker date="1419531415000" expanded="true" signature="1313:1334" placeholder="DELETE FROM ..." />
-            <marker date="1419531415000" expanded="true" signature="2020:2050" placeholder="UPDATE :_tab..." />
-            <marker date="1419531415000" expanded="true" signature="2390:2413" placeholder="SELECT * FRO..table_..." />
+            <marker date="1419871511000" expanded="true" signature="984:1026" placeholder="INSERT INTO ..." />
+            <marker date="1419871511000" expanded="true" signature="1321:1342" placeholder="DELETE FROM ..." />
+            <marker date="1419871511000" expanded="true" signature="2051:2081" placeholder="UPDATE :_tab..." />
+            <marker date="1419871511000" expanded="true" signature="2429:2452" placeholder="SELECT * FRO..table_..." />
           </folding>
         </state>
       </provider>
@@ -600,13 +594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="510">
           <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/addQuestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="465">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -709,17 +696,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/getGroupsByUserId.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="330">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <element signature="e#8#137#0#PHP" expanded="true" />
-            <marker date="1419510588000" expanded="true" signature="198:329" placeholder="SELECT g.nam..groups..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/getGroup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33972126" vertical-offset="0" max-vertical-offset="574">
@@ -734,9 +710,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.033101045" vertical-offset="11" max-vertical-offset="585">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getGroupsByUserId.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.41811848" vertical-offset="0" max-vertical-offset="574">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <element signature="e#8#137#0#PHP" expanded="true" />
+            <marker date="1419510588000" expanded="true" signature="-1:-1" placeholder="SELECT g.nam..groups..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/updateGroup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="405">
+        <state vertical-scroll-proportion="0.4703833" vertical-offset="0" max-vertical-offset="574">
           <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
           <folding>
             <element signature="e#6#103#0#PHP" expanded="true" />
@@ -744,46 +739,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/deleteUserFromGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
-          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="81" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0416665" vertical-offset="1361" max-vertical-offset="1980">
-          <caret line="102" column="36" selection-start-line="102" selection-start-column="36" selection-end-line="102" selection-end-column="36" />
-          <folding>
-            <marker date="1419531415000" expanded="true" signature="983:1025" placeholder="INSERT INTO ..." />
-            <marker date="1419531415000" expanded="true" signature="1313:1334" placeholder="DELETE FROM ..." />
-            <marker date="1419531415000" expanded="true" signature="2020:2050" placeholder="UPDATE :_tab..." />
-            <marker date="1419531415000" expanded="true" signature="2390:2413" placeholder="SELECT * FRO..table_..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/isUserExist.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="225">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/addGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7916667" vertical-offset="11" max-vertical-offset="585">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/addUser2Group.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.0" vertical-offset="0" max-vertical-offset="375">
+        <state vertical-scroll-proportion="0.41811848" vertical-offset="0" max-vertical-offset="574">
           <caret line="16" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
           <folding />
         </state>
@@ -794,6 +752,45 @@
         <state vertical-scroll-proportion="0.05226481" vertical-offset="0" max-vertical-offset="574">
           <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/isUserExist.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10452962" vertical-offset="0" max-vertical-offset="574">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/deleteUserFromGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28745645" vertical-offset="0" max-vertical-offset="574">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.291667" vertical-offset="236" max-vertical-offset="1935">
+          <caret line="37" column="30" selection-start-line="37" selection-start-column="15" selection-end-line="37" selection-end-column="30" />
+          <folding>
+            <marker date="1419871511000" expanded="true" signature="984:1026" placeholder="INSERT INTO ..." />
+            <marker date="1419871511000" expanded="true" signature="1321:1342" placeholder="DELETE FROM ..." />
+            <marker date="1419871511000" expanded="true" signature="2051:2081" placeholder="UPDATE :_tab..." />
+            <marker date="1419871511000" expanded="true" signature="2429:2452" placeholder="SELECT * FRO..table_..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.071428575" vertical-offset="161" max-vertical-offset="735">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#6#138#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

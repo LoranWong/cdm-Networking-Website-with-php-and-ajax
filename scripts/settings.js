@@ -41,7 +41,8 @@ $(function() {
                 $('#settings_details').val(json[0].details);
 
             })
-            //从数据库设置学校以及专业列表  看来这两个要先加载
+        
+        //从数据库设置学校以及专业列表  看来这两个要先加载
         $('#settings_uni,#settings_major,#settings_gender').chosen({
             no_results_text: '(*^__^*)没有找到..'
         });
