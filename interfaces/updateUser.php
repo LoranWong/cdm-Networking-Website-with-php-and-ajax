@@ -32,17 +32,14 @@ $settings_id = $_POST['settings_id'];
 
 //$query = "UPDATE users set user='$settings_user',details='$settings_details' ,birthday = '$settings_birthday' , gender_id = $settings_gender ,major_id =$settings_major ,uni_id = $settings_uni where id =  $settings_id ";
 
-$array = array('user'=>"$settings_user",
-    'details'=>"$settings_details",
-    'birthday'=>"$settings_birthday",
-    'gender_id'=>"$settings_gender",
-    'major_id'=>"$settings_major",
-    'uni_id'=>"$settings_id"
+$array = array('user' => "$settings_user",
+	'details' => "$settings_details",
+	'birthday' => "$settings_birthday",
+	'gender_id' => "$settings_gender",
+	'major_id' => "$settings_major",
+	'uni_id' => "$settings_uni",
 );
 
-
-echo mydb_update('users',$array,"id=$settings_id");
+echo mydb_update('users', $array, "id=$settings_id");
 
 mysql_close();
-
-

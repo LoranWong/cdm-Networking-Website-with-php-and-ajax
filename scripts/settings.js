@@ -43,9 +43,66 @@ $(function() {
             })
         
         //从数据库设置学校以及专业列表  看来这两个要先加载
-        $('#settings_uni,#settings_major,#settings_gender').chosen({
-            no_results_text: '(*^__^*)没有找到..'
+        //专业
+        $.ajax({
+            url: "interfaces/getMajors.php",
+            type: 'POST',
+        })
+        .done(function(response) {
+            //console.log(response);
+            json = eval(response);
+            //console.log(json);
+            //遍历Groups  插入Tabs
+            $.each(json, function(index, val) {
+                item = $('<option value="'+val.id+'">'+val.name+'</option>');
+                item.appendTo($('#settings_major'));
+            });
+            $('#settings_major').chosen({
+                no_results_text: '(*^__^*)没有找到..'
+            });
+
         });
+        //学校
+        $.ajax({
+            url: "interfaces/getUnis.php",
+            type: 'POST',
+        })
+        .done(function(response) {
+            //console.log(response);
+            json = eval(response);
+            //console.log(json);
+            //遍历Groups  插入Tabs
+            $.each(json, function(index, val) {
+                item = $('<option value="'+val.id+'">'+val.name+'</option>');
+                item.appendTo($('#settings_uni'));
+            });
+            $('#settings_uni').chosen({
+                no_results_text: '(*^__^*)没有找到..'
+            });
+
+        });
+        //性别
+        $.ajax({
+            url: "interfaces/getGenders.php",
+            type: 'POST',
+        })
+        .done(function(response) {
+            //console.log(response);
+            json = eval(response);
+            //console.log(json);
+            //遍历Groups  插入Tabs
+            $.each(json, function(index, val) {
+                item = $('<option value="'+val.id+'">'+val.name+'</option>');
+                item.appendTo($('#settings_gender'));
+            });
+            $('#settings_gender').chosen({
+                no_results_text: '(*^__^*)没有找到..'
+            });
+
+        });
+
+
+
 
 
         //初始化生日选择框
@@ -87,7 +144,7 @@ $(function() {
                 $.ajax({
                         url: 'interfaces/updateUser.php',
                         type: 'POST',
-                        data: $('.settings_profile_form').serialize() + "&settings_id=" + g_user_id
+                        data: $('#settings_profile_form').serialize() + "&settings_id=" + g_user_id
                     })
                     .done(function(response, status) {
                         //alert('注册返回：'+response);

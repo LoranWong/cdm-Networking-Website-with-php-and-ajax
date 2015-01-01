@@ -559,7 +559,7 @@
 .item_right {
     width: 10%;
 }
-.item_comments_count {
+.item_comments_count,.item_right .item_comments_count {
     float: right;
     color: white;
     background: #969cb1;

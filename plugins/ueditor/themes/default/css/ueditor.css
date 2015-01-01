@@ -3,9 +3,8 @@
 /* common layer */
 .edui-default .edui-box {
     border: none;
-    padding: 0;
+    padding: 0px;
     margin: 0;
-    overflow: hidden;
 }
 
 .edui-default a.edui-box {

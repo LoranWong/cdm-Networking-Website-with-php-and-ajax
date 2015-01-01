@@ -50,7 +50,7 @@ $(function() {
 			item.find('.item_date').html(time);
 			item.find('.item_title').html(val.title);
 			item.find('.home_comments_count').html(val.comments_count);
-			item.find('.item_title').attr('href', 'details.php?id=' + val.id);
+			item.find('.item_title,.home_comments_count').attr('href', 'details.php?id=' + val.id);
 			item.appendTo('.home_items_con');
 		});
 		if(json.length == 0){

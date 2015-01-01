@@ -260,7 +260,7 @@ $(function() {
                                 //console.log("index--->"+index);
                                 item.attr('question_id', val.id);
                                 item.find('.item_title').html(val.title);
-                                item.find('.item_title').attr('href', 'details.php?id=' + val.id);
+                                item.find('.item_title,.item_comments_count').attr('href', 'details.php?id=' + val.id);
                                 item.find('.item_user').html(val.user);
                                 item.find('.item_user').attr('href', 'home.php?user_id=' + val.user_id);
                                 item.find('.item_avatar_a').attr('href', 'home.php?user_id=' + val.user_id);
