@@ -311,8 +311,6 @@ $(function() {
 
                                     $(this).parents('.item_con').find('.item_hot_comment').html(details);
 
-console.log('?');
-
                                     if ($(this).text() == "显示全部") {
                                         $(this).text("收起");
                                     } else {
