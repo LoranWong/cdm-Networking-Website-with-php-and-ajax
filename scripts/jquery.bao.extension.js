@@ -218,7 +218,7 @@
                     });
                 } else if (request.readyState == 4 && request.response == "false") {
                     $.showErrorDialog("文件错误或过大", function() {
-                        window.history.go(0);
+                        //window.history.go(0);
                     })
                 };
 

@@ -45,13 +45,13 @@
                 <div class="home_middle">
                     <div class="home_fllow_con">
                         <a class="home_fllow_item">
-                            <span>关注了</span>
+                            <span>我圈</span>
                             <br>
                             <strong>15</strong>
                             <label>人</label>
                         </a>
                         <a class="home_fllow_item">
-                            <span>关注者</span>
+                            <span>圈我</span>
                             <br>
                             <strong>28</strong>
                             <label>人</label>

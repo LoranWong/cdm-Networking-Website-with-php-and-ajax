@@ -1,20 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="55153aac-881a-40f0-a367-7123bc2b00f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/getGenders.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/getMajors.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/interfaces/getUnis.php" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/ueditor/themes/default/images/icons.gif" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ueditor/php/config.json" afterPath="$PROJECT_DIR$/plugins/ueditor/php/config.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getTags.php" afterPath="$PROJECT_DIR$/interfaces/getTags.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/settings.js" afterPath="$PROJECT_DIR$/scripts/settings.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/testOperation.php" afterPath="$PROJECT_DIR$/interfaces/testOperation.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ueditor/ueditor.config.js" afterPath="$PROJECT_DIR$/plugins/ueditor/ueditor.config.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugins/ueditor/themes/default/css/ueditor.css" afterPath="$PROJECT_DIR$/plugins/ueditor/themes/default/css/ueditor.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/updateUser.php" afterPath="$PROJECT_DIR$/interfaces/updateUser.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="55153aac-881a-40f0-a367-7123bc2b00f2" name="Default" comment="" />
     <ignored path="cdm.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />

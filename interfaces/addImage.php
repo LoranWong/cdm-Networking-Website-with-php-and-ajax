@@ -28,9 +28,9 @@
 require_once '../require.php';
 
 if ($_POST['type'] == 'avatar') {
-	addavatar('settings_avatar_file',USERAVATAR_PATH,$_POST['id']);
-}elseif($_POST['type'] == 'group'){
-	addavatar('settings_avatar_file',GROUPAVATAR_PATH,$_POST['id']);
+	addavatar('settings_avatar_file', USERAVATAR_PATH, $_POST['id']);
+} elseif ($_POST['type'] == 'group') {
+	addavatar('settings_avatar_file', GROUPAVATAR_PATH, $_POST['id']);
 }
 
 /**
@@ -38,7 +38,7 @@ if ($_POST['type'] == 'avatar') {
  * @param string $dest_path 类似  resources/avatars/user/   函数会添加后缀
  * @param string $id
  */
-function addavatar($file_key,$dest_path,$id) {
+function addavatar($file_key, $dest_path, $id) {
 	//限制文件在2M以下
 	if ($_FILES[$file_key]["error"] > 0) {
 		echofalse_andexit();
@@ -48,7 +48,7 @@ function addavatar($file_key,$dest_path,$id) {
 		// echo "Size: " . ($_FILES[$file_key]["size"] / 1024);
 		// echo "Stored in: " . $_FILES[$file_key]["tmp_name"];
 		// echo $_POST['x']." ".$_POST['y']." ".$_POST['x2']." ".$_POST['x2']." ".$_POST['w']." ".$_POST['h']." ";
-		if (($_FILES[$file_key]["size"] / 1024) > 100) {
+		if (($_FILES[$file_key]["size"] / 1024) > 2000) {
 			echofalse_andexit();
 		}
 
