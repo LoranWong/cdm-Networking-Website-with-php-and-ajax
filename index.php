@@ -56,7 +56,7 @@
                                                 </span>
                                             </td>
                                             <td class="item_right">
-                                                <a href="" class="item_comments_count">0</a>
+                                                <a class="item_comments_count item_comments_count_a" href="">0</a>
                                             </td>
                                         </tr>
                                     </tbody>

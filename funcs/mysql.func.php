@@ -34,6 +34,7 @@ function mydb_insert($table, $array) {
 	//如果包含 'NOW()'  把它两边的双引号去掉以免解析错误
 	$values = str_replace("'NOW()'", "NOW()", $values);
 	$sql = "INSERT INTO $table ($keys) VALUES($values)";
+	//echo $sql;
 	if (mysql_query($sql)) {
 		return mysql_insert_id();
 	} else {
@@ -97,6 +98,7 @@ function mydb_update($table, $array, $where) {
 function mydb_isexist($table, $where) {
 	$where = $where == null ? null : " where " . $where;
 	$sql = "SELECT * FROM {$table} {$where}";
+	echo $sql;
 	$query = mysql_query($sql);
 	if (@mysql_fetch_array($query)) {
 		return 'true';

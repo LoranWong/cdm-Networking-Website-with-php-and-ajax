@@ -164,8 +164,6 @@ $(function() {
                 .done(function(response) {
                     //console.log("response= " + response);
                     //如果是加入
-                    if (isJoin) {
-                        $.showOKDialog("加入成功");
                         $('.group_join_btn').toggle();
                         $('.group_leave_btn').toggle();
                         //增加人数
@@ -175,12 +173,7 @@ $(function() {
                         } else {
                             $('.group_info_questions:last strong').text(users_count - 1);
                         }
-                    //如果是退出
-                    }else{
-                        $.showOKDialog("退出成功",function(){
-                            window.history.go(0);
-                        });
-                    }
+                        $('.group_info_questions:last strong').effect('highlight','1500');
                 });
         }
 

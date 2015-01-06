@@ -43,20 +43,22 @@
                 </div>
 
                 <div class="home_middle">
-                    <div class="home_fllow_con">
-                        <a class="home_fllow_item">
+                    <div class="home_follow_con">
+                        <a class="home_follow_item">
                             <span>我圈</span>
                             <br>
                             <strong>15</strong>
                             <label>人</label>
                         </a>
-                        <a class="home_fllow_item">
+                        <a class="home_follow_item">
                             <span>圈我</span>
                             <br>
                             <strong>28</strong>
                             <label>人</label>
                         </a>
                     </div>
+                    <a id="home_follow_btn" class="gradient_btn_green home_follow_unfollow_btn">圈他</a>
+                    <a id="home_unfollow_btn" class="gradient_btn_white home_follow_unfollow_btn">怒取圈</a>
                     <div class="home_groups">
                         <span class="home_groups_label">加入的小组</span>
                         <span class="chevron">&nbsp;›&nbsp;</span>

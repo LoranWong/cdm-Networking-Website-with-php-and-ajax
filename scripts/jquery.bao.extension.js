@@ -231,15 +231,59 @@
 
     }
 
-
-
-
     //输出调试的简写
     $.l = function(object) {
         console.log(object);
     }
 
+    //初始化ajax
+    $.ajaxSetup({
+        type: 'POST'
+    });
 
+    /**
+    *  根据用户是否具有关注关系来显示按钮
+    **/
+    $.showFollowOrUnfollowBtn =function(follower_id,followee_id,jq_follow_btn,jq_unfollow_btn) {
+        //TODO 判断是否关注了
+        $.ajax({
+                url: 'interfaces/isUserFollow.php',
+                data: {
+                    follower: follower_id,
+                    followee: followee_id,
+                },
+            })
+            .done(function(response) {
+                if (response == 'true') {
+                    jq_follow_btn.hide();
+                    jq_unfollow_btn.show();
+
+                } else {
+                    jq_unfollow_btn.hide();
+                    jq_follow_btn.show();
+                }
+            });
+
+    }
+
+    //圈与取消圈的操作
+    $.doFollowOrUnfollow = function(follower_id, followee_id, isFollow ,jq_followe_btn , jq_unfollow_btn) {
+        //如果未登录
+            ajaxUrl = isFollow ? "interfaces/addFollower.php" : "interfaces/deleteFollower.php";
+            $.ajax({
+                    url: ajaxUrl,
+                    data: {
+                        follower_id: follower_id,
+                        followee_id: followee_id
+                    },
+                })
+                .done(function(response) {
+                    console.log("response= " + response);
+                    jq_followe_btn.toggle();
+                    jq_unfollow_btn.toggle();
+                });
+    }
+    
 
 
 })(jQuery);
