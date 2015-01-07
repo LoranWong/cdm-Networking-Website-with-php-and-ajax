@@ -28,7 +28,7 @@
                     首页
                     <img src="images/triangle_bottom.png"></a>
                     <a id="group_btn" href="index.php?header_id=1" class="top_menu_item">
-                    我的小组
+                    小组动态
                     <img src="images/triangle_bottom.png"></a>
                 </div>
 

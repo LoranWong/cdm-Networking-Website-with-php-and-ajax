@@ -35,7 +35,7 @@ $(function() {
         //TODO :get Tags and add them to tab   and of course add tag_id attr
         ajaxUrl = 'interfaces/getTags.php';
         ajaxDataId = g_tag_id;
-        $('.group_info_con').css('display', 'none');
+        $('#group_info_con_id').css('display', 'none');
 
     } else if (g_header_id == 1) {
         $('#group_btn').css('color', '#fff');

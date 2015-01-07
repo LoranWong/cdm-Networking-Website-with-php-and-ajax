@@ -132,6 +132,12 @@
     margin-bottom: 10px;
     position: relative;
 }
+
+.box_title{
+    padding:10px 5px;
+    margin: 0px 15px;
+    border-bottom: 1px solid #f4f4f4;
+}
 /* Chrome, Safari, Opera */
 
 @-webkit-keyframes showShadow {
@@ -500,7 +506,7 @@
     width: 10%;
 }
 .item_avatar {
-    margin: 11px 15px 0 15px;
+    margin: 11px 15px;
     background: #ccc;
     width: 50px;
     height: 50px;
@@ -559,7 +565,7 @@
 .item_right {
     width: 10%;
 }
-.item_right .item_comments_count{
+.item_right .item_comments_count,.item_comments_count{
     float: right;
     color: white;
     background: #969cb1;
@@ -589,7 +595,7 @@
 .accordion_title {
     margin: 0;
 }
-/*小组详细信息*/
+/*小组详细信息*****************************************/
 
 .group_info_con {
     position: relative;
@@ -607,7 +613,7 @@
     position: absolute;
     cursor: normal;
     left: 90px;
-    top: 30px;
+    top: 70px;
 }
 .group_info_bottom_con {
     margin-top: 60px;
@@ -640,15 +646,48 @@
 .group_join_btn {
     display: none;
     position: absolute;
-    right: 20px;
+    right: 10px;
     bottom: 80px;
 }
 .group_leave_btn {
     position: absolute;
-    right: 20px;
+    right: 10px;
     bottom: 80px;
 }
+/*可能认识*****************************************/
+.item_user_list_name{
+    position: absolute;
+    color: #888;
+    font-size: 15px;
+    top: 15px;
+    left: 90px;
+}
+.item_list_avatar{
+    width: 60px;
+    height: 60px;
+}
+.user_item_con{
+    position: relative;
+    border-bottom: 1px solid #fafafa;
+}
 
+.item_list_follow_btn{
+    position: absolute;
+    padding: 5px 13px;
+    right: 10px;
+    top: 43px;
+}
+.item_user_uni_major{
+    font-size: 12px;
+    color: #aaa;
+
+}
+.item_uin_major_con{
+    margin: 7px 0 0 15px;
+}
+.item_avatar_name_con{
+    position: relative;
+}
 /*灰色旋转条*/
 
 .spinner_gray {
