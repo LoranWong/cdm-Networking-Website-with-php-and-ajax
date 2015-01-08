@@ -4,8 +4,6 @@
 <head>
 <?php require_once 'includeBeforeTitle.php';?>
 <script src="scripts/settings.js"></script>
-
-<title>CdM | Coder Designer Manager 体验分享的快乐</title>
 </head>
 
 <body class="mybody">
@@ -169,7 +167,6 @@
 
                         </div>
                     </form>
-
                 </div>
                 <!-- 页面右边浮动内容 -->
 

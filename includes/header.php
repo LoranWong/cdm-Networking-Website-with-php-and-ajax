@@ -20,7 +20,10 @@
         -->
             <div class="header_main">
                 <a href="index.php">
-                    <img id="header_logo" src="images/logo.png">
+                    <div class="header_logo_box">
+                        <!-- <img id="header_logo_over" class="header_logo" src="images/logo_over.png"> -->
+                        <img id="header_logo_nor" class="header_logo" src="images/logo_nor.png">
+                    </div>
                 </a>
 
                 <div class="header_main_menu">
@@ -46,7 +49,7 @@
 <!-- 提示登录注册 -->
         <div class="tips_reg_log_con box_con">
             <div class="tips_main">
-                <a class="tips_join">成为CdM居民，体验分享的快乐</a>
+                <a class="tips_join">成为圈耳居民，体验分享的快乐</a>
                 <div class="tips_btns">
                     <a class="tips_reg_btn">现在注册</a>
                     <a class="tips_log_btn">问友登录</a>

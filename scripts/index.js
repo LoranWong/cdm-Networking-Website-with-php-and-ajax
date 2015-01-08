@@ -50,7 +50,7 @@ $(function() {
 
     //加载
     loadTabs();
-    loadYouMayKonw();
+    if(g_user_id != null) loadYouMayKonw();
 
     //滚动监听
     $(window).scroll(function(event) {

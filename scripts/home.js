@@ -12,7 +12,7 @@ $(function() {
 
     //加载用户基本信息
     $.ajax({
-            url: 'interfaces/getUser',
+            url: 'interfaces/getUser.php',
             type: 'POST',
             data: {
                 id: g_user_id

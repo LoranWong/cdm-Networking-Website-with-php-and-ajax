@@ -59,6 +59,16 @@ $(function() {
     $('.tips_reg_btn').button();
     $('.tips_log_btn').button();
 
+    //logo初始化
+    // $('#header_logo_nor').mouseenter(function(event) {
+    //     $(this).css('opacity', '0');
+    // });
+    // $('#header_logo_nor').mouseleave(function(event) {
+    //     $(this).css('opacity', '1');
+
+    // });
+
+
     //初始化load对话框
     $('#dia_load').dialog({
         autoOpen: false,
@@ -242,7 +252,7 @@ $(function() {
     function showLoginDialog() {
         //初始化登录对话框
         $('#dia_login').dialog({
-            title: '登入CdM',
+            title: '登入圈耳',
             width: 350,
             height: 230,
             resizable: false,
@@ -296,7 +306,7 @@ $(function() {
 
         //初始化注册对话框
         $('#dia_reg').dialog({
-            title: '欢迎加入CdM',
+            title: '欢迎加入圈耳',
             width: 450,
             height: 240,
             resizable: false,
@@ -307,16 +317,7 @@ $(function() {
                 $('#reg_email').autocomplete('destroy');
             }
         });
-        //初始化生日选择框
-        var date = new Date(1994, 7, 3);
-        $('#reg_birthday').datepicker({
-            changeMonth: true,
-            changeYear: true,
-            defaultDate: date,
-            yearRange: "1900:c",
-            hideIfNotPrevNext: true,
-            maxDate: 0,
-        });
+
         //初始化注册错误信息提示
         $(".dia_reg_form").validate({
             onkeyup: false,
@@ -336,13 +337,7 @@ $(function() {
                 reg_pass: {
                     required: true,
                     rangelength: [6, 20],
-                },
-                reg_birthday: {
-                    required: true,
                 }
-            },
-            messages: {
-
             },
             submitHandler: function(formEle) {
                 $.showLoadDialog('跳转中...');
@@ -353,7 +348,7 @@ $(function() {
                     })
                     .done(function(response, status) {
                         //alert('注册返回：'+response);
-                        if (response == "true") {
+                        if (response != "false") {
                             Login2Server({
                                 login_email: $('#reg_email').val(),
                                 login_pass: $('#reg_pass').val(),

@@ -1,4 +1,4 @@
-    <meta charset="UTF-8">
+<meta charset="UTF-8">
     <!-- jquery -->
     <script src="plugins/jquery-ui/external/jquery/jquery-1.11.1.min.js"></script>
     <script src="plugins/jquery-ui/jquery-ui.min.js"></script>
@@ -25,3 +25,11 @@
 
     <!-- my css -->
     <link rel="stylesheet" href="styles/ui.css">
+
+    <!-- ico -->
+    <LINK href="images/favicon.ico" type="image/x-icon" rel=icon>
+    <LINK href="images/favicon.ico" type="image/x-icon" rel="shortcut icon">
+
+    <!-- title -->
+    <title>圈耳测试版 | 专注小谷围岛三十年~</title>
+

@@ -212,12 +212,21 @@
     width: 1000px;
     margin: auto;
 }
-#header_logo {
+.header_logo_box{
+    position: relative;
     float: left;
+    height: 43px;
+    width: 60px;
     margin: 0;
     padding: 0;
-    height: 43px;
     cursor: pointer;
+    overflow: visible;
+}
+.header_logo {
+    position: absolute;
+    height: 43px;
+    left: 0;
+    top: 0;
 }
 #userInfo_btn {
     float: left;
@@ -236,7 +245,7 @@
 }
 .header_main_menu {
     float: left;
-    margin-left: 20px;
+    margin-left: 10px;
 }
 .top_divide_line {
     height: 30px;

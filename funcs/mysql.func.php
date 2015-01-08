@@ -98,9 +98,9 @@ function mydb_update($table, $array, $where) {
 function mydb_isexist($table, $where) {
 	$where = $where == null ? null : " where " . $where;
 	$sql = "SELECT * FROM {$table} {$where}";
-	echo $sql;
+	//echo $sql;
 	$query = mysql_query($sql);
-	if (@mysql_fetch_array($query)) {
+	if (mysql_fetch_array($query)) {
 		return 'true';
 	} else {
 		return 'false';
