@@ -100,31 +100,21 @@
                         </div>
                     </div>
 
-                    <div class="box_con group_info_con">
+                    <div id="youmaykonw_box_id" class="box_con group_info_con">
                         <div class="box_title">可能认识</div>
                         <div class="user_items_con">
                             <div class="user_item_con">
                                 <div class="item_uin_major_con">
-                                    <span class="item_user_uni_major">华南理工大学</span>
+                                    <span class="item_user_uni_major uni_name">华南理工大学</span>
                                     <span class="item_user_uni_major"> • </span>
-                                    <span class="item_user_uni_major">软件工程</span>
+                                    <span class="item_user_uni_major major_name">软件工程</span>
                                 </div>
                                 <div class="item_avatar_name_con">
-                                    <img class="item_avatar item_list_avatar" src="resources/avatars/default/7_128.png" alt="">
+                                    <a class="item_avatar_a">
+                                        <img class="item_avatar item_list_avatar" src="resources/avatars/default/7_128.png" alt="">
+                                    </a>
                                     <a class="item_user item_user_list_name" href="">男神赵红学长</a>
-                                    <a id="item_user_follow_btn" class="gradient_btn_green item_list_follow_btn">圈他</a>
-                                </div>
-                            </div>
-                            <div class="user_item_con">
-                                <div class="item_uin_major_con">
-                                    <span class="item_user_uni_major">华南理工大学</span>
-                                    <span class="item_user_uni_major"> • </span>
-                                    <span class="item_user_uni_major">行政管理</span>
-                                </div>
-                                <div class="item_avatar_name_con">
-                                    <img class="item_avatar item_list_avatar" src="resources/avatars/default/2_128.png" alt="">
-                                    <a class="item_user item_user_list_name" href="">戴大魔头是也</a>
-                                    <a id="item_user_follow_btn" class="gradient_btn_green item_list_follow_btn">圈他</a>
+                                    <a id="item_user_follow_btn" class="gradient_btn_green item_list_follow_btn" user_id="">圈他</a>
                                 </div>
                             </div>
 

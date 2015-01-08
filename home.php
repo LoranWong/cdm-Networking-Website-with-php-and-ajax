@@ -47,13 +47,13 @@
                         <a class="home_follow_item">
                             <span>我圈</span>
                             <br>
-                            <strong>15</strong>
+                            <strong id="follow_count">0</strong>
                             <label>人</label>
                         </a>
                         <a class="home_follow_item">
                             <span>圈我</span>
                             <br>
-                            <strong>28</strong>
+                            <strong id="fans_count">0</strong>
                             <label>人</label>
                         </a>
                     </div>

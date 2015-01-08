@@ -278,9 +278,9 @@
                     },
                 })
                 .done(function(response) {
-                    console.log("response= " + response);
-                    jq_followe_btn.toggle();
-                    jq_unfollow_btn.toggle();
+                    //console.log("response= " + response);
+                    if(jq_followe_btn != null) jq_followe_btn.toggle();
+                    if(jq_unfollow_btn != null) jq_unfollow_btn.toggle();
                 });
     }
     

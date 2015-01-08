@@ -21,11 +21,13 @@ $(function() {
         .done(function(response) {
             json = eval(response);
             $.l(json);
-            $('.home_user_name').html(json[0].user);
-            $('.home_uni_a').html(json[0].uni_name);
-            $('.home_major_a').html(json[0].major_name);
-            $('.home_email_a').html(json[0].email);
-            $('.home_details').html(json[0].details);
+            $('.home_user_name').text(json[0].user);
+            $('.home_uni_a').text(json[0].uni_name);
+            $('.home_major_a').text(json[0].major_name);
+            $('.home_email_a').text(json[0].email);
+            $('.home_details').text(json[0].details);
+            $('#follow_count').text(json[0].follow_count);
+            $('#fans_count').text(json[0].fans_count);
 
         })
         .fail(function() {
@@ -52,7 +54,7 @@ $(function() {
             $.each(json, function(index, val) {
                 time = $.getTimeByDateTime(val.date);
                 item = (index == 0) ? $('.item_con').first() : $('.item_con').first().clone();
-                item.find('.item_date').html(time);
+                item.find('.home_item_date').html(time);
                 item.find('.item_title').html(val.title);
                 item.find('.home_comments_count').html(val.comments_count);
                 item.find('.item_title,.home_comments_count').attr('href', 'details.php?id=' + val.id);

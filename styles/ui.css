@@ -129,7 +129,7 @@
     border-radius: 3px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
     border: 1px solid #eee;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     position: relative;
 }
 
@@ -668,7 +668,8 @@
 }
 .user_item_con{
     position: relative;
-    border-bottom: 1px solid #fafafa;
+    margin: 0 10px;
+    border-bottom: 1px solid #eee;
 }
 
 .item_list_follow_btn{
@@ -688,6 +689,12 @@
 .item_avatar_name_con{
     position: relative;
 }
+
+#youmaykonw_box_id{
+    display: none;
+}
+
+
 /*灰色旋转条*/
 
 .spinner_gray {
