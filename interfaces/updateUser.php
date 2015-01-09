@@ -40,6 +40,6 @@ $array = array('user' => "$settings_user",
 	'uni_id' => "$settings_uni",
 );
 
-echo mydb_update('users', $array, "id=$settings_id");
+echo mydb_update('users', $array, "id='$settings_id'");
 
 mysql_close();

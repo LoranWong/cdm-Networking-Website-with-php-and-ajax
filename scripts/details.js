@@ -50,7 +50,7 @@ $(function() {
                 },
             })
             .done(function(response) {
-                if (response == "true") {
+                if (response != "false") {
                     $.showOKDialog('回复成功', function() {
                         $('.comment_input_con').slideUp();
                         $('.comment_btn').show('400');

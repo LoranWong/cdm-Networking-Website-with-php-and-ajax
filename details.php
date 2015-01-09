@@ -55,6 +55,7 @@
                         <div class="comments_con">
                             <div class="comment_main comment_label">回复列表</div>
                             <div class="comment_con">
+                                <span class="item_comments_count comment_index">1</span>
                                 <div class="details_top_info comments_top_info">
                                     <a class="comment_avatar_a">
                                         <img class="details_avatar comment_avatar" src="" alt="">
@@ -70,8 +71,6 @@
                                         <span class="chevron">&nbsp;›&nbsp;</span>
                                         <!-- <a class="group_item">小组名</a> -->
                                     </div>
-                                    <span class="item_comments_count comment_index">1</span>
-
                                 </div>
                                 <div class="comment_main">
                                     评论主内容

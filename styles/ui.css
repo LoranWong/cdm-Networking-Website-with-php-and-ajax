@@ -405,6 +405,7 @@
 /*提示注册登录处*/
 
 .tips_reg_log_con {
+    display: none;
     clear: both;
     width: 100%;
     height: 160px;
@@ -663,6 +664,11 @@
     right: 10px;
     bottom: 80px;
 }
+
+#group_info_con_id{
+    display: none;
+}
+
 /*可能认识*****************************************/
 .item_user_list_name{
     position: absolute;
@@ -847,7 +853,7 @@
 .comment_index {
     float: right;
     cursor: default;
-    margin: 0px 50px;
+    margin: 20px 40px;
 }
 .comment_label {
     color: #888;

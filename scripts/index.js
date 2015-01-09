@@ -27,6 +27,8 @@ $(function() {
     g_tagOrGroup_id = '';
     //当前显示的是否是GROUP
     isNowShowGroup = false;
+    //haveTabs
+    haveTabs = true;
 
 
     ajaxUrl = "";
@@ -37,8 +39,6 @@ $(function() {
         //TODO :get Tags and add them to tab   and of course add tag_id attr
         ajaxUrl = 'interfaces/getTags.php';
         ajaxDataId = g_tag_id;
-        $('#group_info_con_id').css('display', 'none');
-
     } else if (g_header_id == 1) {
         $('#group_btn').css('color', '#fff');
         $('#group_btn img').css('display', 'inline');
@@ -58,10 +58,6 @@ $(function() {
             showMoreQuestions(g_header_id, g_tagOrGroup_id);
         }
     });
-
-
-
-
 
 
 
@@ -112,7 +108,7 @@ $(function() {
                     });
                 //等于一代表只有自己
                 if (json.length != 1) {
-                    $('#youmaykonw_box_id').show();
+                    $('#youmaykonw_box_id').show({effect:'blind',duration:400});
                 }
 
             });
@@ -131,8 +127,16 @@ function loadTabs() {
             //console.log(response);
             json = eval(response);
             //console.log(json);
-            //遍历Groups  插入Tabs
-            $.each(json, function(index, val) {
+
+            //如果没有
+            if(json.length == 0){
+                $('.main_left').hide();
+                haveTabs = false;
+                alert('请创建或者加入小组');
+                window.location = "settings.php?settings=creategroup";
+            }else{
+                //遍历Groups  插入Tabs
+                $.each(json, function(index, val) {
                 item = $('<li tab_index = "' + index + '" tagOrGroup_id ="' + val.id + '""><a href="#tab_content">' + val.name + '</a></li>');
                 item.appendTo($('.tabs_con ul'));
             });
@@ -142,7 +146,10 @@ function loadTabs() {
                 heightStyle: 'content',
                 beforeActivate: loadQuestion,
                 create: loadQuestion,
+                show: { effect: "fade", duration: 300 }
             });
+            }
+
         });
 }
 
@@ -156,8 +163,8 @@ function loadQuestion(event, ui) {
     $('.item_con').not(':first').remove();
     //首次加载
     showMoreQuestions(g_header_id, g_tagOrGroup_id);
-    //若当前显示的是Group,显示页面右边内容
-    if (isNowShowGroup) {
+    //若当前显示的是Group且有加入小组,显示页面右边内容
+    if (isNowShowGroup && haveTabs) {
         //加载小组信息
         doInitGroupInfo();
     }
@@ -193,6 +200,9 @@ function doInitGroupInfo() {
             $('.group_leave_btn').unbind("click").click(function(event) {
                 doJoinOrleave(g_user_id, g_group_id, false);
             });
+
+            $('#group_info_con_id').show({effect:'blind',duration:400});
+
         });
 
 }
@@ -281,6 +291,9 @@ function showMoreQuestions(header_id, tagOrGroup_id) {
             .done(function(response, status, xhr) {
 
                 if (response != "[]") {
+
+                    $('.item_con').show();
+
                     json = eval("(" + response + ")");
 
                     if (json.length < 3) {
@@ -381,7 +394,16 @@ function showMoreQuestions(header_id, tagOrGroup_id) {
                     //当内容已经被取完时
                     $('#spinner_gray_new').hide();
                     $('#item_more_new').text("没有更多内容~(≧▽≦)~啦");
+                    //如果没有内容
+                    if(g_items_json == null || g_items_json.length ==0){
+                        $('.item_con').hide();
+                    }
+
                 }
+
+
+
+
             }).always(function() {
                 isLoading = false;
             });

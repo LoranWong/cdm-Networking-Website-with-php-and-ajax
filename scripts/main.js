@@ -19,9 +19,9 @@ $(function() {
                 json = eval(response);
                 //待用
             });
-        $(".tips_reg_log_con").css("display", "none");
     } else {
         //没有cookie
+        $(".tips_reg_log_con").show('blind',400)
         $("#userInfo_btn").hide();
         $("#logout_btn").hide();
     }
@@ -389,15 +389,14 @@ $(function() {
                         $.cookie("user", json[0].user);
                     }
                     setTimeout(function() {
-                        $('#dia_load').dialog('close');
-
-                        dialog2Close.dialog('close');
-
-                        //登录
-                        $("#userInfo_btn").html(json[0].user);
-                        $(".tips_reg_log_con").css("display", "none");
-                        $("#userInfo_btn").show();
-                        $("#logout_btn").show();
+                        window.history.go(0);
+                        // $('#dia_load').dialog('close');
+                        // dialog2Close.dialog('close');
+                        // //登录
+                        // $("#userInfo_btn").html(json[0].user);
+                        // $(".tips_reg_log_con").css("display", "none");
+                        // $("#userInfo_btn").show();
+                        // $("#logout_btn").show();
 
                     }, 700);
                 } else {

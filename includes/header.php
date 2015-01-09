@@ -49,10 +49,10 @@
 <!-- 提示登录注册 -->
         <div class="tips_reg_log_con box_con">
             <div class="tips_main">
-                <a class="tips_join">成为圈耳居民，体验分享的快乐</a>
+                <a class="tips_join">加入圈耳,话小谷围点点滴滴</a>
                 <div class="tips_btns">
                     <a class="tips_reg_btn">现在注册</a>
-                    <a class="tips_log_btn">问友登录</a>
+                    <a class="tips_log_btn">岛民登录</a>
                 </div>
             </div>
         </div>
