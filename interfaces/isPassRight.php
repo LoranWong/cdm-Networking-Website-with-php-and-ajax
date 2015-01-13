@@ -16,6 +16,4 @@ $sql = "SELECT user,id FROM users WHERE email='$_POST[login_email]' AND pass='$p
 
 echo get_json_from_sql($sql);
 
-
 mysql_close();
-

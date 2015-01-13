@@ -8,7 +8,7 @@ $(function() {
     g_group_id = $.baoGetUrlParam('group_id');
     //$.l(g_settings);
     if (g_group_id != null) {
-        console.log(g_group_id);
+        $.l(g_group_id);
     } else if (g_settings == 'profile' || g_settings == null) {
         $('.settings_profile').show();
         initProfile();
@@ -49,9 +49,9 @@ $(function() {
             type: 'POST',
         })
         .done(function(response) {
-            //console.log(response);
+            //$.l(response);
             json = eval(response);
-            //console.log(json);
+            //$.l(json);
             //遍历Groups  插入Tabs
             $.each(json, function(index, val) {
                 item = $('<option value="'+val.id+'">'+val.name+'</option>');
@@ -68,9 +68,9 @@ $(function() {
             type: 'POST',
         })
         .done(function(response) {
-            //console.log(response);
+            //$.l(response);
             json = eval(response);
-            //console.log(json);
+            //$.l(json);
             //遍历Groups  插入Tabs
             $.each(json, function(index, val) {
                 item = $('<option value="'+val.id+'">'+val.name+'</option>');
@@ -87,9 +87,9 @@ $(function() {
             type: 'POST',
         })
         .done(function(response) {
-            //console.log(response);
+            //$.l(response);
             json = eval(response);
-            //console.log(json);
+            //$.l(json);
             //遍历Groups  插入Tabs
             $.each(json, function(index, val) {
                 item = $('<option value="'+val.id+'">'+val.name+'</option>');
@@ -158,7 +158,7 @@ $(function() {
                         }
                     })
                     .fail(function() {
-                        console.log("error");
+                        $.l("error");
                         $.showErrorDialog("网络错误");
                     });
             },
@@ -270,7 +270,7 @@ $(function() {
             .done(function(response) {
                 json = eval("(" + response + ")");
                 g_groups_json = json;
-                //console.log(json);
+                //$.l(json);
                 //该旗帜标志是否不存在管理的小组
                 flag = false;
                 $.each(json, function(index, val) {
@@ -288,7 +288,7 @@ $(function() {
                                 color: '#eee'
                             });
                             g_selected_group_id = $(this).attr('group_id');
-                            //console.log(selected_group_id);
+                            //$.l(selected_group_id);
                             //将其他小组名隐藏
                             $.each($('#settings_manage_groups .group_item'), function(index, val) {
                                 if ($(val).attr('group_id') != g_selected_group_id) {
@@ -334,7 +334,7 @@ $(function() {
                             });
                         });
                     }
-                    console.log(flag);
+                    $.l(flag);
                 });
                 if (!flag) {
                     $('#settings_manage_groups .settings_group_label').text('你不是任何小组的上帝权限拥有者哦！咱可以自己去创建小组(*^__^*) 嘻嘻……');

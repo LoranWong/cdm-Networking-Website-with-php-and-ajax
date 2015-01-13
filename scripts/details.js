@@ -41,7 +41,7 @@ $(function() {
     $('.comment_btn_ok').click(function(event) {
         $.showLoadDialog('提交中...');
         $.ajax({
-                url: 'interfaces/addComment',
+                url: 'interfaces/addComment.php',
                 type: 'POST',
                 data: {
                     question_id: g_question_id,
@@ -79,7 +79,7 @@ $(function() {
     });
 
     function showMoreComment() {
-        //console.log(id);
+        //$.l(id);
         if (!isLoading) {
             //防止异步加载出错
             isLoading = true;
@@ -95,7 +95,7 @@ $(function() {
                 .done(function(response, status, xhr) {
                     if (response != "[]") {
                         json = eval("(" + response + ")");
-                        //console.log(json);
+                        //$.l(json);
 
                         if(json.comments.length < 3 ){
                             //当内容已经被取完时
@@ -151,8 +151,8 @@ $(function() {
                             item = index == 0 && currentLength == 0 ? $('.comment_con').first() : $('.comment_con').first().clone();
 
                             item.find(".group_item").remove();
-                            //console.log("currentLength--->"+currentLength);
-                            //console.log(val);
+                            //$.l("currentLength--->"+currentLength);
+                            //$.l(val);
                             item.attr('comment_id', val.id);
                             item.find('.comment_main').html(val.details);
                             item.find('.item_user').html(val.user);
@@ -185,7 +185,7 @@ $(function() {
 
                 })
                 .fail(function() {
-                    console.log("error");
+                    $.l("error");
                 }).always(function() {
                     isLoading = false;
 
@@ -205,7 +205,7 @@ $(function() {
             })
             .done(function(response) {
                 json = eval("(" + response + ")");
-                //console.log(json);
+                //$.l(json);
                 $.each(json, function(index, val) {
                     item = $('<a class="tag_item"></a>');
                     item.attr('href', "index.php?header_id=0&tag_id=" + val.id);

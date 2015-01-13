@@ -76,7 +76,7 @@ $(function() {
                 }
             })
             .done(function(response) {
-                console.log(response);
+                $.l(response);
                 json = eval(response);
                 isFirstUser = true;
                 $.each(json, function(index, val) {
@@ -132,9 +132,9 @@ $(function() {
                 },
             })
             .done(function(response) {
-                //console.log(response);
+                //$.l(response);
                 json = eval(response);
-                //console.log(json);
+                //$.l(json);
 
                 //如果没有
                 if (json.length == 0) {
@@ -168,7 +168,7 @@ $(function() {
 
     function loadQuestion(event, ui) {
         g_tagOrGroup_id = (ui.newTab == undefined) ? ui.tab.attr('tagOrGroup_id') : ui.newTab.attr('tagOrGroup_id');
-        //console.log(g_tagOrGroup_id);
+        //$.l(g_tagOrGroup_id);
         //每次切换Tab清空数据
         g_items_json = "";
         //移除之前加载的内容
@@ -235,7 +235,7 @@ $(function() {
                 },
             })
             .done(function(response) {
-                //console.log("response= " + response);
+                //$.l("response= " + response);
                 if (response == 'true') {
                     $('.group_join_btn').hide();
                     $('.group_leave_btn').show();
@@ -262,18 +262,27 @@ $(function() {
                     },
                 })
                 .done(function(response) {
-                    //console.log("response= " + response);
-                    //如果是加入
-                    $('.group_join_btn').toggle();
-                    $('.group_leave_btn').toggle();
-                    //增加人数
-                    users_count = parseInt($('.group_info_questions:last strong').text());
-                    if ($('.group_join_btn').is(":hidden")) {
-                        $('.group_info_questions:last strong').text(users_count + 1);
-                    } else {
-                        $('.group_info_questions:last strong').text(users_count - 1);
+                    //$.l("response= " + response);
+                    if(response == 'false'){
+                        $.showErrorDialog("网络错误");
+
+
+                    }else if(response == 'e_0'){
+                        alert("抱歉,每人最多加入五个小组(⊙o⊙)哦！");
+                    }else{
+                        //如果是加入
+                        $('.group_join_btn').toggle();
+                        $('.group_leave_btn').toggle();
+                        //增加人数
+                        users_count = parseInt($('.group_info_questions:last strong').text());
+                        if ($('.group_join_btn').is(":hidden")) {
+                            $('.group_info_questions:last strong').text(users_count + 1);
+                        } else {
+                            $('.group_info_questions:last strong').text(users_count - 1);
+                        }
+                        $('.group_info_questions:last strong').effect('highlight', '1500');
                     }
-                    $('.group_info_questions:last strong').effect('highlight', '1500');
+
                 });
         }
 
@@ -327,8 +336,8 @@ $(function() {
                             } else {
                                 g_items_json = g_items_json.concat(json);
                             }
-                            //console.log(json);
-                            //console.log(g_items_json);
+                            //$.l(json);
+                            //$.l(g_items_json);
 
                             html = '';
                             $.each(json, function(index, val) {
@@ -346,8 +355,8 @@ $(function() {
                                 }
 
                                 //设置Index时加上前面已经有的
-                                //console.log("currentLength--->"+currentLength);
-                                //console.log("index--->"+index);
+                                //$.l("currentLength--->"+currentLength);
+                                //$.l("index--->"+index);
                                 item.attr('question_id', val.id);
                                 item.find('.item_title').html(val.title);
                                 item.find('.item_title,.item_comments_count').attr('href', 'details.php?id=' + val.id);
@@ -370,7 +379,7 @@ $(function() {
 
 
                                 item.find('.item_main').mouseenter(function(event) {
-                                    //console.log($(this).find('.item_hot_comment').text().length);
+                                    //$.l($(this).find('.item_hot_comment').text().length);
                                     if ($(this).parents('.item_con').attr('needShowbtn') == 'true') {
                                         $(this).find('.item_hot_comment_scale').css('display', 'inline');
                                     }
@@ -386,9 +395,9 @@ $(function() {
                                     longDetails = '';
                                     showDetails = '';
                                     $.each(g_items_json, function(index, val) {
-                                        // console.log(index);
-                                        // console.log(itemIndex);
-                                        // console.log(val);
+                                        // $.l(index);
+                                        // $.l(itemIndex);
+                                        // $.l(val);
                                         if (val.id == itemIndex) {
                                             longDetails = "<html>" + val.details + "</html>";
                                             shortDetails = val.details_text.length > DETAILS_LENGTH ? val.details_text.slice(0, DETAILS_LENGTH) + '... ' : val.details_text;

@@ -56,7 +56,7 @@
             })
             .done(function(response) {
                 json = eval("(" + response + ")");
-                //console.log(json);
+                //$.l(json);
                 $.each(json, function(index, val) {
                     item = $('<a class="group_item"></a>');
                     item.attr('group_id', val.id);
@@ -146,7 +146,7 @@
             } else {
                 var files = $('#' + input_file_eleid).prop('files'); //获取到文件列表
                 if (files.length == 0) {
-                    console.log('请选择文件');
+                    $.l('请选择文件');
                     return;
                 } else {
 
@@ -191,7 +191,7 @@
                     marginTop: '-' + Math.round(ry * sel.y) + 'px'
                 });
             }
-            //console.log(sel);
+            //$.l(sel);
             g_sel = sel;
         }
 
@@ -212,7 +212,7 @@
             request.onreadystatechange = function() {
                 $('#' + submit_btn_eleid).attr('disabled', 'false');
                 if (request.readyState == 4 && request.response == "true") {
-                    //console.log(request.response);
+                    //$.l(request.response);
                     $.showOKDialog("修改成功", function() {
                         window.location.replace(successURL);
                     });
@@ -226,7 +226,7 @@
 
             request.open('POST', uploadURL);
             request.send(formData);
-            console.log('图片已经执行发送');
+            $.l('图片已经执行发送');
         });
 
     }
@@ -278,7 +278,7 @@
                     },
                 })
                 .done(function(response) {
-                    //console.log("response= " + response);
+                    //$.l("response= " + response);
                     if(jq_followe_btn != null) jq_followe_btn.toggle();
                     if(jq_unfollow_btn != null) jq_unfollow_btn.toggle();
                 });

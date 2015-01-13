@@ -25,16 +25,16 @@
 
                     <ul class="home_ul">
                         <li>
-                            <img src="images/home_uni.png" alt="">
-                            <a class="home_uni_a">加载中</a>
+                            <i class="fa fa-institution icon-padding"></i>
+                            <a id="home_uni_a">加载中</a>
                         </li>
                         <li>
-                            <img src="images/home_major.png" alt="">
-                            <a class="home_major_a">加载中</a>
+                            <i class="fa fa-wrench icon-padding"></i>
+                            <a id="home_major_a">加载中</a>
                         </li>
                         <li>
-                            <img src="images/home_email.png" alt="">
-                            <a class="home_email_a">加载中</a>
+                            <i class="fa fa-envelope icon-padding"></i>
+                            <a href="" id="home_email_a">加载中</a>
                         </li>
                     </ul>
 

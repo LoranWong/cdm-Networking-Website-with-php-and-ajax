@@ -160,9 +160,9 @@ $(function() {
                 type: 'POST',
             })
             .done(function(response) {
-                //console.log(response);
+                //$.l(response);
                 json = eval(response);
-                //console.log(json);
+                //$.l(json);
                 //遍历Groups  插入Tabs
                 $.each(json, function(index, val) {
                     item = $('<option value="' + val.id + '"">' + val.name + '</option>');
@@ -197,12 +197,12 @@ $(function() {
                 }
             },
             submitHandler: function(formEle) {
-                //console.log($('#ask_details').sceditor("instance").getBody());
+                //$.l($('#ask_details').sceditor("instance").getBody());
 
                 //选择分类之后才提交
                 if ($('#ask_tag').val() != 0) {
                     $.showLoadDialog('请稍候...');
-                    console.log($('.ask_title').val());
+                    $.l($('.ask_title').val());
                     $.ajax({
                             url: 'interfaces/addQuestion.php',
                             type: 'POST',
@@ -345,7 +345,7 @@ $(function() {
                         }
                     })
                     .fail(function() {
-                        console.log("error");
+                        $.l("error");
                         $.showErrorDialog("网络错误");
                     });
             },
@@ -391,7 +391,7 @@ $(function() {
                 }
             })
             .fail(function() {
-                console.log("error");
+                $.l("error");
                 $.showErrorDialog("网络错误");
             });
     }

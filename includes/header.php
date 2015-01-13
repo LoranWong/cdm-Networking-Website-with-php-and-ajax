@@ -3,14 +3,13 @@
             <img class="top_avatar" src="" alt="">
             <a id="userInfo_btn" class="top_menu_item">登录中</a>
             <ul class="profile_menu">
-                <li id="home_btn"> <i class="iconsfzh home_btn_icon"></i>
+                <li id="home_btn" class="hvr-wobble-horizontal"> <i class="fa fa-home fa-lg icon-padding"></i>
                     主页
                 </li>
-                <li id="settings_btn"> <i class="iconsfzh settings_btn_icon"></i>
+                <li id="settings_btn" class="hvr-wobble-horizontal"> <i class="fa fa-cog fa-lg icon-padding"></i>
                     设置
                 </li>
-                <li id="logout_btn">
-                    <i class="iconsfzh logout_btn_icon"></i>
+                <li id="logout_btn" class="hvr-wobble-horizontal"><i class="fa fa-sign-out fa-lg icon-padding"></i>
                     退出
                 </li>
             </ul>

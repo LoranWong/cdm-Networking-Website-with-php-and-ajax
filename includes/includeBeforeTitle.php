@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="plugins_css/hover.css">
     <link rel="stylesheet" href="plugins_css/animate.css">
     <link rel="stylesheet" href="plugins_css/buttons.css">
-    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 
 

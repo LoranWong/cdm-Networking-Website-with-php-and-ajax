@@ -31,7 +31,7 @@
                                 <span class="detalis_info">
                                     <a class="question_user">作者</a>
                                     &nbsp;•&nbsp;
-                                    <span class="question_date">3分钟前</span>
+                                    <span class="question_date">0分钟前</span>
                                 </span>
                             </div>
                             <a class="item_hot_comment_scale comment_btn">回复</a>
@@ -43,7 +43,6 @@
                             <a class="details_title_content">问题标题</a>
                         </div>
                         <div class="details_question_main">
-                            ------正文： 我爸是一个对于同性恋极度反感厌恶的人。我爸听到库克出柜的时候，立马下了命令：家里不准再购买任何的苹果产品（我意见很大），并且让我考虑换掉iPhone（不干涉）。 幸好他不知道我是同性恋。
                         </div>
                     </div>
                     <div class="box_con comment_input_con">

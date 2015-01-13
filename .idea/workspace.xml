@@ -2,15 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55153aac-881a-40f0-a367-7123bc2b00f2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/interfaces/getUsersByGroupId.php" afterPath="$PROJECT_DIR$/interfaces/getUsers.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getUser.php" afterPath="$PROJECT_DIR$/interfaces/getUser.php" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/home_email.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/home_major.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/images/home_uni.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addUser2Group.php" afterPath="$PROJECT_DIR$/interfaces/addUser2Group.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/details.js" afterPath="$PROJECT_DIR$/scripts/details.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/details.php" afterPath="$PROJECT_DIR$/details.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/header.php" afterPath="$PROJECT_DIR$/includes/header.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/home.js" afterPath="$PROJECT_DIR$/scripts/home.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/includeBeforeTitle.php" afterPath="$PROJECT_DIR$/includes/includeBeforeTitle.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/isPassRight.php" afterPath="$PROJECT_DIR$/interfaces/isPassRight.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/jquery.bao.extension.js" afterPath="$PROJECT_DIR$/scripts/jquery.bao.extension.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.js" afterPath="$PROJECT_DIR$/scripts/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/settings.js" afterPath="$PROJECT_DIR$/scripts/settings.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/ui.css" afterPath="$PROJECT_DIR$/styles/ui.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cdm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -38,14 +45,9 @@
       <file leaf-file-name="mysql.func.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9583333" vertical-offset="469" max-vertical-offset="1965">
+            <state vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="1965">
               <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-              <folding>
-                <marker date="1420517292000" expanded="true" signature="984:1026" placeholder="INSERT INTO ..." />
-                <marker date="1420517292000" expanded="true" signature="1335:1356" placeholder="DELETE FROM ..." />
-                <marker date="1420517292000" expanded="true" signature="2065:2095" placeholder="UPDATE :_tab..." />
-                <marker date="1420517292000" expanded="true" signature="2443:2466" placeholder="SELECT * FRO..table_..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -53,38 +55,32 @@
       <file leaf-file-name="getUser.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interfaces/getUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="360">
+            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
               <caret line="12" column="58" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="58" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getUsers.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interfaces/getUsers.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.0416665" vertical-offset="491" max-vertical-offset="1065">
+              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding>
-                <marker date="1420705331000" expanded="true" signature="101:444" placeholder="SELECT (SELE..users..." />
-                <marker date="1420705331000" expanded="true" signature="109:148" placeholder="SELECT name ..unis..." />
-                <marker date="1420705331000" expanded="true" signature="165:208" placeholder="SELECT name ..majors..." />
-                <marker date="1420705331000" expanded="true" signature="227:284" placeholder="SELECT COUNT..rel_user_user..." />
-                <marker date="1420705331000" expanded="true" signature="304:361" placeholder="SELECT COUNT..rel_user_user..." />
+                <element signature="e#8#370#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getUsers.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/interfaces/getUsers.php">
+      <file leaf-file-name="addUser2Group.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interfaces/addUser2Group.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.80213904" vertical-offset="210" max-vertical-offset="855">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.44425088" vertical-offset="0" max-vertical-offset="574">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding>
-                <element signature="e#8#370#0#PHP" expanded="true" />
-                <marker date="1420705756000" expanded="true" signature="597:730" placeholder="SELECT u.use..users..." />
-                <marker date="1420705756000" expanded="true" signature="597:731" placeholder="SELECT u.use..users..." />
-                <marker date="1420705756000" expanded="true" signature="597:738" placeholder="SELECT u.use..users..." />
-                <marker date="1420705756000" expanded="true" signature="785:872" placeholder="SELECT user,..users..." />
-                <marker date="1420705756000" expanded="true" signature="926:1321" placeholder="SELECT user,..users..." />
-                <marker date="1420705756000" expanded="true" signature="934:983" placeholder="SELECT unis...unis..." />
-                <marker date="1420705756000" expanded="true" signature="1003:1060" placeholder="SELECT major..majors..." />
-                <marker date="1420705756000" expanded="true" signature="1126:1162" placeholder="SELECT uni_i..users..." />
-                <marker date="1420705756000" expanded="true" signature="1126:1178" placeholder="SELECT uni_i..users..." />
-                <marker date="1420705756000" expanded="true" signature="1189:1258" placeholder="SELECT COUNT..rel_user_user..." />
-                <marker date="1420705756000" expanded="true" signature="1189:1262" placeholder="SELECT COUNT..rel_user_user..." />
-                <marker date="1420705756000" expanded="true" signature="1287:1321" placeholder="SELECT uni_i..users..." />
+                <marker date="1421160540000" expanded="true" signature="323:380" placeholder="select * fro..rel_user_group..." />
               </folding>
             </state>
           </provider>
@@ -93,19 +89,9 @@
       <file leaf-file-name="getQuestions.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interfaces/getQuestions.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.375" vertical-offset="345" max-vertical-offset="1140">
+            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1140">
               <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-              <folding>
-                <marker date="1419937708000" expanded="true" signature="368:662" placeholder="SELECT (SELE..." />
-                <marker date="1419937708000" expanded="true" signature="376:417" placeholder="SELECT user ..users..." />
-                <marker date="1419937708000" expanded="true" signature="770:1061" placeholder="SELECT (SELE..." />
-                <marker date="1419937708000" expanded="true" signature="778:819" placeholder="SELECT user ..users..." />
-                <marker date="1419937708000" expanded="true" signature="1150:1229" placeholder="SELECT title..." />
-                <marker date="1419937708000" expanded="true" signature="1250:1404" placeholder="SELECT (SELE..." />
-                <marker date="1419937708000" expanded="true" signature="1258:1299" placeholder="SELECT user ..users..." />
-                <marker date="1419937708000" expanded="true" signature="1613:1765" placeholder="SELECT (SELE..." />
-                <marker date="1419937708000" expanded="true" signature="1621:1662" placeholder="SELECT user ..users..." />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -113,7 +99,7 @@
       <file leaf-file-name="deleteFollower.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interfaces/deleteFollower.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
               <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
               <folding />
             </state>
@@ -152,7 +138,6 @@
         <option value="$PROJECT_DIR$/interfaces/addImage.php" />
         <option value="$PROJECT_DIR$/interfaces/getGroup.php" />
         <option value="$PROJECT_DIR$/interfaces/deleteUserFromGroup.php" />
-        <option value="$PROJECT_DIR$/interfaces/addUser2Group.php" />
         <option value="$PROJECT_DIR$/interfaces/isUserInGroup.php" />
         <option value="$PROJECT_DIR$/interfaces/addQuestion.php" />
         <option value="$PROJECT_DIR$/interfaces/temp.txt" />
@@ -169,6 +154,7 @@
         <option value="$PROJECT_DIR$/interfaces/getUsersByUniId.php" />
         <option value="$PROJECT_DIR$/interfaces/getUser.php" />
         <option value="$PROJECT_DIR$/interfaces/getUsers.php" />
+        <option value="$PROJECT_DIR$/interfaces/addUser2Group.php" />
       </list>
     </option>
   </component>
@@ -348,15 +334,15 @@
       <BehatRunner />
       <method />
     </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method />
-    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -410,13 +396,13 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40095848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -444,6 +430,14 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/interfaces/deleteFollower.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
+          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/deleteUserFromGroup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
@@ -455,12 +449,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1316" max-vertical-offset="1980">
           <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
-          <folding>
-            <marker date="1420517292000" expanded="true" signature="984:1026" placeholder="INSERT INTO ..." />
-            <marker date="1420517292000" expanded="true" signature="1335:1356" placeholder="DELETE FROM ..." />
-            <marker date="1420517292000" expanded="true" signature="2065:2095" placeholder="UPDATE :_tab..." />
-            <marker date="1420517292000" expanded="true" signature="2443:2466" placeholder="SELECT * FRO..table_..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -503,12 +492,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1420517292000" expanded="true" signature="984:1026" placeholder="INSERT INTO ..." />
-            <marker date="1420517292000" expanded="true" signature="1335:1356" placeholder="DELETE FROM ..." />
-            <marker date="1420517292000" expanded="true" signature="2065:2095" placeholder="UPDATE :_tab..." />
-            <marker date="1420517292000" expanded="true" signature="2443:2466" placeholder="SELECT * FRO..table_..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -769,24 +753,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/addUser2Group.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39198607" vertical-offset="0" max-vertical-offset="574">
-          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9583333" vertical-offset="469" max-vertical-offset="1965">
+        <state vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="1965">
           <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding>
-            <marker date="1420517292000" expanded="true" signature="984:1026" placeholder="INSERT INTO ..." />
-            <marker date="1420517292000" expanded="true" signature="1335:1356" placeholder="DELETE FROM ..." />
-            <marker date="1420517292000" expanded="true" signature="2065:2095" placeholder="UPDATE :_tab..." />
-            <marker date="1420517292000" expanded="true" signature="2443:2466" placeholder="SELECT * FRO..table_..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -796,15 +767,13 @@
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
           <folding>
             <element signature="e#6#70#0#PHP" expanded="true" />
-            <marker date="1420134082000" expanded="true" signature="-1:-1" placeholder="SELECT name,..tags..." />
-            <marker date="1420134082000" expanded="true" signature="-1:-1" placeholder="SELECT name,..tags..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/deleteFollower.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
           <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
           <folding />
         </state>
@@ -812,54 +781,36 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/getQuestions.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.375" vertical-offset="345" max-vertical-offset="1140">
+        <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1140">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding>
-            <marker date="1419937708000" expanded="true" signature="368:662" placeholder="SELECT (SELE..." />
-            <marker date="1419937708000" expanded="true" signature="376:417" placeholder="SELECT user ..users..." />
-            <marker date="1419937708000" expanded="true" signature="770:1061" placeholder="SELECT (SELE..." />
-            <marker date="1419937708000" expanded="true" signature="778:819" placeholder="SELECT user ..users..." />
-            <marker date="1419937708000" expanded="true" signature="1150:1229" placeholder="SELECT title..." />
-            <marker date="1419937708000" expanded="true" signature="1250:1404" placeholder="SELECT (SELE..." />
-            <marker date="1419937708000" expanded="true" signature="1258:1299" placeholder="SELECT user ..users..." />
-            <marker date="1419937708000" expanded="true" signature="1613:1765" placeholder="SELECT (SELE..." />
-            <marker date="1419937708000" expanded="true" signature="1621:1662" placeholder="SELECT user ..users..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/getUser.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.25" vertical-offset="0" max-vertical-offset="360">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
           <caret line="12" column="58" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="58" />
-          <folding>
-            <marker date="1420705331000" expanded="true" signature="101:444" placeholder="SELECT (SELE..users..." />
-            <marker date="1420705331000" expanded="true" signature="109:148" placeholder="SELECT name ..unis..." />
-            <marker date="1420705331000" expanded="true" signature="165:208" placeholder="SELECT name ..majors..." />
-            <marker date="1420705331000" expanded="true" signature="227:284" placeholder="SELECT COUNT..rel_user_user..." />
-            <marker date="1420705331000" expanded="true" signature="304:361" placeholder="SELECT COUNT..rel_user_user..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/getUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80213904" vertical-offset="210" max-vertical-offset="855">
+        <state vertical-scroll-proportion="-7.0416665" vertical-offset="491" max-vertical-offset="1065">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
           <folding>
             <element signature="e#8#370#0#PHP" expanded="true" />
-            <marker date="1420705756000" expanded="true" signature="597:730" placeholder="SELECT u.use..users..." />
-            <marker date="1420705756000" expanded="true" signature="597:731" placeholder="SELECT u.use..users..." />
-            <marker date="1420705756000" expanded="true" signature="597:738" placeholder="SELECT u.use..users..." />
-            <marker date="1420705756000" expanded="true" signature="785:872" placeholder="SELECT user,..users..." />
-            <marker date="1420705756000" expanded="true" signature="926:1321" placeholder="SELECT user,..users..." />
-            <marker date="1420705756000" expanded="true" signature="934:983" placeholder="SELECT unis...unis..." />
-            <marker date="1420705756000" expanded="true" signature="1003:1060" placeholder="SELECT major..majors..." />
-            <marker date="1420705756000" expanded="true" signature="1126:1162" placeholder="SELECT uni_i..users..." />
-            <marker date="1420705756000" expanded="true" signature="1126:1178" placeholder="SELECT uni_i..users..." />
-            <marker date="1420705756000" expanded="true" signature="1189:1258" placeholder="SELECT COUNT..rel_user_user..." />
-            <marker date="1420705756000" expanded="true" signature="1189:1262" placeholder="SELECT COUNT..rel_user_user..." />
-            <marker date="1420705756000" expanded="true" signature="1287:1321" placeholder="SELECT uni_i..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addUser2Group.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.44425088" vertical-offset="0" max-vertical-offset="574">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <marker date="1421160540000" expanded="true" signature="323:380" placeholder="select * fro..rel_user_group..." />
           </folding>
         </state>
       </provider>
