@@ -20,8 +20,10 @@ $(function() {
                 //待用
             });
     } else {
-        //没有cookie
-        $(".tips_reg_log_con").show('blind',400)
+        $(".tips_reg_log_con").show();
+        $(".tips_reg_log_con").addClass('animated pulse');
+
+
         $("#userInfo_btn").hide();
         $("#logout_btn").hide();
     }
@@ -53,21 +55,6 @@ $(function() {
     $(".header_logo_title").click(function(event) {
         window.open('index.php', "_parent");
     });
-
-    //button初始化
-    $('.dia_submit').button();
-    $('.tips_reg_btn').button();
-    $('.tips_log_btn').button();
-
-    //logo初始化
-    // $('#header_logo_nor').mouseenter(function(event) {
-    //     $(this).css('opacity', '0');
-    // });
-    // $('#header_logo_nor').mouseleave(function(event) {
-    //     $(this).css('opacity', '1');
-
-    // });
-
 
     //初始化load对话框
     $('#dia_load').dialog({

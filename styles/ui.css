@@ -387,11 +387,11 @@
     display: none;
     width: 10px;
     height: 8px;
-    bottom: -1.7px;
+    bottom: -2.5px;
     left: 21px;
 }
 #group_btn img {
-    bottom: -1.7px;
+    bottom: -2.5px;
     left: 37px;
 }
 .white_bar {
@@ -416,7 +416,7 @@
     float: left;
     height: 160px;
     line-height: 160px;
-    font-size: 30px;
+    font-size: 25px;
     margin: 0;
     padding: 0 50px;
     color: #444;
@@ -428,9 +428,12 @@
 }
 .tips_reg_btn, .tips_log_btn {
     margin: 0px 7px;
-    padding: 5px 20px;
-    font-size: 20px;
+    padding: 7px 20px;
+    font-size: 17px;
+    height: auto;
+    cursor: pointer;
 }
+
 /*注册登录弹出窗口*/
 
 #dia_reg, #dia_login, #dia_ask {
@@ -447,9 +450,9 @@
 }
 .dia_submit {
     display: block;
-    height: 35px;
-    padding: 0px;
-    margin: 15px auto 0 auto;
+    padding: 2px 15px;
+    margin: 10px auto 0px auto;
+    font-size: 15px;
 }
 #dia_load {
     display: none;

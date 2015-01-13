@@ -9,6 +9,7 @@
     <script src="plugins/jquery.sceditor.xhtml.min.js"></script>
     <script src="plugins/jquery.Jcrop.min.js"></script>
     <script src="plugins/ajaxfileupload.js"></script>
+    <script src="plugins/buttons.js"></script>
     <script type="text/javascript" charset="utf-8" src="plugins/ueditor/ueditor.config.js"></script>
     <script type="text/javascript" charset="utf-8" src="plugins/ueditor/ueditor.all.min.js"> </script>
     <!-- their css -->
@@ -20,6 +21,10 @@
     <!-- css plugins -->
     <link rel="stylesheet" href="plugins_css/hover.css">
     <link rel="stylesheet" href="plugins_css/animate.css">
+    <link rel="stylesheet" href="plugins_css/buttons.css">
+    <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+
+
 
     <!-- my js -->
     <script src="scripts/jquery.bao.extension.js"></script>

@@ -22,7 +22,7 @@
                 <a href="index.php">
                     <div class="header_logo_box">
                         <!-- <img id="header_logo_over" class="header_logo" src="images/logo_over.png"> -->
-                        <img id="header_logo_nor" class="header_logo" src="images/logo_nor.png">
+                        <img id="header_logo_nor" class="hvr-buzz-out header_logo " src="images/logo_nor.png">
                     </div>
                 </a>
 
@@ -36,7 +36,7 @@
                 </div>
 
                 <div class="header_search">
-                    <a id="ask_btn" class="gradient_btn_green">发布</a>
+                    <a id="ask_btn" class="gradient_btn_green"><i class="fa fa-pencil-square-o"></i> 发布</a>
                     <input id="search_input" type="text" name="search" class="round_textbox search" title="问题 用户 分享 ...">
                     <img id="search_btn" src="images/search.png" alt="">
                 </div>
@@ -49,10 +49,10 @@
 <!-- 提示登录注册 -->
         <div class="tips_reg_log_con box_con">
             <div class="tips_main">
-                <a class="tips_join">加入圈耳,话小谷围点点滴滴</a>
+                <a class="tips_join">圈耳,我们在小谷围的四年时光。</a>
                 <div class="tips_btns">
-                    <a class="tips_reg_btn">现在注册</a>
-                    <a class="tips_log_btn">岛民登录</a>
+                    <a class="button button-rounded button-flat-action tips_reg_btn"><i class="fa fa-users"></i> 加入我们</a>
+                    <a class="button button-rounded button-flat-action tips_log_btn"><i class="fa fa-sign-in"></i> 岛民登录</a>
                 </div>
             </div>
         </div>
@@ -75,7 +75,7 @@
                 <!-- <textarea id="ask_details" name="ask_details" class="round_textbox"></textarea> -->
                 <script id="editor" type="text/plain" style="width:832px;height:330px;"></script>
             </div>
-            <input type="submit" class="dia_submit" value="提交">
+            <input type="submit" class="button button-rounded button-flat-action dia_submit" value="提交">
         </form>
     </div>
 
@@ -94,7 +94,7 @@
                 <input type="checkbox" name="login_save_cookie" id="login_save_cookie" checked/>
                 <label for="login_save_cookie">一个月内自动登录</label>
             </p>
-            <input type="submit" class="dia_submit" value="登录">
+            <input type="submit" class="button button-rounded button-flat-action dia_submit" value="登录">
         </form>
     </div>
 
@@ -113,7 +113,7 @@
                 <lable for="reg_pass">密 码 ：</lable>
                 <input type="password" id="reg_pass" name="reg_pass" class="round_textbox dia_textbox" placeholder="密码至少6位">
             </p>
-            <input type="submit" class="dia_submit" value="加入我们">
+            <input type="submit" class="button button-rounded button-flat-action dia_submit" value="加入我们">
         </form>
     </div>
 
