@@ -37,18 +37,18 @@
                                             </td>
 
                                             <td class="item_main">
-                                                <a class="item_title" target="_blank">该小组还没有主题哦~</a>
+                                                <a class="item_title" target="_blank">你网速简直太慢了</a>
                                                 <div class="item_hot_comment_div">
-                                                    <div class="item_hot_comment">快发布主题吧</div>
-                                                    <span class="item_hot_comment_scale">显示全部</span>
+                                                    <div class="item_hot_comment"></div>
+                                                    <span class="item_hot_comment_scale"></span>
                                                 </div>
                                                 <span class="item_info">
-                                                    <a class="item_user" id="item_user">指标啦啦</a>
+                                                    <a class="item_user" id="item_user">你网速好慢</a>
                                                     &nbsp;•&nbsp;
-                                                    <span class="item_date">0分钟前</span>
+                                                    <span class="item_date">不能再慢了</span>
                                                     <span class="lastest_comment_info">
                                                         &nbsp;•&nbsp; 最新回复来自
-                                                        <a class="item_latest_user" id="item_latest_user">Duanqu~</a>
+                                                        <a class="item_latest_user" id="item_latest_user">你网速为什么这么慢</a>
                                                     </span>
 
                                                 </span>
@@ -60,9 +60,9 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div id="item_more_new" class="item_more">
+                            <div id="item_more_new" class="hvr-bubble-float-top item_more">
                                 <i id="spinner_gray_new" class="spinner_gray"></i>
-                                正在加载更多
+                                <span>嘿咻~嘿咻 ↖(^ω^)↗</span>
                             </div>
                         </div>
                     </div>

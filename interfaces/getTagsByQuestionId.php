@@ -7,6 +7,7 @@
  */
 
 require_once '../require.php';
+sleep(1);
 $id = $_POST['id'];
 
 $sql = "SELECT t.name,t.id from tags t join rel_question_tag r on r.tag_id = t.id where r.question_id = $id";

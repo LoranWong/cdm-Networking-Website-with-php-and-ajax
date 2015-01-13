@@ -26,7 +26,7 @@
 
  */
 require_once '../require.php';
-
+sleep(1);
 if ($_POST['type'] == 'avatar') {
 	addavatar('settings_avatar_file', USERAVATAR_PATH, $_POST['id']);
 } elseif ($_POST['type'] == 'group') {

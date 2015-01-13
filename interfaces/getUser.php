@@ -4,7 +4,7 @@
  */
 
 require_once '../require.php';
-
+sleep(1);
 $id = $_POST['id'];
 
 $sql = "SELECT

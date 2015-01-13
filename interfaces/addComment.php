@@ -21,8 +21,6 @@ $array = array('user_id' => "$user_id",
 	'details' => "$details",
 	'date' => "NOW()");
 
-echo mydb_insert('comments',$array);
+echo mydb_insert('comments', $array);
 
 mysql_close();
-
-

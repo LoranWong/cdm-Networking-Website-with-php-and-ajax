@@ -7,7 +7,7 @@
  */
 
 require_once '../require.php';
-
+sleep(1);
 $name = $_POST['name'];
 $details = $_POST['details'];
 $group_id = $_POST['group_id'];

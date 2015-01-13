@@ -18,7 +18,7 @@ $(function() {
     //摘要长度
     DETAILS_LENGTH = 80;
     //每次加载帖子个数
-    DETAILS_LOAD_COUNT = 10;
+    DETAILS_LOAD_COUNT = 2;
     //每次加载可能认识用户个数
     USERS_LOAD_COUNT = 5;
     //防止异步加载出错
@@ -53,12 +53,16 @@ $(function() {
     if(g_user_id != null) loadYouMayKonw();
 
     //滚动监听
-    $(window).scroll(function(event) {
-        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-            showMoreQuestions(g_header_id, g_tagOrGroup_id);
-        }
+    // $(window).scroll(function(event) {
+    //     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
+    //         showMoreQuestions(g_header_id, g_tagOrGroup_id);
+    //     }
+    // });
+    $('#item_more_new').click(function(event) {
+        $('#spinner_gray_new').css('display', 'inline-block');
+        $('#item_more_new span').text("嘿咻~嘿咻 ↖(^ω^)↗");
+        showMoreQuestions(g_header_id, g_tagOrGroup_id);
     });
-
 
 
     //函数部分**************
@@ -148,6 +152,7 @@ function loadTabs() {
                 create: loadQuestion,
                 show: { effect: "fade", duration: 300 }
             });
+
             }
 
         });
@@ -160,7 +165,10 @@ function loadQuestion(event, ui) {
     //每次切换Tab清空数据
     g_items_json = "";
     //移除之前加载的内容
-    $('.item_con').not(':first').remove();
+    $('.item_con').not(":first").remove();
+    $('.item_con:first').hide();
+    $('#spinner_gray_new').css('display', 'inline-block');
+    $('#item_more_new span').text("嘿咻~嘿咻 ↖(^ω^)↗");
     //首次加载
     showMoreQuestions(g_header_id, g_tagOrGroup_id);
     //若当前显示的是Group且有加入小组,显示页面右边内容
@@ -296,10 +304,11 @@ function showMoreQuestions(header_id, tagOrGroup_id) {
 
                     json = eval("(" + response + ")");
 
-                    if (json.length < 3) {
+                    if (json.length < DETAILS_LOAD_COUNT) {
                         //当内容已经被取完时
-                        $('#spinner_gray_new').hide();
-                        $('#item_more_new').text("没有更多内容~(≧▽≦)~啦");
+                        $('#item_more_new span').text("没有更多内容~(≧▽≦)~啦");
+                    }else{
+                        $('#item_more_new span').text("点我加载更多(*^__^*)");
                     }
 
                     currentLength = g_items_json.length;
@@ -389,22 +398,19 @@ function showMoreQuestions(header_id, tagOrGroup_id) {
                             }
                         });
                         item.appendTo('.items_con');
+                        item.addClass('animated flipInX');
                     });
+                    
                 } else {
                     //当内容已经被取完时
-                    $('#spinner_gray_new').hide();
-                    $('#item_more_new').text("没有更多内容~(≧▽≦)~啦");
+                    $('#item_more_new span').text("没有更多内容~(≧▽≦)~啦");
                     //如果没有内容
                     if(g_items_json == null || g_items_json.length ==0){
                         $('.item_con').hide();
                     }
-
                 }
-
-
-
-
             }).always(function() {
+                $('#spinner_gray_new').hide();
                 isLoading = false;
             });
 

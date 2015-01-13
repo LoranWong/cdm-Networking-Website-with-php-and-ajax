@@ -24,18 +24,16 @@ $array = array('user_id' => "$user_id",
 	'date' => "NOW()",
 );
 
-
-
-if (! $question_id = mydb_insert('questions', $array)) {
+if (!$question_id = mydb_insert('questions', $array)) {
 	echo 'false';
-}else{
+} else {
 	$array = array('question_id' => "$question_id",
 		'tag_id' => "$tag_id",
 	);
-	if(mydb_insert('rel_question_tag', $array)){
+	if (mydb_insert('rel_question_tag', $array)) {
 		echo 'true';
-	}else{
-		mydb_delete('questions',"id={$question_id}");
+	} else {
+		mydb_delete('questions', "id={$question_id}");
 		echo 'false';
 	}
 }

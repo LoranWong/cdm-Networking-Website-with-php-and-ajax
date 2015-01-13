@@ -18,14 +18,12 @@ $reg_email = addslashes($_POST['reg_email']);
 //$query = "INSERT INTO users (user, pass, email, date)
 //VALUES ('$reg_user', '$reg_pass', '$reg_email' , NOW())";
 
-$array = array('user'=>"$reg_user",
-    'pass'=>"$reg_pass",
-    'email'=>"$reg_email",
-    'date'=>"NOW()"
-    );
+$array = array('user' => "$reg_user",
+	'pass' => "$reg_pass",
+	'email' => "$reg_email",
+	'date' => "NOW()",
+);
 
-echo mydb_insert('users',$array);
+echo mydb_insert('users', $array);
 
 mysql_close();
-
-

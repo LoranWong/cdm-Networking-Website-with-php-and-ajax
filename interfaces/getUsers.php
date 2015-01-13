@@ -22,6 +22,7 @@
  */
 
 require_once '../require.php';
+sleep(1);
 $group_id = $_POST['group_id'];
 $uni_id = $_POST['uni_id'];
 $get_uni_user_id = $_POST['get_uni_user_id'];

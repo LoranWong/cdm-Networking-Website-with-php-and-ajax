@@ -5,7 +5,7 @@
  * @param $_POST['followee_id']
  */
 require_once '../require.php';
-
+sleep(1);
 $follower_id = $_POST['follower_id'];
 $followee_id = $_POST['followee_id'];
 

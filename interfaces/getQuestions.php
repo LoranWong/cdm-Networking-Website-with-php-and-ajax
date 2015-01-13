@@ -10,7 +10,7 @@
  */
 
 require_once '../require.php';
-
+sleep(1);
 $start = $_POST['start'];
 $count = $_POST['count'];
 

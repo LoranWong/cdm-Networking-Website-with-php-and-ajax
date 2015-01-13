@@ -5,7 +5,7 @@
  * @param $_POST['user_id']
  */
 require_once '../require.php';
-
+sleep(1);
 $group_id = $_POST['group_id'];
 $user_id = $_POST['user_id'];
 
