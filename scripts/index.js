@@ -15,12 +15,6 @@ $(function() {
 
     //全局变量items_json  存放当前页面的所有问题数据
     g_items_json = '';
-    //摘要长度
-    DETAILS_LENGTH = 80;
-    //每次加载帖子个数
-    DETAILS_LOAD_COUNT = 2;
-    //每次加载可能认识用户个数
-    USERS_LOAD_COUNT = 5;
     //防止异步加载出错
     isLoading = false;
     //当前页面显示的Tag或者Group 的ID
@@ -52,12 +46,6 @@ $(function() {
     loadTabs();
     if (g_user_id != null) loadYouMayKonw();
 
-    //滚动监听
-    // $(window).scroll(function(event) {
-    //     if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-    //         showMoreQuestions(g_header_id, g_tagOrGroup_id);
-    //     }
-    // });
     $('#item_more_new').click(function(event) {
         $('#spinner_gray_new').css('display', 'inline-block');
         $('#item_more_new span').text("嘿咻~嘿咻 ↖(^ω^)↗");
@@ -72,7 +60,7 @@ $(function() {
                 data: {
                     get_uni_user_id: g_user_id,
                     start: 0,
-                    count: USERS_LOAD_COUNT,
+                    count: $.BAO_USERS_LOAD_COUNT,
                 }
             })
             .done(function(response) {
@@ -263,13 +251,13 @@ $(function() {
                 })
                 .done(function(response) {
                     //$.l("response= " + response);
-                    if(response == 'false'){
+                    if (response == 'false') {
                         $.showErrorDialog("网络错误");
 
 
-                    }else if(response == 'e_0'){
+                    } else if (response == 'e_0') {
                         alert("抱歉,每人最多加入五个小组(⊙o⊙)哦！");
-                    }else{
+                    } else {
                         //如果是加入
                         $('.group_join_btn').toggle();
                         $('.group_leave_btn').toggle();
@@ -297,13 +285,13 @@ $(function() {
                 ajaxDataObj = {
                     tag_id: tagOrGroup_id,
                     start: g_items_json.length,
-                    count: DETAILS_LOAD_COUNT,
+                    count: $.BAO_DETAILS_LOAD_COUNT,
                 }
             } else if (header_id == 1) {
                 ajaxDataObj = {
                     group_id: tagOrGroup_id,
                     start: g_items_json.length,
-                    count: DETAILS_LOAD_COUNT,
+                    count: $.BAO_DETAILS_LOAD_COUNT,
                 }
             }
 
@@ -323,7 +311,7 @@ $(function() {
 
                             json = eval("(" + response + ")");
 
-                            if (json.length < DETAILS_LOAD_COUNT) {
+                            if (json.length < $.BAO_DETAILS_LOAD_COUNT) {
                                 //当内容已经被取完时
                                 $('#item_more_new span').text("没有更多内容~(≧▽≦)~啦");
                             } else {
@@ -346,8 +334,8 @@ $(function() {
 
                                 item = index == 0 && currentLength == 0 ? $('.item_con').first() : $('.item_con').first().clone();
 
-                                if (val.details_text.length > DETAILS_LENGTH) {
-                                    details = val.details_text.slice(0, DETAILS_LENGTH) + '... ';
+                                if (val.details_text.length > $.BAO_DETAILS_LENGTH) {
+                                    details = val.details_text.slice(0, $.BAO_DETAILS_LENGTH) + '... ';
                                     item.attr('needShowbtn', 'true');
                                 } else {
                                     details = val.details_text;
@@ -363,6 +351,7 @@ $(function() {
                                 item.find('.item_user').html(val.user);
                                 item.find('.item_user').attr('href', 'home.php?user_id=' + val.user_id);
                                 item.find('.item_avatar_a').attr('href', 'home.php?user_id=' + val.user_id);
+                                item.find('.item_avatar_a img').attr('toolkit_id', val.user_id);
                                 $.showAvatar(item.find('.item_avatar'), val.user_id, 128);
                                 item.find('.item_date').html(time);
                                 item.find('.item_hot_comment').html(details);
@@ -400,7 +389,7 @@ $(function() {
                                         // $.l(val);
                                         if (val.id == itemIndex) {
                                             longDetails = "<html>" + val.details + "</html>";
-                                            shortDetails = val.details_text.length > DETAILS_LENGTH ? val.details_text.slice(0, DETAILS_LENGTH) + '... ' : val.details_text;
+                                            shortDetails = val.details_text.length > $.BAO_DETAILS_LENGTH ? val.details_text.slice(0, $.BAO_DETAILS_LENGTH) + '... ' : val.details_text;
                                             //跳出循环
                                             return false;
                                         }
@@ -428,11 +417,18 @@ $(function() {
                                 $('.item_con').hide();
                             }
                         }
+
+                        //每次showMore之后更新绑定
+                        $.updateShowToolKit();
                     }).always(function() {
                         $('#spinner_gray_new').hide();
                         isLoading = false;
                     });
 
             };
+
+
         } //showMoreQuestions函数结束
+
+
 })

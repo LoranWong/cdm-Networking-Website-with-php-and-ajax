@@ -76,8 +76,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div id="item_more_new" class="item_more"> <i id="spinner_gray_new" class="spinner_gray"></i>
-                            正在加载更多
+                        <div id="item_more_new" class="hvr-bubble-float-top item_more">
+                            <i id="spinner_gray_new" class="spinner_gray"></i>
+                            <span>嘿咻~嘿咻 ↖(^ω^)↗</span>
                         </div>
                     </div>
                 </div>

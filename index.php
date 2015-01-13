@@ -32,7 +32,7 @@
                                         <tr>
                                             <td class="item_left" valign="top">
                                                 <a class="item_avatar_a">
-                                                    <img class="item_avatar" src="" alt="">
+                                                    <img class="show_toolkit item_avatar" src="" alt="">
                                                 </a>
                                             </td>
 

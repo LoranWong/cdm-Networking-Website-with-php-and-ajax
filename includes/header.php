@@ -118,3 +118,12 @@
 
     <!-- loading窗口 -->
     <div id="dia_load">请稍候...</div>
+
+
+    <!-- 自定义toolkit -->
+    <div class="toolkit_con bottom">
+        <div class="toolkit_in_con"></div>
+        <div class="arrow"></div>
+        <div class="arrow"></div>
+    </div>
+

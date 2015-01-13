@@ -1,6 +1,15 @@
 (function($) {
 
     //定义全局变量
+    //config
+    //摘要长度
+    $.BAO_DETAILS_LENGTH = 80;
+    //每次加载帖子个数
+    $.BAO_DETAILS_LOAD_COUNT = 3;
+    //每次加载评论
+    $.BAO_COMMENT_LOAD_COUNT =3;
+    //每次加载可能认识用户个数
+    $.BAO_USERS_LOAD_COUNT = 5;
     //$.PATH_INTERFACE = 'interfaces/';
 
     //获取Get参数
@@ -283,7 +292,35 @@
                     if(jq_unfollow_btn != null) jq_unfollow_btn.toggle();
                 });
     }
-    
+
+    /* 绑定所有class包含 show_toolkit 的元素mouseenter事件,该元素必须有 toolkit_id */
+    $.updateShowToolKit = function(){
+        $('.show_toolkit').unbind('mouseenter').mouseenter(function(event) {
+            $('.toolkit_con').show();
+            distance_to_top = Math.ceil($(this).offset().top) - Math.ceil($(window).scrollTop());
+            if(distance_to_top > $('.toolkit_con').outerHeight()){
+                $('.toolkit_con').addClass('top');
+                $('.toolkit_con').removeClass('bottom');
+                $('.toolkit_con').css({
+                    left: $(this).offset().left - 30,
+                    top: $(this).offset().top - $('.toolkit_con').outerHeight() - 10,
+                });
+            }else{
+                $('.toolkit_con').addClass('bottom');
+                $('.toolkit_con').removeClass('top');
+                $('.toolkit_con').css({
+                    left: $(this).offset().left - 30,
+                    top: $(this).offset().top + $(this).innerHeight() + 10,
+                });
+            }
+        });
+        $('.show_toolkit').unbind('mouseleave').mouseleave(function(event) {
+            $('.toolkit_con').hide();
+        });
+
+
+    }
+
 
 
 })(jQuery);

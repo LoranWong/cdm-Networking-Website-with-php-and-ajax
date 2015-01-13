@@ -706,6 +706,55 @@
 }
 
 
+/**** toolkit ************************************************************/
+.toolkit_con{
+    display: none;
+    position: absolute;
+    padding: 12px;
+    z-index: 80;
+    left: 100px;
+    top: 100px;
+}
+
+.toolkit_con .arrow{
+    position: absolute;
+    left: 60px;
+    margin-left: -13px;
+    border-left: 13px solid transparent;
+    border-right: 13px solid transparent;
+}
+.toolkit_con.bottom .arrow{
+    top: 0;
+    border-bottom: 13px solid #ccc;
+}
+.toolkit_con.top .arrow{
+    bottom: 0;
+    border-top: 13px solid #ccc;
+}
+
+/*覆盖上一个 产生边界效果*/
+.toolkit_con.bottom .arrow:last-child{
+    top: 1px;
+    border-bottom: 13px solid #fff;
+}
+.toolkit_con.top .arrow:last-child{
+    bottom: 1px;
+    border-top: 13px solid #fff;
+}
+
+
+.toolkit_in_con{
+    background: #fff;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 150px;
+}
+
+
+
+
+
 /*灰色旋转条*/
 
 .spinner_gray {

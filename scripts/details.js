@@ -6,8 +6,6 @@ $(function() {
     comments_json = '';
     hasQuestionShow = false;
     isLoading = false;
-    //每次加载回复个数
-    COMMENT_LOAD_COUNT = 10;
     //初始化按钮
     $('.comment_btn_ok').button();
     $('.comment_btn_cancel').button();
@@ -71,12 +69,12 @@ $(function() {
     //首次加载 
     showMoreComment();
 
-
-    $(window).scroll(function(event) {
-        if ($(window).scrollTop() + $(window).height() == $(document).height()) {
-            showMoreComment();
-        }
+    $('#item_more_new').click(function(event) {
+        $('#spinner_gray_new').css('display', 'inline-block');
+        $('#item_more_new span').text("嘿咻~嘿咻 ↖(^ω^)↗");
+        showMoreComment();
     });
+
 
     function showMoreComment() {
         //$.l(id);
@@ -89,7 +87,7 @@ $(function() {
                     data: {
                         id: g_question_id,
                         start: comments_json.length,
-                        count: COMMENT_LOAD_COUNT,
+                        count: $.BAO_COMMENT_LOAD_COUNT,
                     },
                 })
                 .done(function(response, status, xhr) {
@@ -97,11 +95,13 @@ $(function() {
                         json = eval("(" + response + ")");
                         //$.l(json);
 
-                        if(json.comments.length < 3 ){
+                        if (json.length < $.BAO_COMMENT_LOAD_COUNT) {
                             //当内容已经被取完时
-                            $('#spinner_gray_new').hide();
-                            $('#item_more_new').text("没有更多内容~(≧▽≦)~啦");
+                            $('#item_more_new span').text("没有更多内容~(≧▽≦)~啦");
+                        } else {
+                            $('#item_more_new span').text("点我加载更多(*^__^*)");
                         }
+
 
                         //防止重复加载
                         if (!hasQuestionShow) {
@@ -166,8 +166,7 @@ $(function() {
                             $.showGroupsInfo(val.user_id, item.find('.details_groups'));
 
                             item.appendTo('.comments_con');
-
-
+                            item.addClass('animated flipInX');
 
                         });
 
@@ -178,17 +177,14 @@ $(function() {
                             }
                             //当内容已经被取完时
                             $('#spinner_gray_new').hide();
-                            $('#item_more_new').text("没有更多内容~(≧▽≦)~啦");
+                            $('#item_more_new span').text("没有更多内容~(≧▽≦)~啦");
                         }
                     }
 
-
                 })
-                .fail(function() {
-                    $.l("error");
-                }).always(function() {
+                .always(function() {
+                    $('#spinner_gray_new').hide();
                     isLoading = false;
-
                 })
         }
     }
