@@ -91,10 +91,7 @@
                                     <img src="" class="jcrop-preview" alt="Preview">
                                 </div>
                             </div>
-                            <input type="button" id='settings_avatar_submit' class="dia_submit " value="裁剪并上传">
-
-
-
+                            <a id='settings_avatar_submit' class="button button-rounded button-flat-action dia_submit"><i class="fa fa-upload icon-padding"></i>裁剪并上传</a>
 
                 </div>
 

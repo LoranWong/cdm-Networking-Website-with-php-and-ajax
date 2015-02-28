@@ -9,7 +9,7 @@
 
 require_once '../require.php';
 
-sleep(1);
+////sleep(1);
 
 $reg_user = addslashes($_POST['reg_user']);
 $reg_pass = sha1(addslashes($_POST['reg_pass']));

@@ -10,12 +10,12 @@
 
 <body class="mybody">
     <div class="con">
-<?php require_once 'header.php';?>
-<!-- 页面的主内容 -->
+    <?php require_once 'header.php';?>
+    <!-- 页面的主内容 -->
         <div class="main_con">
             <div class="main_con_inner">
 
-                <div class="home_left">
+                <div class="home_left box_con">
 
                     <div class="home_user_name">JackWong</div>
 
@@ -40,7 +40,7 @@
 
                 </div>
 
-                <div class="home_middle">
+                <div class="home_middle box_con">
                     <div class="home_follow_con">
                         <a class="home_follow_item">
                             <span>我圈</span>

@@ -9,7 +9,7 @@
 
 require_once '../require.php';
 
-sleep(1);
+////sleep(1);
 
 $details = addslashes($_POST['details']);
 $details_text = addslashes($_POST['details_text']);

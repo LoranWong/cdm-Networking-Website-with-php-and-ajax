@@ -6,7 +6,7 @@
  * @return 1.insert_id  2.false  3.e_0(代表加入小组达到上限)
  */
 require_once '../require.php';
-sleep(1);
+////sleep(1);
 $group_id = $_POST['group_id'];
 $user_id = $_POST['user_id'];
 

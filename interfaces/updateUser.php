@@ -12,7 +12,7 @@
 
 require_once '../require.php';
 
-sleep(1);
+//sleep(1);
 
 $settings_details = addslashes($_POST['settings_details']);
 $settings_user = addslashes($_POST['settings_user']);

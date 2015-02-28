@@ -8,7 +8,7 @@
 
 require_once '../require.php';
 
-sleep(1);
+//sleep(1);
 
 $pass = sha1($_POST['login_pass']);
 

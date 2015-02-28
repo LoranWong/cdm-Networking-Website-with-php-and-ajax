@@ -122,7 +122,22 @@
 
     <!-- 自定义toolkit -->
     <div class="toolkit_con bottom">
-        <div class="toolkit_in_con"></div>
+        <div class="toolkit_in_con">
+            <div class="toolkit_user_con">
+                    <img class="item_toolkit_avatar" src="resources/avatars/user/17_128x128.jpg" alt="">
+
+                <div class="toolkit_con_right">
+                    <a class="toolit_user_name">JackWong</a>
+                    <p class="toolit_user_details">非典型文艺程序猿的一生</p>
+                    <a class="fa fa-institution toolit_user_uni" style="font-size: 12px;padding-left: 10px;"> 华南理工大学</a>
+                    <a class="fa fa-wrench toolit_user_major" style="font-size: 12px;"> 软件工程</a>
+
+                </div>
+
+
+
+            </div>
+        </div>
         <div class="arrow"></div>
         <div class="arrow"></div>
     </div>

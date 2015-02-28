@@ -411,4 +411,11 @@ $(function() {
 
     });
 
+
+    //随机改变背景
+    $.l($.getRandomImageUrl());
+    $.l($('.mybody'));
+    $('.mybody').css('background-image', $.getRandomImageUrl());
+
+
 })

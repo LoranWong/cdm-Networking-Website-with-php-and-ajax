@@ -8,10 +8,8 @@
  */
 
 require_once '../require.php';
-sleep(1);
+//sleep(1);
 $id = $_POST['id'];
 $sql = "SELECT g.name,g.details,g.id,r.admin from groups g join rel_user_group r on r.group_id = g.id where r.user_id = $id ORDER BY r.date";
 echo get_json_from_sql($sql);
 mysql_close();
-
-

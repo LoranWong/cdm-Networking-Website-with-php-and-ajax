@@ -6,7 +6,7 @@
 require_once '../require.php';
 
 $id = $_POST['major_id'];
-sleep(1);
+//sleep(1);
 if ($id == null) {
     $sql = "SELECT name,id FROM majors";
 } else {

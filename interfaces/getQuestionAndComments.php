@@ -7,7 +7,7 @@
  */
 
 require_once '../require.php';
-sleep(1);
+//sleep(1);
 $start = $_POST['start'];
 $count = $_POST['count'];
 $question_id = $_POST['id'];

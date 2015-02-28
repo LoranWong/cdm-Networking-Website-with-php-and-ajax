@@ -2,22 +2,700 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="55153aac-881a-40f0-a367-7123bc2b00f2" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/home_email.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/home_major.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/images/home_uni.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-icons_228ef1_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-icons_ef8c08_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-icons_ffd27a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/images/ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/jquery-ui-1.10.4.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/css/ui-lightness/jquery-ui-1.10.4.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/AUTHORS.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/Gruntfile.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/MIT-LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/README.md" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/accordion/collapsible.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/accordion/custom-icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/accordion/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/accordion/fillspace.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/accordion/hoverintent.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/accordion/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/accordion/no-auto-height.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/accordion/sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/addClass/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/addClass/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/animate/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/animate/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/categories.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/combobox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/custom-data.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/folding.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/images/jquery_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/images/jqueryui_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/images/sizzlejs_32x32.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/images/transparent_1x1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/images/ui-anim_basic_16x16.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/london.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/maxheight.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/multiple-remote.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/multiple.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/remote-jsonp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/remote-with-cache.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/remote.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/search.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/autocomplete/xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/button/checkbox.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/button/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/button/icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/button/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/button/radio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/button/splitbutton.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/button/toolbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/alt-field.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/buttonbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/date-formats.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/date-range.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/dropdown-month-year.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/icon-trigger.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/images/calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/inline.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/jquery.ui.datepicker-ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/jquery.ui.datepicker-fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/jquery.ui.datepicker-he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/jquery.ui.datepicker-zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/localization.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/min-max.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/multiple-calendars.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/other-months.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/datepicker/show-week.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/demos.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/dialog/animated.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/dialog/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/dialog/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/dialog/modal-confirmation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/dialog/modal-form.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/dialog/modal-message.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/dialog/modal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/constrain-movement.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/cursor-style.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/events.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/handle.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/revert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/snap-to.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/draggable/visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/accepted-elements.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/images/high_tatras.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/images/high_tatras2.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/images/high_tatras2_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/images/high_tatras3.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/images/high_tatras3_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/images/high_tatras4.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/images/high_tatras4_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/images/high_tatras_min.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/photo-manager.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/propagation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/revert.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/shopping-cart.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/droppable/visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/effect/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/effect/easing.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/effect/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/hide/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/hide/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/images/calendar.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/images/demo-config-on-tile.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/images/demo-config-on.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/images/demo-spindown-closed.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/images/demo-spindown-open.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/images/icon-docs-info.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/images/pbar-ani.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/menu/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/menu/icons.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/menu/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/position/cycler.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/position/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/position/images/earth.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/position/images/flight.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/position/images/rocket.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/position/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/progressbar/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/progressbar/images/pbar-ani.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/progressbar/indeterminate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/progressbar/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/progressbar/label.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/removeClass/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/removeClass/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/animate.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/aspect-ratio.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/constrain-area.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/helper.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/max-min.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/snap-to-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/synchronous-resize.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/textarea.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/resizable/visual-feedback.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/selectable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/selectable/display-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/selectable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/selectable/serialize.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/show/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/show/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/colorpicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/hotelrooms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/multiple-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/range-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/range.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/rangemax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/rangemin.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/side-scroll.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/slider-vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/slider/steps.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/connect-lists-through-tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/connect-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/delay-start.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/display-grid.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/empty-lists.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/items.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/placeholder.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/sortable/portlets.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/spinner/currency.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/spinner/decimal.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/spinner/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/spinner/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/spinner/latlong.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/spinner/overflow.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/spinner/time.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/switchClass/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/switchClass/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/ajax.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/ajax/content1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/ajax/content2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/ajax/content3-slow.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/ajax/content4-broken.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/bottom.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/collapsible.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/manipulation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/mouseover.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tabs/vertical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/toggle/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/toggle/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/toggleClass/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/toggleClass/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/ajax/content1.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/ajax/content2.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/custom-animation.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/custom-content.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/custom-style.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/forms.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/images/st-stephens.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/images/tower-bridge.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/tracking.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/tooltip/video-player.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/widget/default.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/demos/widget/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/accordion.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/autocomplete.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/blind-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/bounce-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/button.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/clip-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/datepicker.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/dialog.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/draggable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/drop-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/droppable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/explode-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/fade-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/fold-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/highlight-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/jQuery.widget.bridge.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/jQuery.widget.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/menu.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/mouse.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/position.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/progressbar.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/puff-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/pulsate-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/resizable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/scale-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/selectable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/shake-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/size-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/slide-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/slider.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/sortable.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/spinner.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/tabs.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/tooltip.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/docs/transfer-effect.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/external/globalize.culture.de-DE.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/external/globalize.culture.ja-JP.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/external/globalize.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/external/jquery.mousewheel.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/external/jshint.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/external/qunit.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/external/qunit.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/package.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-bg_flat_0_aaaaaa_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-bg_flat_75_ffffff_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-bg_glass_55_fbf9ee_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-bg_glass_75_dadada_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-bg_glass_75_e6e6e6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-bg_glass_95_fef1ec_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-bg_highlight-soft_75_cccccc_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-icons_2e83ff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-icons_454545_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-icons_888888_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/images/ui-icons_cd0a0a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.accordion.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.progressbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.resizable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.selectable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.spinner.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/base/minified/jquery.ui.tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-bg_flat_10_000000_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-icons_228ef1_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-icons_ef8c08_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-icons_ffd27a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/images/ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery-ui.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.accordion.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.all.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.autocomplete.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.base.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.button.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.core.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.datepicker.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.menu.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.progressbar.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.resizable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.selectable.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.slider.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.spinner.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.tabs.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.theme.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/jquery.ui.tooltip.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/animated-overlay.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-bg_diagonals-thick_18_b81900_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-bg_diagonals-thick_20_666666_40x40.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-bg_flat_10_000000_40x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-bg_glass_100_f6f6f6_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-bg_glass_100_fdf5ce_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-bg_glass_65_ffffff_1x400.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-bg_gloss-wave_35_f6a828_500x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-bg_highlight-soft_100_eeeeee_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-bg_highlight-soft_75_ffe45c_1x100.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-icons_222222_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-icons_228ef1_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-icons_ef8c08_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-icons_ffd27a_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/images/ui-icons_ffffff_256x240.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery-ui.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.accordion.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.autocomplete.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.button.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.core.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.datepicker.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.dialog.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.menu.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.progressbar.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.resizable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.selectable.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.slider.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.spinner.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.tabs.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.theme.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/themes/ui-lightness/minified/jquery.ui.tooltip.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.accordion.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.autocomplete.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.button.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.core.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.datepicker.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.dialog.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.draggable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.droppable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-blind.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-bounce.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-clip.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-drop.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-explode.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-fade.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-fold.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-highlight.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-pulsate.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-scale.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-shake.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-slide.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect-transfer.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.effect.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.menu.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.mouse.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.position.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.progressbar.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.resizable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.selectable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.slider.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.sortable.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.spinner.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.tabs.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.tooltip.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui.widget.jquery.json" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery-ui-i18n.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-af.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ar-DZ.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-az.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-be.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-bg.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-bs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-cs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-cy-GB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-da.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-de.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-el.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-en-AU.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-en-GB.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-en-NZ.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-eo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-es.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-et.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-eu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-fa.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-fi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-fo.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-fr-CA.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-fr-CH.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-fr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-gl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-he.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-hi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-hr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-hu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-hy.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-id.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-is.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-it.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ja.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ka.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-kk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-km.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ko.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ky.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-lb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-lt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-lv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-mk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ml.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ms.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-nb.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-nl-BE.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-nl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-nn.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-no.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-pl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-pt-BR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-pt.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-rm.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ro.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ru.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-sk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-sl.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-sq.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-sr-SR.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-sr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-sv.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-ta.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-th.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-tj.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-tr.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-uk.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-vi.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-zh-CN.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-zh-HK.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/i18n/jquery.ui.datepicker-zh-TW.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery-ui.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.accordion.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.autocomplete.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.button.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.core.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.datepicker.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.dialog.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.draggable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.droppable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-blind.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-bounce.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-clip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-drop.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-explode.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-fade.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-fold.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-highlight.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-pulsate.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-scale.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-shake.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-slide.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect-transfer.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.effect.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.menu.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.mouse.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.position.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.progressbar.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.resizable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.selectable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.slider.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.sortable.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.spinner.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.tabs.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.tooltip.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/jquery.ui.widget.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery-ui-i18n.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-af.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ar-DZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-az.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-be.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-bg.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-bs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ca.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-cs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-cy-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-da.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-de.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-el.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-en-AU.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-en-GB.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-en-NZ.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-eo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-es.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-et.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-eu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fa.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fo.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fr-CA.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fr-CH.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-fr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-gl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-he.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-hi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-hr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-hu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-hy.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-id.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-is.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-it.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ja.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ka.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-kk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-km.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ko.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ky.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-lb.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-lt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-lv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-mk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ml.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ms.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-nb.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-nl-BE.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-nl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-nn.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-no.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-pl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-pt-BR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-pt.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-rm.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ro.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ru.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sl.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sq.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sr-SR.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-sv.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-ta.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-th.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-tj.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-tr.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-uk.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-vi.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-zh-CN.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-zh-HK.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/i18n/jquery.ui.datepicker-zh-TW.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery-ui.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.accordion.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.autocomplete.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.button.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.core.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.datepicker.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.dialog.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.draggable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.droppable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-blind.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-bounce.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-clip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-drop.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-explode.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-fade.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-fold.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-highlight.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-pulsate.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-scale.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-shake.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-slide.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect-transfer.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.effect.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.menu.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.mouse.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.position.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.progressbar.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.resizable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.selectable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.slider.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.sortable.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.spinner.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.tabs.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/development-bundle/ui/minified/jquery.ui.widget.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/js/jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/js/jquery-ui-1.10.4.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/plugins/jquery-ui-old/js/jquery-ui-1.10.4.min.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/user/17_128x128.jpg" afterPath="$PROJECT_DIR$/resources/avatars/user/17_128x128.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/user/17_256x256.jpg" afterPath="$PROJECT_DIR$/resources/avatars/user/17_256x256.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/user/17_32x32.jpg" afterPath="$PROJECT_DIR$/resources/avatars/user/17_32x32.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/user/17_64x64.jpg" afterPath="$PROJECT_DIR$/resources/avatars/user/17_64x64.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/user/17_origin.jpg" afterPath="$PROJECT_DIR$/resources/avatars/user/17_origin.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/group/3_128x128.jpg" afterPath="$PROJECT_DIR$/resources/avatars/group/3_128x128.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/group/3_256x256.jpg" afterPath="$PROJECT_DIR$/resources/avatars/group/3_256x256.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/group/3_32x32.jpg" afterPath="$PROJECT_DIR$/resources/avatars/group/3_32x32.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/group/3_64x64.jpg" afterPath="$PROJECT_DIR$/resources/avatars/group/3_64x64.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/avatars/group/3_origin.jpg" afterPath="$PROJECT_DIR$/resources/avatars/group/3_origin.jpg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addComment.php" afterPath="$PROJECT_DIR$/interfaces/addComment.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addFollower.php" afterPath="$PROJECT_DIR$/interfaces/addFollower.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addGroup.php" afterPath="$PROJECT_DIR$/interfaces/addGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addImage.php" afterPath="$PROJECT_DIR$/interfaces/addImage.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addQuestion.php" afterPath="$PROJECT_DIR$/interfaces/addQuestion.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addUser.php" afterPath="$PROJECT_DIR$/interfaces/addUser.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/addUser2Group.php" afterPath="$PROJECT_DIR$/interfaces/addUser2Group.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/details.js" afterPath="$PROJECT_DIR$/scripts/details.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/details.php" afterPath="$PROJECT_DIR$/details.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/header.php" afterPath="$PROJECT_DIR$/includes/header.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/home.js" afterPath="$PROJECT_DIR$/scripts/home.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/deleteFollower.php" afterPath="$PROJECT_DIR$/interfaces/deleteFollower.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/deleteUserFromGroup.php" afterPath="$PROJECT_DIR$/interfaces/deleteUserFromGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getGenders.php" afterPath="$PROJECT_DIR$/interfaces/getGenders.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getGroup.php" afterPath="$PROJECT_DIR$/interfaces/getGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getGroupsByUserId.php" afterPath="$PROJECT_DIR$/interfaces/getGroupsByUserId.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getMajors.php" afterPath="$PROJECT_DIR$/interfaces/getMajors.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getQuestionAndComments.php" afterPath="$PROJECT_DIR$/interfaces/getQuestionAndComments.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getQuestions.php" afterPath="$PROJECT_DIR$/interfaces/getQuestions.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getTags.php" afterPath="$PROJECT_DIR$/interfaces/getTags.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getTagsByQuestionId.php" afterPath="$PROJECT_DIR$/interfaces/getTagsByQuestionId.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getUnis.php" afterPath="$PROJECT_DIR$/interfaces/getUnis.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getUser.php" afterPath="$PROJECT_DIR$/interfaces/getUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/getUsers.php" afterPath="$PROJECT_DIR$/interfaces/getUsers.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home.php" afterPath="$PROJECT_DIR$/home.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/includes/includeBeforeTitle.php" afterPath="$PROJECT_DIR$/includes/includeBeforeTitle.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/index.js" afterPath="$PROJECT_DIR$/scripts/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/isPassRight.php" afterPath="$PROJECT_DIR$/interfaces/isPassRight.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/isUserExist.php" afterPath="$PROJECT_DIR$/interfaces/isUserExist.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/isUserFollow.php" afterPath="$PROJECT_DIR$/interfaces/isUserFollow.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/isUserInGroup.php" afterPath="$PROJECT_DIR$/interfaces/isUserInGroup.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/jquery.bao.extension.js" afterPath="$PROJECT_DIR$/scripts/jquery.bao.extension.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/main.js" afterPath="$PROJECT_DIR$/scripts/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scripts/settings.js" afterPath="$PROJECT_DIR$/scripts/settings.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/settings.php" afterPath="$PROJECT_DIR$/settings.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/styles/ui.css" afterPath="$PROJECT_DIR$/styles/ui.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/updateGroup.php" afterPath="$PROJECT_DIR$/interfaces/updateGroup.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/interfaces/updateUser.php" afterPath="$PROJECT_DIR$/interfaces/updateUser.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="cdm.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,55 +720,31 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="mysql.func.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
+      <file leaf-file-name="addImage.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interfaces/addImage.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="1965">
-              <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1547">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getUser.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaces/getUser.php">
+      <file leaf-file-name="addQuestion.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interfaces/addQuestion.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
-              <caret line="12" column="58" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="58" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="697">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="getUsers.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaces/getUsers.php">
+      <file leaf-file-name="addUser.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interfaces/addUser.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.0416665" vertical-offset="491" max-vertical-offset="1065">
-              <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
-              <folding>
-                <element signature="e#8#370#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addUser2Group.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/interfaces/addUser2Group.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44425088" vertical-offset="0" max-vertical-offset="574">
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <marker date="1421160540000" expanded="true" signature="323:380" placeholder="select * fro..rel_user_group..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="getQuestions.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/interfaces/getQuestions.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1140">
-              <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="493">
+              <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -99,9 +753,78 @@
       <file leaf-file-name="deleteFollower.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/interfaces/deleteFollower.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
-              <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deleteUserFromGroup.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interfaces/deleteUserFromGroup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getGenders.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interfaces/getGenders.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="340">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getGroup.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/interfaces/getGroup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.18085106" vertical-offset="0" max-vertical-offset="846">
+              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+              <folding>
+                <marker date="1425027120000" expanded="true" signature="194:533" placeholder="SELECT name,..groups..." />
+                <marker date="1425027120000" expanded="true" signature="220:372" placeholder="SELECT count..questions..." />
+                <marker date="1425027120000" expanded="true" signature="262:348" placeholder="SELECT u.id ..users..." />
+                <marker date="1425027120000" expanded="true" signature="397:490" placeholder="SELECT count..users..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addFollower.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interfaces/addFollower.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="459">
+              <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addGroup.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interfaces/addGroup.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="629">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding>
+                <element signature="e#6#102#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addUser2Group.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/interfaces/addUser2Group.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="561">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <marker date="1425027120000" expanded="true" signature="327:384" placeholder="select * fro..rel_user_group..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -117,8 +840,6 @@
         <option value="$PROJECT_DIR$/scripts/details.js" />
         <option value="$PROJECT_DIR$/interfaces/login_isPassRight.php" />
         <option value="$PROJECT_DIR$/scripts/main.js" />
-        <option value="$PROJECT_DIR$/interfaces/addComment.php" />
-        <option value="$PROJECT_DIR$/interfaces/addUser.php" />
         <option value="$PROJECT_DIR$/interfaces/isPassRight.php" />
         <option value="$PROJECT_DIR$/interfaces/isUserExist.php" />
         <option value="$PROJECT_DIR$/interfaces/getTagsByQuestionId.php" />
@@ -131,30 +852,32 @@
         <option value="$PROJECT_DIR$/interfaces/addGroupManager.php" />
         <option value="$PROJECT_DIR$/funcs/image.func.php" />
         <option value="$PROJECT_DIR$/interfaces/getManageGroupsByUserId.php" />
-        <option value="$PROJECT_DIR$/interfaces/addGroup.php" />
         <option value="$PROJECT_DIR$/interfaces/updateGroup.php" />
         <option value="$PROJECT_DIR$/interfaces/getGroupsByUserId.php" />
         <option value="$PROJECT_DIR$/funcs/config.php" />
-        <option value="$PROJECT_DIR$/interfaces/addImage.php" />
-        <option value="$PROJECT_DIR$/interfaces/getGroup.php" />
-        <option value="$PROJECT_DIR$/interfaces/deleteUserFromGroup.php" />
         <option value="$PROJECT_DIR$/interfaces/isUserInGroup.php" />
-        <option value="$PROJECT_DIR$/interfaces/addQuestion.php" />
         <option value="$PROJECT_DIR$/interfaces/temp.txt" />
         <option value="$PROJECT_DIR$/interfaces/temp.php" />
         <option value="$PROJECT_DIR$/interfaces/testOperation.php" />
         <option value="$PROJECT_DIR$/interfaces/getTags.php" />
         <option value="$PROJECT_DIR$/interfaces/getMajors.php" />
         <option value="$PROJECT_DIR$/interfaces/getUnis.php" />
-        <option value="$PROJECT_DIR$/interfaces/getGenders.php" />
         <option value="$PROJECT_DIR$/interfaces/isUserFollow.php" />
-        <option value="$PROJECT_DIR$/interfaces/deleteFollower.php" />
-        <option value="$PROJECT_DIR$/interfaces/addFollower.php" />
         <option value="$PROJECT_DIR$/funcs/mysql.func.php" />
         <option value="$PROJECT_DIR$/interfaces/getUsersByUniId.php" />
-        <option value="$PROJECT_DIR$/interfaces/getUser.php" />
         <option value="$PROJECT_DIR$/interfaces/getUsers.php" />
+        <option value="$PROJECT_DIR$/interfaces/getUser.php" />
+        <option value="$PROJECT_DIR$/interfaces/addComment.php" />
+        <option value="$PROJECT_DIR$/interfaces/addFollower.php" />
+        <option value="$PROJECT_DIR$/interfaces/addGroup.php" />
+        <option value="$PROJECT_DIR$/interfaces/addImage.php" />
+        <option value="$PROJECT_DIR$/interfaces/addQuestion.php" />
+        <option value="$PROJECT_DIR$/interfaces/addUser.php" />
         <option value="$PROJECT_DIR$/interfaces/addUser2Group.php" />
+        <option value="$PROJECT_DIR$/interfaces/deleteFollower.php" />
+        <option value="$PROJECT_DIR$/interfaces/deleteUserFromGroup.php" />
+        <option value="$PROJECT_DIR$/interfaces/getGenders.php" />
+        <option value="$PROJECT_DIR$/interfaces/getGroup.php" />
       </list>
     </option>
   </component>
@@ -163,9 +886,10 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1280" />
-    <option name="height" value="695" />
+    <option name="x" value="-1920" />
+    <option name="y" value="-149" />
+    <option name="width" value="1920" />
+    <option name="height" value="969" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -218,6 +942,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,13 +1033,12 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="options.lastSelected" value="Errors" />
+    <property name="options.lastSelected" value="reference.settingsdialog.IDE.editor.colors.Font" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="FullScreen" value="false" />
@@ -334,15 +1058,15 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
       <method />
     </configuration>
     <list size="0" />
@@ -381,7 +1105,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1280" height="695" extended-state="6" />
+    <frame x="-1920" y="-149" width="1920" height="969" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -390,19 +1114,19 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1984375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13177083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3290735" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23553719" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40095848" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -449,7 +1173,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1316" max-vertical-offset="1980">
           <caret line="121" column="17" selection-start-line="121" selection-start-column="17" selection-end-line="121" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -492,7 +1215,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1380">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -559,20 +1281,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/addComment.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.375" vertical-offset="0" max-vertical-offset="510">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/addUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="465">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/getTagsByQuestionId.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-8.125" vertical-offset="0" max-vertical-offset="315">
@@ -622,38 +1330,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/funcs/image.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5" vertical-offset="270" max-vertical-offset="1125">
-          <caret line="30" column="0" selection-start-line="30" selection-start-column="0" selection-end-line="39" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/funcs/config.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-2.5" vertical-offset="0" max-vertical-offset="300">
           <caret line="4" column="24" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/getGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33972126" vertical-offset="0" max-vertical-offset="574">
-          <caret line="13" column="31" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/addImage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6791444" vertical-offset="804" max-vertical-offset="1365">
-          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/addGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.033101045" vertical-offset="11" max-vertical-offset="585">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -678,13 +1358,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/addQuestion.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.416667" vertical-offset="161" max-vertical-offset="735">
-          <caret line="29" column="17" selection-start-line="29" selection-start-column="17" selection-end-line="29" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/isUserInGroup.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.05226481" vertical-offset="0" max-vertical-offset="574">
@@ -692,23 +1365,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/getGenders.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13066202" vertical-offset="0" max-vertical-offset="574">
-          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
-          <folding>
-            <element signature="e#6#64#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/getUnis.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="330">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="e#6#61#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -716,9 +1376,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.0" vertical-offset="0" max-vertical-offset="345">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="14" />
-          <folding>
-            <element signature="e#6#74#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -726,7 +1383,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.54545456" vertical-offset="24" max-vertical-offset="585">
           <caret line="22" column="31" selection-start-line="22" selection-start-column="31" selection-end-line="22" selection-end-column="31" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -737,45 +1393,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/deleteUserFromGroup.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28745645" vertical-offset="0" max-vertical-offset="574">
-          <caret line="11" column="34" selection-start-line="0" selection-start-column="0" selection-end-line="11" selection-end-column="83" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/addFollower.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36585367" vertical-offset="0" max-vertical-offset="574">
-          <caret line="14" column="12" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="469" max-vertical-offset="1965">
-          <caret line="36" column="6" selection-start-line="36" selection-start-column="6" selection-end-line="36" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/getTags.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="345">
           <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
-          <folding>
-            <element signature="e#6#70#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/deleteFollower.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -783,34 +1404,129 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="345" max-vertical-offset="1140">
           <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/interfaces/getUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="360">
-          <caret line="12" column="58" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="58" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/getUsers.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.0416665" vertical-offset="491" max-vertical-offset="1065">
+        <state vertical-scroll-proportion="0.0" vertical-offset="491" max-vertical-offset="1065">
           <caret line="44" column="0" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcs/mysql.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-38.576923" vertical-offset="0" max-vertical-offset="2227">
+          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/funcs/image.func.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-28.115385" vertical-offset="0" max-vertical-offset="1275">
+          <caret line="43" column="27" selection-start-line="43" selection-start-column="27" selection-end-line="43" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="0" max-vertical-offset="408">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addComment.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="476">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addFollower.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="459">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="629">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#8#370#0#PHP" expanded="true" />
+            <element signature="e#6#102#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addImage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="248" max-vertical-offset="1547">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addQuestion.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="697">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/addUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="85" max-vertical-offset="493">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/interfaces/addUser2Group.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44425088" vertical-offset="0" max-vertical-offset="574">
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="561">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
           <folding>
-            <marker date="1421160540000" expanded="true" signature="323:380" placeholder="select * fro..rel_user_group..." />
+            <marker date="1425027120000" expanded="true" signature="327:384" placeholder="select * fro..rel_user_group..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/deleteFollower.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/deleteUserFromGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="119" max-vertical-offset="289">
+          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getGenders.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="340">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/interfaces/getGroup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18085106" vertical-offset="0" max-vertical-offset="846">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <marker date="1425027120000" expanded="true" signature="194:533" placeholder="SELECT name,..groups..." />
+            <marker date="1425027120000" expanded="true" signature="220:372" placeholder="SELECT count..questions..." />
+            <marker date="1425027120000" expanded="true" signature="262:348" placeholder="SELECT u.id ..users..." />
+            <marker date="1425027120000" expanded="true" signature="397:490" placeholder="SELECT count..users..." />
           </folding>
         </state>
       </provider>

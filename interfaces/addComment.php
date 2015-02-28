@@ -7,7 +7,7 @@
 
 require_once '../require.php';
 
-sleep(1);
+////sleep(1);
 
 $details = addslashes($_POST['details']);
 $question_id = $_POST['question_id'];

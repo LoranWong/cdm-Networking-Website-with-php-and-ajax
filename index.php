@@ -40,7 +40,7 @@
                                                 <a class="item_title" target="_blank">你网速简直太慢了</a>
                                                 <div class="item_hot_comment_div">
                                                     <div class="item_hot_comment"></div>
-                                                    <span class="item_hot_comment_scale"></span>
+                                                    <span class="item_hot_comment_scale">显示全部</span>
                                                 </div>
                                                 <span class="item_info">
                                                     <a class="item_user" id="item_user">你网速好慢</a>

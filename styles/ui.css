@@ -5,11 +5,23 @@
     color: #777;
     padding: 0;
     font-family: "Microsoft YaHei", "WenQuanYi Micro Hei", SimHei, tahoma, sans-serif;
-    background: #fff;
+    background-size: 100%;
+    /*background: #fff;*/
+    /*background-image: url(../resources/backgrounds/main_bg_0.jpg);*/
+    background-attachment: fixed;
 }
 
 .main_frame_body{
     margin:0;
+}
+
+/*文章内图片的最大宽度*/
+p img{
+    max-width: 760px;
+}
+
+.con{
+    overflow: hidden;
 }
 
 /*全局使用*******************************************************************************************/
@@ -134,6 +146,7 @@
     border: 1px solid #eee;
     margin-bottom: 20px;
     position: relative;
+    opacity: .93;
 }
 
 .box_title{
@@ -731,7 +744,6 @@
     bottom: 0;
     border-top: 13px solid #ccc;
 }
-
 /*覆盖上一个 产生边界效果*/
 .toolkit_con.bottom .arrow:last-child{
     top: 1px;
@@ -747,12 +759,37 @@
     background: #fff;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 200px;
-    height: 150px;
+/*    width: 200px;
+    height: 150px;*/
 }
 
+/*toolkit user 内容*/
+.toolkit_user_con{
+    padding: 15px;
+    position: relative;
+}
+.toolkit_con_right{
+    display: inline-block;
+    vertical-align: top;
+}
+.item_toolkit_avatar{
+    width: 65px;
+    height: 65px;
+    border-radius: 10px;
+}
 
-
+.toolit_user_name{
+    font-weight: bold;
+    font-size: 14px;
+    color: #4A9005;
+    vertical-align: top;
+    padding-left: 10px;
+}
+.toolit_user_details{
+    font-size: 13px;
+    margin: 5px 0;
+    padding-left: 10px;
+}
 
 
 /*灰色旋转条*/
@@ -780,6 +817,7 @@
     margin-top: 15px;
 }
 #details_con {
+    padding: 5px 10px 10px 10px;
     position: relative;
 }
 .details_avatar {
@@ -945,6 +983,7 @@
     width: 250px;
     float: left;
     margin: 40px 0 0 0;
+    padding: 15px 10px;
 }
 .home_user_name {
     font-size: 22px;
@@ -991,6 +1030,7 @@
     width: 500px;
     float: left;
     margin: 40px 0 0 20px;
+    padding: 0px 30px 20px 50px;
 }
 .home_groups {
     clear: both;
@@ -1206,8 +1246,8 @@
 #settings_avatar_submit {
     display: none;
     position: absolute;
-    top: 275px;
-    left: 440px;
+    top: 290px;
+    left: 430px;
 }
 .settings_file_box {
     outline: none;

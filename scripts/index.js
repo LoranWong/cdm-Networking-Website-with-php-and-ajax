@@ -33,13 +33,17 @@ $(function() {
         //TODO :get Tags and add them to tab   and of course add tag_id attr
         ajaxUrl = 'interfaces/getTags.php';
         ajaxDataId = g_tag_id;
-    } else if (g_header_id == 1) {
+    } else if (g_header_id == 1 && g_user_id != null) {
         $('#group_btn').css('color', '#fff');
         $('#group_btn img').css('display', 'inline');
         //查看自己所有小组动态 还是  查看URL参数中的特定动态
+        //$.l("g_header_id == 1");
         ajaxUrl = (g_group_id == null) ? 'interfaces/getGroupsByUserId.php' : 'interfaces/getGroup.php';
         ajaxDataId = (g_group_id == null) ? $.cookie().id : g_group_id;
         isNowShowGroup = true;
+    } else if(g_user_id==null){
+        //若没有登录直接跳转首页
+        window.location = "index.php";
     }
 
     //加载
@@ -377,6 +381,7 @@ $(function() {
                                 item.find('.item_main').mouseleave(function(event) {
                                     $(this).find('.item_hot_comment_scale').css('display', 'none');
                                 });
+                                
                                 item.find('.item_hot_comment_scale').unbind('click').click(function(event) {
                                     //获取所点击条目的下标  从全局数据g_items_json中取得所要显示内容
                                     itemIndex = $(this).parents('.item_con').attr('question_id');
