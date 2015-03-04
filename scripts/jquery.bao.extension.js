@@ -7,7 +7,7 @@
     //每次加载帖子个数
     $.BAO_DETAILS_LOAD_COUNT = 3;
     //每次加载评论
-    $.BAO_COMMENT_LOAD_COUNT =3;
+    $.BAO_COMMENT_LOAD_COUNT = 3;
     //每次加载可能认识用户个数
     $.BAO_USERS_LOAD_COUNT = 5;
     //背景图片个数
@@ -54,9 +54,9 @@
     }
 
     /**加载用户所在小组信息  
-	@p1  用户ID  
-	@p2  需要appendTo哪个Jquery对象
-	**/
+    @p1  用户ID  
+    @p2  需要appendTo哪个Jquery对象
+    **/
     $.showGroupsInfo = function(user_id, appendToWhat) {
         $.ajax({
                 url: 'interfaces/getGroupsByUserId.php',
@@ -67,7 +67,7 @@
             })
             .done(function(response) {
                 json = eval("(" + response + ")");
-                //$.l(json);
+                //console.log(json);
                 $.each(json, function(index, val) {
                     item = $('<a class="group_item"></a>');
                     item.attr('group_id', val.id);
@@ -130,15 +130,15 @@
     }
 
     /**
-		显示照片预览裁剪并上传
-		note: 本函数选择文件后会将 class 为settings_avatar_img settings_file_box的元素 hide
-		@param formData 先创建好并放出其他参数
-		@param input_file_eleid 选择文件的input标签的ID，其name 与 class 必为 settings_avatar_file
-		@param avatar_new_eleid 新显示的图像元素的ID
-		@param submit_btn_eleid 提交按钮的ID
-		@uploadURL 上传URL
-		@successURL 上传成功后跳转URL
-	**/
+        显示照片预览裁剪并上传
+        note: 本函数选择文件后会将 class 为settings_avatar_img settings_file_box的元素 hide
+        @param formData 先创建好并放出其他参数
+        @param input_file_eleid 选择文件的input标签的ID，其name 与 class 必为 settings_avatar_file
+        @param avatar_new_eleid 新显示的图像元素的ID
+        @param submit_btn_eleid 提交按钮的ID
+        @uploadURL 上传URL
+        @successURL 上传成功后跳转URL
+    **/
     $.imageSelectAndUpload = function(formData, input_file_eleid, avatar_new_eleid, submit_btn_eleid, uploadURL, successURL) {
 
         var jcrop_api;
@@ -157,7 +157,7 @@
             } else {
                 var files = $('#' + input_file_eleid).prop('files'); //获取到文件列表
                 if (files.length == 0) {
-                    $.l('请选择文件');
+                    console.log('请选择文件');
                     return;
                 } else {
 
@@ -202,7 +202,7 @@
                     marginTop: '-' + Math.round(ry * sel.y) + 'px'
                 });
             }
-            //$.l(sel);
+            //console.log(sel);
             g_sel = sel;
         }
 
@@ -223,7 +223,7 @@
             request.onreadystatechange = function() {
                 $('#' + submit_btn_eleid).attr('disabled', 'false');
                 if (request.readyState == 4 && request.response == "true") {
-                    //$.l(request.response);
+                    //console.log(request.response);
                     $.showOKDialog("修改成功", function() {
                         window.location.replace(successURL);
                     });
@@ -237,15 +237,11 @@
 
             request.open('POST', uploadURL);
             request.send(formData);
-            $.l('图片已经执行发送');
+            console.log('图片已经执行发送');
         });
 
     }
 
-    //输出调试的简写
-    $.l = function(object) {
-        console.log(object);
-    }
 
     //初始化ajax
     $.ajaxSetup({
@@ -253,9 +249,9 @@
     });
 
     /**
-    *  根据用户是否具有关注关系来显示按钮
-    **/
-    $.showFollowOrUnfollowBtn =function(follower_id,followee_id,jq_follow_btn,jq_unfollow_btn) {
+     *  根据用户是否具有关注关系来显示按钮
+     **/
+    $.showFollowOrUnfollowBtn = function(follower_id, followee_id, jq_follow_btn, jq_unfollow_btn) {
         //TODO 判断是否关注了
         $.ajax({
                 url: 'interfaces/isUserFollow.php',
@@ -278,54 +274,114 @@
     }
 
     //圈与取消圈的操作
-    $.doFollowOrUnfollow = function(follower_id, followee_id, isFollow ,jq_followe_btn , jq_unfollow_btn) {
+    $.doFollowOrUnfollow = function(follower_id, followee_id, isFollow, jq_followe_btn, jq_unfollow_btn) {
         //如果未登录
-            ajaxUrl = isFollow ? "interfaces/addFollower.php" : "interfaces/deleteFollower.php";
-            $.ajax({
-                    url: ajaxUrl,
-                    data: {
-                        follower_id: follower_id,
-                        followee_id: followee_id
-                    },
-                })
-                .done(function(response) {
-                    //$.l("response= " + response);
-                    if(jq_followe_btn != null) jq_followe_btn.toggle();
-                    if(jq_unfollow_btn != null) jq_unfollow_btn.toggle();
-                });
+        ajaxUrl = isFollow ? "interfaces/addFollower.php" : "interfaces/deleteFollower.php";
+        $.ajax({
+                url: ajaxUrl,
+                data: {
+                    follower_id: follower_id,
+                    followee_id: followee_id
+                },
+            })
+            .done(function(response) {
+                //console.log("response= " + response);
+                if (jq_followe_btn != null) jq_followe_btn.toggle();
+                if (jq_unfollow_btn != null) jq_unfollow_btn.toggle();
+            });
     }
+
+    /* 根据大小更新 toolkit 的显示位置 */
+    $.updateToolKitPosition = function(context) {
+        //重置位置
+        distance_to_top = Math.ceil(context.offset().top) - Math.ceil($(window).scrollTop());
+        if (distance_to_top > $('.toolkit_con').outerHeight()) {
+            $('.toolkit_con').addClass('top');
+            $('.toolkit_con').removeClass('bottom');
+            $('.toolkit_con').css({
+                left: context.offset().left - 30,
+                top: context.offset().top - $('.toolkit_con').outerHeight() - 10,
+            });
+        } else {
+            $('.toolkit_con').addClass('bottom');
+            $('.toolkit_con').removeClass('top');
+            $('.toolkit_con').css({
+                left: context.offset().left - 30,
+                top: context.offset().top + context.innerHeight() + 10,
+            });
+        }
+    }
+
+
 
     /* 绑定所有class包含 show_toolkit 的元素mouseenter事件,该元素必须有 toolkit_id */
-    $.updateShowToolKit = function(){
-        $('.toolkit_con').show();
-        // $('.show_toolkit').unbind('mouseenter').mouseenter(function(event) {
-        //     $('.toolkit_con').show();
-        //     distance_to_top = Math.ceil($(this).offset().top) - Math.ceil($(window).scrollTop());
-        //     if(distance_to_top > $('.toolkit_con').outerHeight()){
-        //         $('.toolkit_con').addClass('top');
-        //         $('.toolkit_con').removeClass('bottom');
-        //         $('.toolkit_con').css({
-        //             left: $(this).offset().left - 30,
-        //             top: $(this).offset().top - $('.toolkit_con').outerHeight() - 10,
-        //         });
-        //     }else{
-        //         $('.toolkit_con').addClass('bottom');
-        //         $('.toolkit_con').removeClass('top');
-        //         $('.toolkit_con').css({
-        //             left: $(this).offset().left - 30,
-        //             top: $(this).offset().top + $(this).innerHeight() + 10,
-        //         });
-        //     }
-        // });
-        // $('.show_toolkit').unbind('mouseleave').mouseleave(function(event) {
-        //     $('.toolkit_con').hide();
-        // });
+    $.updateShowToolKit = function() {
+        //$('.toolkit_con').show();
+        var show_timer;
+        var hide_timer;
+        $('.show_toolkit').unbind('mouseenter').mouseenter(function(event) {
+            var context = $(this);
+            show_timer = setTimeout(function() {
+
+                //show 函数
+                $('.toolkit_con').show();
+                $('.toolkit_con').addClass('animated flipInY');
+
+                //ajax加载显示用户信息
+                $('.toolkit_user_con').hide();
+                $('#toolkit_spiner').show();
+                $.updateToolKitPosition(context);
+                //加载用户基本信息
+                user_id = context.attr('toolkit_id');
+                $.ajax({
+                        url: 'interfaces/getUser.php',
+                        type: 'POST',
+                        data: {
+                            id: user_id
+                        },
+                    })
+                    .done(function(response) {
+                        $('.toolkit_user_con').show();
+                        $('#toolkit_spiner').hide();
+                        $.updateToolKitPosition(context);
+
+                        json = eval(response);
+                        console.log(json);
+                        $('.item_toolkit_avatar').attr('src', '');
+                        $.showAvatar($('.item_toolkit_avatar'), user_id, "128");
+                        $('.toolit_user_name').text(json[0].user);
+                        $('.toolit_user_uni').text(json[0].uni_name);
+                        $('.toolit_user_major').text(json[0].major_name);
+                        $('.toolit_user_details').text(json[0].details);
+                        $('#toolkit_follow_count').text(json[0].follow_count);
+                        $('#toolkit_fan_count').text(json[0].fans_count);
+
+                    })
+                    .fail(function() {
+                        console.log("error");
+                    });
 
 
+
+            }, 200);
+
+        });
+        $('.show_toolkit').unbind('mouseleave').mouseleave(function(event) {
+            clearTimeout(show_timer);
+            hide_timer = setTimeout(function() {
+                $('.toolkit_con').hide();
+            }, 250);
+        });
+        $('.toolkit_con').unbind('mouseenter').mouseenter(function(event) {
+            clearTimeout(hide_timer);
+        });
+        $('.toolkit_con').unbind('mouseleave').mouseleave(function(event) {
+            $('.toolkit_con').hide();
+        });
     }
 
-    $.getRandomImageUrl = function(){
-        return "url(resources/backgrounds/main_bg_"+ parseInt((Math.random()*$.BAO_BACKGROUNDS_COUNT)) + ".jpg)";
+    $.getRandomImageUrl = function() {
+        return "url(resources/backgrounds/main_bg_" + parseInt((Math.random() * $.BAO_BACKGROUNDS_COUNT)) + ".jpg)";
     }
 
 

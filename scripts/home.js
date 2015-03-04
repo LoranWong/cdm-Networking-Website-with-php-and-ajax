@@ -8,7 +8,7 @@ $(function() {
     isOthers = (g_user_id == $.cookie().id) ? false : true;
 
 
-    //$.l(g_user_id);
+    //console.log(g_user_id);
 
     //加载用户基本信息
     $.ajax({
@@ -20,7 +20,7 @@ $(function() {
         })
         .done(function(response) {
             json = eval(response);
-            $.l(json);
+            //console.log(json);
             $('.home_user_name').text(json[0].user);
             $('#home_uni_a').text(json[0].uni_name);
             $('#home_major_a').text(json[0].major_name);
@@ -32,7 +32,7 @@ $(function() {
 
         })
         .fail(function() {
-            $.l("error");
+            console.log("error");
         });
 
     $.showAvatar($('.home_user_avatar'), g_user_id, "origin");
@@ -50,7 +50,7 @@ $(function() {
         })
         .done(function(response) {
             json = eval(response);
-            //$.l(json);
+            //console.log(json);
             $('#home_items_count').html(json.length);
             $.each(json, function(index, val) {
                 time = $.getTimeByDateTime(val.date);
@@ -68,7 +68,7 @@ $(function() {
 
         })
         .fail(function() {
-            $.l("error");
+            console.log("error");
         });
 
     //如果是显示他人页面,且已经登录
@@ -79,7 +79,7 @@ $(function() {
         $('#home_follow_btn').click(function(event) {
             $.doFollowOrUnfollow($.cookie().id, g_user_id , true ,  $('#home_follow_btn'), $('#home_unfollow_btn'));
             users_count = parseInt($('.home_follow_item:last strong').text());
-            $.l(users_count);
+            console.log(users_count);
             $('.home_follow_item:last strong').text(users_count + 1);
             $('.home_follow_item:last strong').effect('highlight','1500');
         });
@@ -87,7 +87,7 @@ $(function() {
 		$('#home_unfollow_btn').click(function(event) {
             $.doFollowOrUnfollow($.cookie().id, g_user_id , false ,  $('#home_follow_btn'), $('#home_unfollow_btn'));
             users_count = parseInt($('.home_follow_item:last strong').text());
-            $.l(users_count);
+            console.log(users_count);
             $('.home_follow_item:last strong').text(users_count - 1);
             $('.home_follow_item:last strong').effect('highlight','1500');
             

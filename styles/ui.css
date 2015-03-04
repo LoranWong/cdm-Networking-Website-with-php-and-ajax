@@ -751,7 +751,7 @@ p img{
 }
 .toolkit_con.top .arrow:last-child{
     bottom: 1px;
-    border-top: 13px solid #fff;
+    border-top: 13px solid #f6f6f6;
 }
 
 
@@ -765,14 +765,15 @@ p img{
 
 /*toolkit user 内容*/
 .toolkit_user_con{
-    padding: 15px;
     position: relative;
 }
 .toolkit_con_right{
+    margin: 15px 25px 15px 0;
     display: inline-block;
     vertical-align: top;
 }
 .item_toolkit_avatar{
+    margin: 15px 0 15px 15px;
     width: 65px;
     height: 65px;
     border-radius: 10px;
@@ -791,7 +792,49 @@ p img{
     padding-left: 10px;
 }
 
+.toolkit_con_bottom{
+    padding: 15px 15px 10px 15px;
+    border-radius: 5px;
+    background: #f6f6f6;
+    overflow: hidden;
+}
+.toolkit_con_bottom .tookit_item{
+    text-decoration: none;
+    overflow: hidden;
+    float: left;
+    color: #aaa;
+    padding: 0 10px;
+}
+.toolkit_con_bottom .tookit_item:hover{
+    color: #4AA005
+}
+.toolkit_con_bottom .tookit_item:not(:last-child){
+    border-right: solid 1px #ddd;
 
+}
+.toolkit_con_bottom .tookit_item .value:hover,.toolkit_con_bottom a .key:hover{
+    color: inherit;
+}
+.toolkit_con_bottom .tookit_item .value{
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+}
+
+.toolkit_con_bottom .tookit_item .key{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+.toolkit_con_bottom #toolkit_inside_btn{
+    position: absolute;
+    right: 15px;
+    bottom: 15px;
+}
+
+#toolkit_spiner{
+    margin: 25px 30px;
+}
 /*灰色旋转条*/
 
 .spinner_gray {

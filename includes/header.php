@@ -124,7 +124,7 @@
     <div class="toolkit_con bottom">
         <div class="toolkit_in_con">
             <div class="toolkit_user_con">
-                    <img class="item_toolkit_avatar" src="resources/avatars/user/17_128x128.jpg" alt="">
+                <img class="item_toolkit_avatar" src="resources/avatars/user/17_128x128.jpg" alt="">
 
                 <div class="toolkit_con_right">
                     <a class="toolit_user_name">JackWong</a>
@@ -133,10 +133,27 @@
                     <a class="fa fa-wrench toolit_user_major" style="font-size: 12px;"> 软件工程</a>
 
                 </div>
+                <div class="toolkit_con_bottom">
+                    <a class="tookit_item" href="">
+                    <span id="toolkit_question_count" class="value">12</span>
+                    <span class="key">发布</span>
+                    </a>
+                    <a  class="tookit_item" href="">
+                    <span id="toolkit_fan_count" class="value">22</span>
+                    <span class="key">圈他</span>
+                    </a>
+                    <a  class="tookit_item" href="">
+                    <span id="toolkit_follow_count" class="value">345</span>
+                    <span class="key">他圈</span>
+                    </a>
 
-
+                    <a id="toolkit_inside_btn" class="gradient_btn_green " user_id="25">圈他</a>
+                </div>
 
             </div>
+
+            <div id="toolkit_spiner" class="spinner_gray"></div>
+
         </div>
         <div class="arrow"></div>
         <div class="arrow"></div>

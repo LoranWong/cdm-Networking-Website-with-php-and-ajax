@@ -37,18 +37,18 @@
                                             </td>
 
                                             <td class="item_main">
-                                                <a class="item_title" target="_blank">你网速简直太慢了</a>
+                                                <a class="item_title" target="_blank"><!-- 标题 --></a>
                                                 <div class="item_hot_comment_div">
                                                     <div class="item_hot_comment"></div>
                                                     <span class="item_hot_comment_scale">显示全部</span>
                                                 </div>
                                                 <span class="item_info">
-                                                    <a class="item_user" id="item_user">你网速好慢</a>
+                                                    <a class="show_toolkit item_user" id="item_user"><!-- 发布用户 --></a>
                                                     &nbsp;•&nbsp;
-                                                    <span class="item_date">不能再慢了</span>
+                                                    <span class="item_date"><!-- 时间 --></span>
                                                     <span class="lastest_comment_info">
                                                         &nbsp;•&nbsp; 最新回复来自
-                                                        <a class="item_latest_user" id="item_latest_user">你网速为什么这么慢</a>
+                                                        <a class="show_toolkit item_latest_user" id="item_latest_user"><!-- 最新回复用户 --></a>
                                                     </span>
 
                                                 </span>

@@ -38,13 +38,13 @@ $(function() {
 
     });
     $('#userInfo_btn').mouseleave(function(event) {
-        //$.l($(event.relatedTarget).attr('id') == "home_btn");
+        //console.log($(event.relatedTarget).attr('id') == "home_btn");
         if ($(event.relatedTarget).attr('id') != "home_btn") {
             $('.profile_menu').slideUp('fast');
         }
     });
     $('.profile_menu').mouseleave(function(event) {
-        //$.l($(event.relatedTarget).attr('id' == "userInfo_btn"));
+        //console.log($(event.relatedTarget).attr('id' == "userInfo_btn"));
         if ($(event.relatedTarget).attr('id') != "userInfo_btn") {
             $('.profile_menu').slideUp('fast');
         }
@@ -160,9 +160,9 @@ $(function() {
                 type: 'POST',
             })
             .done(function(response) {
-                //$.l(response);
+                //console.log(response);
                 json = eval(response);
-                //$.l(json);
+                //console.log(json);
                 //遍历Groups  插入Tabs
                 $.each(json, function(index, val) {
                     item = $('<option value="' + val.id + '"">' + val.name + '</option>');
@@ -197,12 +197,12 @@ $(function() {
                 }
             },
             submitHandler: function(formEle) {
-                //$.l($('#ask_details').sceditor("instance").getBody());
+                //console.log($('#ask_details').sceditor("instance").getBody());
 
                 //选择分类之后才提交
                 if ($('#ask_tag').val() != 0) {
                     $.showLoadDialog('请稍候...');
-                    $.l($('.ask_title').val());
+                    console.log($('.ask_title').val());
                     $.ajax({
                             url: 'interfaces/addQuestion.php',
                             type: 'POST',
@@ -345,7 +345,7 @@ $(function() {
                         }
                     })
                     .fail(function() {
-                        $.l("error");
+                        console.log("error");
                         $.showErrorDialog("网络错误");
                     });
             },
@@ -391,7 +391,7 @@ $(function() {
                 }
             })
             .fail(function() {
-                $.l("error");
+                console.log("error");
                 $.showErrorDialog("网络错误");
             });
     }
@@ -400,7 +400,7 @@ $(function() {
     currentScrollTop = 0;
     $(window).scroll(function(event) {
         if ($(window).scrollTop() > currentScrollTop + 200) {
-            //$.l("down!");
+            //console.log("down!");
             $('.header_con').slideUp('fast');
             currentScrollTop = $(window).scrollTop();
         } else if ($(window).scrollTop() < currentScrollTop) {
@@ -413,8 +413,8 @@ $(function() {
 
 
     //随机改变背景
-    $.l($.getRandomImageUrl());
-    $.l($('.mybody'));
+    console.log($.getRandomImageUrl());
+    console.log($('.mybody'));
     $('.mybody').css('background-image', $.getRandomImageUrl());
 
 

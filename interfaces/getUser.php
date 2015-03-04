@@ -17,4 +17,3 @@ WHERE id=$id";
 
 echo get_json_from_sql($sql);
 mysql_close();
-

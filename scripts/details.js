@@ -77,7 +77,7 @@ $(function() {
 
 
     function showMoreComment() {
-        //$.l(id);
+        //console.log(id);
         if (!isLoading) {
             //防止异步加载出错
             isLoading = true;
@@ -93,7 +93,7 @@ $(function() {
                 .done(function(response, status, xhr) {
                     if (response != "[]") {
                         json = eval("(" + response + ")");
-                        //$.l(json);
+                        //console.log(json);
 
                         if (json.length < $.BAO_COMMENT_LOAD_COUNT) {
                             //当内容已经被取完时
@@ -151,8 +151,8 @@ $(function() {
                             item = index == 0 && currentLength == 0 ? $('.comment_con').first() : $('.comment_con').first().clone();
 
                             item.find(".group_item").remove();
-                            //$.l("currentLength--->"+currentLength);
-                            //$.l(val);
+                            //console.log("currentLength--->"+currentLength);
+                            //console.log(val);
                             item.attr('comment_id', val.id);
                             item.find('.comment_main').html(val.details);
                             item.find('.item_user').html(val.user);
@@ -201,7 +201,7 @@ $(function() {
             })
             .done(function(response) {
                 json = eval("(" + response + ")");
-                //$.l(json);
+                //console.log(json);
                 $.each(json, function(index, val) {
                     item = $('<a class="tag_item"></a>');
                     item.attr('href', "index.php?header_id=0&tag_id=" + val.id);
