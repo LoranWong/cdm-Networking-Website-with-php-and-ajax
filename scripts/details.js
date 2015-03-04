@@ -114,6 +114,7 @@ $(function() {
                             $('.question_user').html(json.question[0].user);
                             $('.question_date').html(time);
                             $('.details_avatar_a').attr('href', 'home.php?user_id=' + json.question[0].user_id);
+                            $('.details_avatar_a,.question_user').attr('toolkit_id', json.question[0].user_id);
                             //显示头像
                             $.showAvatar($('.details_avatar'), json.question[0].user_id, 128);
                             $('.question_user').attr('href', 'home.php?user_id=' + json.question[0].user_id);
@@ -156,6 +157,7 @@ $(function() {
                             item.attr('comment_id', val.id);
                             item.find('.comment_main').html(val.details);
                             item.find('.item_user').html(val.user);
+                            item.find('.comment_avatar_and_user').attr("toolkit_id",val.user_id);
                             item.find('.comment_avatar_a').attr('href', 'home.php?user_id=' + val.user_id);
                             //显示头像
                             $.showAvatar(item.find('.comment_avatar'),val.user_id,128);
@@ -180,6 +182,9 @@ $(function() {
                             $('#item_more_new span').text("没有更多内容~(≧▽≦)~啦");
                         }
                     }
+
+                    //每次showMore之后更新绑定
+                    $.updateShowToolKit();
 
                 })
                 .always(function() {

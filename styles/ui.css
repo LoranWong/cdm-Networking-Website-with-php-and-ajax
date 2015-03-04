@@ -772,7 +772,11 @@ p img{
     display: inline-block;
     vertical-align: top;
 }
+.item_toolkit_avatar_a{
+    text-decoration: none;
+}
 .item_toolkit_avatar{
+    cursor: pointer;
     margin: 15px 0 15px 15px;
     width: 65px;
     height: 65px;
@@ -785,7 +789,13 @@ p img{
     color: #4A9005;
     vertical-align: top;
     padding-left: 10px;
+    cursor: pointer;
+    text-decoration: none;
 }
+.toolit_user_name:hover{
+    text-decoration: underline;
+}
+
 .toolit_user_details{
     font-size: 13px;
     margin: 5px 0;
@@ -826,7 +836,7 @@ p img{
     padding-bottom: 5px;
     font-size: 13px;
 }
-.toolkit_con_bottom #toolkit_inside_btn{
+.toolkit_con_bottom #toolkit_inside_btn_follow,.toolkit_con_bottom #toolkit_inside_btn_unfollow{
     position: absolute;
     right: 15px;
     bottom: 15px;
@@ -962,7 +972,15 @@ p img{
 }
 .comment_avatar_a {
     text-decoration: none;
+
 }
+.comment_avatar_and_user .item_user{
+    line-height: 38px;
+    position: relative;
+    bottom: 11px;
+}
+
+
 .comment_info {
     position: relative;
     display: inline-block;
@@ -1019,6 +1037,11 @@ p img{
 .comments_and_label__con {
     padding: 0 10px 10px 10px;
 }
+
+.comment_avatar_and_user{
+    display: inline-block;
+}
+
 /*下方属于home页面内容*******************************************************************************/
 
 .home_left {
@@ -1092,11 +1115,10 @@ p img{
 .home_item_date_td {
     font-size: 13px;
     color: #999;
-}
-.home_item_date_td {
     width: 10%;
 }
 .home_item_right {
+    padding-left: 10px;
     width: 6%;
 }
 .home_item {
@@ -1110,6 +1132,7 @@ p img{
 .home_comments_count {
     font-size: 11px;
     padding: 3px 7px;
+    margin-right: auto;
 }
 .home_items_con .item_con {
     padding: 10px 5px;

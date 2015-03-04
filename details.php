@@ -18,7 +18,7 @@
                 <div class="main_left">
                     <div id="details_con" class="box_con">
                         <div class="details_top_info">
-                            <a class="details_avatar_a">
+                            <a class="show_toolkit details_avatar_a">
                                 <img class="details_avatar" src="" alt="">
                             </a>
 
@@ -29,7 +29,7 @@
                             </div>
                             <div class="details_info_con">
                                 <span class="detalis_info">
-                                    <a class="question_user">作者</a>
+                                    <a class="show_toolkit question_user">作者</a>
                                     &nbsp;•&nbsp;
                                     <span class="question_date">0分钟前</span>
                                 </span>
@@ -55,15 +55,20 @@
                             <div class="comment_main comment_label">回复列表</div>
                             <div class="comment_con">
                                 <span class="item_comments_count comment_index">1</span>
-                                <div class="details_top_info comments_top_info">
+                                <div class=" details_top_info comments_top_info">
+                                <div class="show_toolkit comment_avatar_and_user" >
                                     <a class="comment_avatar_a">
                                         <img class="details_avatar comment_avatar" src="" alt="">
                                     </a>
+                                    <a class="item_user"><!-- 回复用户名 --></a>
+                                </div>
+
+
                                     <div class="details_groups comment_info">
                                         <span class="detalis_info">
-                                            <a class="item_user">回复用户名</a>
+
                                             &nbsp;•&nbsp;
-                                            <span class="item_date">0分钟</span>
+                                            <span class="item_date"><!-- 回复时间 --></span>
                                             前&nbsp;•&nbsp;
                                         </span>
                                         来自小组

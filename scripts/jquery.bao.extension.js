@@ -346,15 +346,48 @@
                         $.updateToolKitPosition(context);
 
                         json = eval(response);
-                        console.log(json);
+                        //console.log(json);
                         $('.item_toolkit_avatar').attr('src', '');
                         $.showAvatar($('.item_toolkit_avatar'), user_id, "128");
+                        $('.item_toolkit_avatar_a').attr('href', 'home.php?user_id=' + user_id);
+                        $('.toolit_user_name').attr('href', 'home.php?user_id=' + user_id);
                         $('.toolit_user_name').text(json[0].user);
                         $('.toolit_user_uni').text(json[0].uni_name);
                         $('.toolit_user_major').text(json[0].major_name);
                         $('.toolit_user_details').text(json[0].details);
+
+                        $('.toolkit_question_count_a').attr('href', 'home.php?user_id=' + user_id);
+
                         $('#toolkit_follow_count').text(json[0].follow_count);
                         $('#toolkit_fan_count').text(json[0].fans_count);
+
+                        //如果是显示他人页面,且已经登录
+                        if (user_id != $.cookie().id && $.cookie().id != null) {
+                            //显示按钮
+                            $.showFollowOrUnfollowBtn($.cookie().id, user_id, $('#toolkit_inside_btn_follow'), $('#toolkit_inside_btn_unfollow'));
+
+                            $('#toolkit_inside_btn_follow').unbind('click').click(function(event) {
+                                $.doFollowOrUnfollow($.cookie().id, user_id, true, $('#toolkit_inside_btn_follow'), $('#toolkit_inside_btn_unfollow'));
+                                users_count = parseInt($('#toolkit_fan_count').text());
+                                console.log(users_count);
+                                $('#toolkit_fan_count').text(users_count + 1);
+                                $('#toolkit_fan_count').effect('highlight', '1500');
+                            });
+
+                            $('#toolkit_inside_btn_unfollow').unbind('click').click(function(event) {
+                                $.doFollowOrUnfollow($.cookie().id, user_id, false, $('#toolkit_inside_btn_follow'), $('#toolkit_inside_btn_unfollow'));
+                                users_count = parseInt($('#toolkit_fan_count').text());
+                                console.log(users_count);
+                                $('#toolkit_fan_count').text(users_count - 1);
+                                $('#toolkit_fan_count').effect('highlight', '1500');
+
+                            });
+
+                        }else{
+                            $('#toolkit_inside_btn_follow,#toolkit_inside_btn_unfollow').hide();
+                        }
+
+
 
                     })
                     .fail(function() {

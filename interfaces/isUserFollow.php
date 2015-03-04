@@ -6,7 +6,7 @@
  */
 require_once '../require.php';
 //sleep(1);
-$follower_id = $_POST['follower_id'];
-$followee_id = $_POST['followee_id'];
+$follower_id = $_POST['follower'];
+$followee_id = $_POST['followee'];
 
-echo mydb_isexist('rel_user_user',"follower_id={$follower_id} and followee_id = {$followee_id}");
+echo mydb_isexist('rel_user_user', 'follower_id=' . $follower_id . ' and followee_id = ' . $followee_id);

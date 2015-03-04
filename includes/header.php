@@ -124,8 +124,7 @@
     <div class="toolkit_con bottom">
         <div class="toolkit_in_con">
             <div class="toolkit_user_con">
-                <img class="item_toolkit_avatar" src="resources/avatars/user/17_128x128.jpg" alt="">
-
+            <a class="item_toolkit_avatar_a"><img class="item_toolkit_avatar" src="resources/avatars/user/17_128x128.jpg" alt=""></a>
                 <div class="toolkit_con_right">
                     <a class="toolit_user_name">JackWong</a>
                     <p class="toolit_user_details">非典型文艺程序猿的一生</p>
@@ -134,20 +133,21 @@
 
                 </div>
                 <div class="toolkit_con_bottom">
-                    <a class="tookit_item" href="">
+                    <a class="tookit_item toolkit_question_count_a" href="">
                     <span id="toolkit_question_count" class="value">12</span>
                     <span class="key">发布</span>
                     </a>
-                    <a  class="tookit_item" href="">
+                    <a  class="tookit_item toolkit_fan_count_a" href="">
                     <span id="toolkit_fan_count" class="value">22</span>
                     <span class="key">圈他</span>
                     </a>
-                    <a  class="tookit_item" href="">
+                    <a  class="tookit_item toolkit_follow_count_a" href="">
                     <span id="toolkit_follow_count" class="value">345</span>
                     <span class="key">他圈</span>
                     </a>
 
-                    <a id="toolkit_inside_btn" class="gradient_btn_green " user_id="25">圈他</a>
+                    <a id="toolkit_inside_btn_follow" class="gradient_btn_green " user_id="">圈他</a>
+                    <a id="toolkit_inside_btn_unfollow" class="gradient_btn_white "  user_id="">怒取圈</a>
                 </div>
 
             </div>

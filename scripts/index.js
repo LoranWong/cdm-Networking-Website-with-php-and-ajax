@@ -81,6 +81,7 @@ $(function() {
                         item.find('.item_user_list_name').text(val.user);
                         $.showAvatar(item.find('.item_list_avatar'), val.id, 128);
                         item.find('.item_user_list_name,.item_avatar_a').attr('href', 'home.php?user_id=' + val.id);
+                        item.find('.item_avatar_a').attr('toolkit_id', val.id);
                         item.find('#item_user_follow_btn').attr('user_id', val.id);
                         item.find('#item_user_follow_btn').click(function(event) {
                             user_id = $(this).attr('user_id');

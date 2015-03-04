@@ -108,7 +108,7 @@
                                     <span class="item_user_uni_major major_name">软件工程</span>
                                 </div>
                                 <div class="item_avatar_name_con">
-                                    <a class="item_avatar_a">
+                                    <a class="show_toolkit item_avatar_a">
                                         <img class="item_avatar item_list_avatar" src="resources/avatars/default/7_128.png" alt="">
                                     </a>
                                     <a class="item_user item_user_list_name" href="">男神赵红学长</a>
