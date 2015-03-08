@@ -69,13 +69,16 @@
                 json = eval("(" + response + ")");
                 //console.log(json);
                 $.each(json, function(index, val) {
-                    item = $('<a class="group_item"></a>');
+                    item = $('<a class="show_toolkit group_item"></a>');
                     item.attr('group_id', val.id);
                     item.attr('href', "index.php?header_id=1&group_id=" + val.id);
                     item.attr('group_id', val.id);
                     item.html(val.name);
                     item.appendTo(appendToWhat);
                 });
+
+                $.updateShowToolKit();
+
             });
     }
 
@@ -320,7 +323,10 @@
         var show_timer;
         var hide_timer;
         $('.show_toolkit').unbind('mouseenter').mouseenter(function(event) {
+
             var context = $(this);
+            $('.toolkit_con').hide();
+            clearTimeout(hide_timer);
             show_timer = setTimeout(function() {
 
                 //show 函数
@@ -331,69 +337,105 @@
                 $('.toolkit_user_con').hide();
                 $('#toolkit_spiner').show();
                 $.updateToolKitPosition(context);
-                //加载用户基本信息
+                //加载toolkit基本信息
                 user_id = context.attr('toolkit_id');
-                $.ajax({
-                        url: 'interfaces/getUser.php',
-                        type: 'POST',
-                        data: {
-                            id: user_id
-                        },
-                    })
-                    .done(function(response) {
-                        $('.toolkit_user_con').show();
-                        $('#toolkit_spiner').hide();
-                        $.updateToolKitPosition(context);
+                group_id = context.attr('group_id');
+                if (user_id != null && user_id.length != 0) {
+                    //用户Toolkit
+                    $.ajax({
+                            url: 'interfaces/getUser.php',
+                            type: 'POST',
+                            data: {
+                                id: user_id
+                            },
+                        })
+                        .done(function(response) {
+                            $('.toolkit_user_con').show();
+                            $('#toolkit_spiner').hide();
+                            $.updateToolKitPosition(context);
 
-                        json = eval(response);
-                        //console.log(json);
-                        $('.item_toolkit_avatar').attr('src', '');
-                        $.showAvatar($('.item_toolkit_avatar'), user_id, "128");
-                        $('.item_toolkit_avatar_a').attr('href', 'home.php?user_id=' + user_id);
-                        $('.toolit_user_name').attr('href', 'home.php?user_id=' + user_id);
-                        $('.toolit_user_name').text(json[0].user);
-                        $('.toolit_user_uni').text(json[0].uni_name);
-                        $('.toolit_user_major').text(json[0].major_name);
-                        $('.toolit_user_details').text(json[0].details);
+                            json = eval(response);
+                            //console.log(json);
+                            $('#toolkit_item_text_1').text("圈他");
+                            $('.toolkit_follow_count_a,.toolit_user_uni,.toolit_user_major,#toolkit_inside_btn_follow,#toolkit_inside_btn_unfollow').show();
 
-                        $('.toolkit_question_count_a').attr('href', 'home.php?user_id=' + user_id);
+                            $('.item_toolkit_avatar').attr('src', '');
+                            $.showAvatar($('.item_toolkit_avatar'), user_id, "128");
+                            $('.item_toolkit_avatar_a,.toolit_user_name,.toolkit_question_count_a').attr('href', 'home.php?user_id=' + user_id);
+                            $('.toolit_user_name').text(json[0].user);
+                            $('.toolit_user_uni').text(" " + json[0].uni_name);
+                            $('.toolit_user_major').text(" " + json[0].major_name);
+                            $('.toolit_user_details').text(json[0].details);
+                            $('#toolkit_follow_count').text(json[0].follow_count);
+                            $('#toolkit_fan_count').text(json[0].fans_count);
 
-                        $('#toolkit_follow_count').text(json[0].follow_count);
-                        $('#toolkit_fan_count').text(json[0].fans_count);
+                            //如果是显示他人页面,且已经登录
+                            if (user_id != $.cookie().id && $.cookie().id != null) {
+                                //显示按钮
+                                $.showFollowOrUnfollowBtn($.cookie().id, user_id, $('#toolkit_inside_btn_follow'), $('#toolkit_inside_btn_unfollow'));
 
-                        //如果是显示他人页面,且已经登录
-                        if (user_id != $.cookie().id && $.cookie().id != null) {
-                            //显示按钮
-                            $.showFollowOrUnfollowBtn($.cookie().id, user_id, $('#toolkit_inside_btn_follow'), $('#toolkit_inside_btn_unfollow'));
+                                $('#toolkit_inside_btn_follow').unbind('click').click(function(event) {
+                                    $.doFollowOrUnfollow($.cookie().id, user_id, true, $('#toolkit_inside_btn_follow'), $('#toolkit_inside_btn_unfollow'));
+                                    users_count = parseInt($('#toolkit_fan_count').text());
+                                    console.log(users_count);
+                                    $('#toolkit_fan_count').text(users_count + 1);
+                                    $('#toolkit_fan_count').effect('highlight', '1500');
+                                });
 
-                            $('#toolkit_inside_btn_follow').unbind('click').click(function(event) {
-                                $.doFollowOrUnfollow($.cookie().id, user_id, true, $('#toolkit_inside_btn_follow'), $('#toolkit_inside_btn_unfollow'));
-                                users_count = parseInt($('#toolkit_fan_count').text());
-                                console.log(users_count);
-                                $('#toolkit_fan_count').text(users_count + 1);
-                                $('#toolkit_fan_count').effect('highlight', '1500');
-                            });
+                                $('#toolkit_inside_btn_unfollow').unbind('click').click(function(event) {
+                                    $.doFollowOrUnfollow($.cookie().id, user_id, false, $('#toolkit_inside_btn_follow'), $('#toolkit_inside_btn_unfollow'));
+                                    users_count = parseInt($('#toolkit_fan_count').text());
+                                    console.log(users_count);
+                                    $('#toolkit_fan_count').text(users_count - 1);
+                                    $('#toolkit_fan_count').effect('highlight', '1500');
 
-                            $('#toolkit_inside_btn_unfollow').unbind('click').click(function(event) {
-                                $.doFollowOrUnfollow($.cookie().id, user_id, false, $('#toolkit_inside_btn_follow'), $('#toolkit_inside_btn_unfollow'));
-                                users_count = parseInt($('#toolkit_fan_count').text());
-                                console.log(users_count);
-                                $('#toolkit_fan_count').text(users_count - 1);
-                                $('#toolkit_fan_count').effect('highlight', '1500');
+                                });
 
-                            });
-
-                        }else{
-                            $('#toolkit_inside_btn_follow,#toolkit_inside_btn_unfollow').hide();
-                        }
-
+                            } else {
+                                $('#toolkit_inside_btn_follow,#toolkit_inside_btn_unfollow').hide();
+                            }
 
 
-                    })
-                    .fail(function() {
-                        console.log("error");
-                    });
 
+                        });
+
+                } else if (group_id != null && group_id.length != 0) {
+                    //小组 ToolKit
+                    $.ajax({
+                            url: 'interfaces/getGroup.php',
+                            data: {
+                                id: group_id,
+                            },
+                        })
+                        .done(function(response) {
+                            $('.toolkit_user_con').show();
+                            $('#toolkit_spiner').hide();
+                            $.updateToolKitPosition(context);
+
+
+                            json = eval(response);
+                            //显示小组信息
+
+                            $('.item_toolkit_avatar_a,.toolit_user_name,.toolkit_question_count_a').attr('href', "index.php?header_id=1&group_id=" + json[0].id);
+                            $('.toolit_user_name').text(json[0].name);
+                            $.showAvatar($('.item_toolkit_avatar'), json[0].id, 256, true);
+                            $('.toolit_user_details').text(json[0].details);
+
+                            $('#toolkit_item_text_1').text("成员");
+                            $('.toolkit_follow_count_a,.toolit_user_uni,.toolit_user_major,#toolkit_inside_btn_follow,#toolkit_inside_btn_unfollow').hide();
+                            
+                            $('#toolkit_question_count').text(json[0].questions_count);
+                            $('#toolkit_fan_count').text(json[0].users_count);
+
+                        });
+
+
+
+
+
+                } else {
+                    console.log("显示toolkit时 user_id 与 group_id 都为空！");
+                }
 
 
             }, 200);

@@ -128,22 +128,22 @@
                 <div class="toolkit_con_right">
                     <a class="toolit_user_name">JackWong</a>
                     <p class="toolit_user_details">非典型文艺程序猿的一生</p>
-                    <a class="fa fa-institution toolit_user_uni" style="font-size: 12px;padding-left: 10px;"> 华南理工大学</a>
-                    <a class="fa fa-wrench toolit_user_major" style="font-size: 12px;"> 软件工程</a>
+                    <a class="fa fa-institution toolit_user_uni" style="font-size: 12px;padding-left: 10px;">华南理工大学</a>
+                    <a class="fa fa-wrench toolit_user_major" style="font-size: 12px;">软件工程</a>
 
                 </div>
                 <div class="toolkit_con_bottom">
                     <a class="tookit_item toolkit_question_count_a" href="">
                     <span id="toolkit_question_count" class="value">12</span>
-                    <span class="key">发布</span>
+                    <span id="toolkit_item_text_0" class="key">发布</span>
                     </a>
                     <a  class="tookit_item toolkit_fan_count_a" href="">
                     <span id="toolkit_fan_count" class="value">22</span>
-                    <span class="key">圈他</span>
+                    <span id="toolkit_item_text_1" class="key">圈他</span>
                     </a>
                     <a  class="tookit_item toolkit_follow_count_a" href="">
                     <span id="toolkit_follow_count" class="value">345</span>
-                    <span class="key">他圈</span>
+                    <span id="toolkit_item_text_2" class="key">他圈</span>
                     </a>
 
                     <a id="toolkit_inside_btn_follow" class="gradient_btn_green " user_id="">圈他</a>

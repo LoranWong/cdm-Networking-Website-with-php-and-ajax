@@ -142,8 +142,9 @@ $(function() {
                         item.appendTo($('.tabs_con ul'));
                     });
                     //tabs初始化
+                    tag_id = ((g_tag_id == null || g_tag_id < 0 || g_tag_id > json.length) ? 0 : g_tag_id );
                     $('.tabs_con').tabs({
-                        active: 0,
+                        active: tag_id,
                         heightStyle: 'content',
                         beforeActivate: loadQuestion,
                         create: loadQuestion,

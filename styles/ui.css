@@ -690,6 +690,9 @@ p img{
     width: 60px;
     height: 60px;
 }
+.item_avatar_a{
+    display: block;
+}
 .user_item_con{
     position: relative;
     margin: 0 10px;
